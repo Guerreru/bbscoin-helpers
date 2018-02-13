@@ -2,20 +2,30 @@
 
 Native Node.js module for CryptoNote based cryptocurrencies.
 
-
 ## Usages
-Create a wallet with a single spending key. (In bytecoin's GreenWallet format)
-```
+
+```javascript
 createWallet(file_path, container_password, callback);
 ```
+Create a wallet with a single spending key.
+
 
 ## Compilation
-First, please clone bbscoin project to the project root and build it.
-Because we will require static libraries from it.
-For instructions regarding to how to build bbscoin, please refer to: https://github.com/bbscoin/bbscoin 
+
+First, please clone bbscoin project to cryptonote-helpers' root or create a symbol link to ./bbscoin.
+Please follow the instructions to build it first: https://github.com/bbscoin/bbscoin 
+As we will link static libraries from the build release folder.
+
+
+### Requirement
+
+- node (v9.5.0)
+- boost
 
 ### macOS
-```
+
+```bash
 brew install boost
+npm install
 node-gyp rebuild
 ```
