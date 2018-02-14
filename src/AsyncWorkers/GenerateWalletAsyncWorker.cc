@@ -24,14 +24,14 @@ void GenerateWalletAsyncWorker::Execute() {
         // Generate spend/view key pair
         Crypto::generate_keys(spendKey.publicKey, spendKey.secretKey);
         Crypto::generate_keys(viewKey.publicKey, viewKey.secretKey);
-        uint64_t creationTimestamp = time(nullptr);
+        timestamp = time(nullptr);
 
         // View keys
-        prefix->encryptedViewKeys = encryptKeyPair(viewKey.publicKey, viewKey.secretKey, creationTimestamp, storageKey, prefix->nextIv);
+        prefix->encryptedViewKeys = encryptKeyPair(viewKey.publicKey, viewKey.secretKey, timestamp, storageKey, prefix->nextIv);
 
         // Spend keys
         incIv(prefix->nextIv);
-        storage.push_back(encryptKeyPair(spendKey.publicKey, spendKey.secretKey, creationTimestamp, storageKey, prefix->nextIv));
+        storage.push_back(encryptKeyPair(spendKey.publicKey, spendKey.secretKey, timestamp, storageKey, prefix->nextIv));
 
         // Other stuff
         std::string containerData;
@@ -63,6 +63,7 @@ void GenerateWalletAsyncWorker::HandleOKCallback() {
     Nan::Set(viewKeyResult, Nan::New("public").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->viewKey.publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
     Nan::Set(viewKeyResult, Nan::New("secret").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->viewKey.secretKey), sizeof(Crypto::SecretKey))).ToLocalChecked());
     v8::Local<v8::Object> result = Nan::New<v8::Object>();
+    Nan::Set(result, Nan::New("timestamp").ToLocalChecked(), Nan::New<v8::Number>(this->timestamp));
     Nan::Set(result, Nan::New("address").ToLocalChecked(), Nan::New(this->address).ToLocalChecked());
     Nan::Set(result, Nan::New("spendKey").ToLocalChecked(), spendKeyResult);
     Nan::Set(result, Nan::New("viewKey").ToLocalChecked(), viewKeyResult);

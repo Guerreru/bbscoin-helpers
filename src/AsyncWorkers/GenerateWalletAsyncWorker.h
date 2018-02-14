@@ -25,6 +25,8 @@ class GenerateWalletAsyncWorker : public Nan::AsyncWorker {
   private:
     std::string path;
     std::string password;
+
+    uint64_t timestamp;
     std::string address;
     KeyPair spendKey;
     KeyPair viewKey;
