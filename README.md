@@ -1,6 +1,6 @@
-# cryptonote-helpers
+# bbscoin-helpers
 
-Native Node.js module for CryptoNote based cryptocurrencies.
+Native Node.js module for BBSCoin, however this should work for all cryptonote based cryptocurrencies.
 
 ## Usages
 
