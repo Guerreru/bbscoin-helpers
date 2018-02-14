@@ -26,6 +26,8 @@ class GenerateWalletAsyncWorker : public Nan::AsyncWorker {
     std::string path;
     std::string password;
     std::string address;
+    KeyPair spendKey;
+    KeyPair viewKey;
 
     struct ContainerStoragePrefix {
         uint8_t version;
