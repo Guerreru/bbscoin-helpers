@@ -9,6 +9,16 @@ createWallet(file_path, container_password, callback);
 ```
 Create a wallet with a single spending key.
 
+```javascript
+generateNewKeyPair();
+```
+Create a new public/secret key pair
+
+```javascript
+generateAddressFromKeyPair(spendPublicKey, viewPublicKey);
+```
+Create an address from public keys
+
 
 ## Compilation
 
