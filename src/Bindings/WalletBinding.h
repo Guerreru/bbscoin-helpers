@@ -8,4 +8,5 @@ public:
   static NAN_METHOD(CreateWallet);
   static NAN_METHOD(GenerateNewKeyPair);
   static NAN_METHOD(GenerateAddressFromKeyPair);
+  static NAN_METHOD(FilterOutputs);
 };

@@ -1,9 +1,9 @@
-#include "GenerateWalletAsyncWorker.h"
 #include <nan.h>
+#include "GenerateWalletAsyncWorker.h"
 
 GenerateWalletAsyncWorker::GenerateWalletAsyncWorker(std::string path,
-                                                     std::string password, Nan::Callback *callback)
-    : Nan::AsyncWorker(callback) {
+                                                     std::string password,
+                                                     Nan::Callback *callback) : Nan::AsyncWorker(callback) {
 
     this->path = path;
     this->password = password;
@@ -48,7 +48,7 @@ void GenerateWalletAsyncWorker::Execute() {
 
     } catch (const std::exception &e) {
         std::string msg = "Failed to save wallet: ";
-        this->SetErrorMessage((msg + e.what()).c_str());
+        SetErrorMessage((msg + e.what()).c_str());
         return;
     }
 }
@@ -57,11 +57,11 @@ void GenerateWalletAsyncWorker::HandleOKCallback() {
     Nan::HandleScope scope;
 
     v8::Local<v8::Object> spendKeyResult = Nan::New<v8::Object>();
-    Nan::Set(spendKeyResult, Nan::New("public").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->spendKey.publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
-    Nan::Set(spendKeyResult, Nan::New("secret").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->spendKey.secretKey), sizeof(Crypto::SecretKey))).ToLocalChecked());
+    Nan::Set(spendKeyResult, Nan::New("public").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&this->spendKey.publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+    Nan::Set(spendKeyResult, Nan::New("secret").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&this->spendKey.secretKey), sizeof(Crypto::SecretKey))).ToLocalChecked());
     v8::Local<v8::Object> viewKeyResult = Nan::New<v8::Object>();
-    Nan::Set(viewKeyResult, Nan::New("public").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->viewKey.publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
-    Nan::Set(viewKeyResult, Nan::New("secret").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&this->viewKey.secretKey), sizeof(Crypto::SecretKey))).ToLocalChecked());
+    Nan::Set(viewKeyResult, Nan::New("public").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&this->viewKey.publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+    Nan::Set(viewKeyResult, Nan::New("secret").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&this->viewKey.secretKey), sizeof(Crypto::SecretKey))).ToLocalChecked());
     v8::Local<v8::Object> result = Nan::New<v8::Object>();
     Nan::Set(result, Nan::New("timestamp").ToLocalChecked(), Nan::New<v8::Number>(this->timestamp));
     Nan::Set(result, Nan::New("address").ToLocalChecked(), Nan::New(this->address).ToLocalChecked());
@@ -70,17 +70,15 @@ void GenerateWalletAsyncWorker::HandleOKCallback() {
 
     v8::Local<v8::Value> argv[] = {
         Nan::Null(),
-        result
-    };
+        result};
     callback->Call(2, argv);
 }
 
 void GenerateWalletAsyncWorker::HandleErrorCallback() {
     Nan::HandleScope scope;
     v8::Local<v8::Value> argv[] = {
-        Nan::New(this->ErrorMessage()).ToLocalChecked(),
-        Nan::Null()
-    };
+        Nan::New(ErrorMessage()).ToLocalChecked(),
+        Nan::Null()};
     callback->Call(2, argv);
 }
 
@@ -107,8 +105,7 @@ EncryptedWalletRecord GenerateWalletAsyncWorker::encryptKeyPair(const PublicKey 
 }
 
 void GenerateWalletAsyncWorker::incIv(Crypto::chacha8_iv &iv) {
-    static_assert(sizeof(uint64_t) == sizeof(Crypto::chacha8_iv),
-                  "Bad Crypto::chacha8_iv size");
+    static_assert(sizeof(uint64_t) == sizeof(Crypto::chacha8_iv), "Bad Crypto::chacha8_iv size");
     uint64_t *i = reinterpret_cast<uint64_t *>(&iv);
     if (*i < std::numeric_limits<uint64_t>::max()) {
         ++(*i);

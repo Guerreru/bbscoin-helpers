@@ -1,10 +1,11 @@
 #pragma once
 
-#include <nan.h>
 #include <initializer_list>
+#include <nan.h>
 
-#include "CryptoNoteConfig.h"
+#include "CryptoNote.h"
 #include "Common/StringOutputStream.h"
+#include "CryptoNoteConfig.h"
 #include "CryptoNoteCore/CryptoNoteBasicImpl.h"
 #include "Serialization/BinaryOutputStreamSerializer.h"
 #include "Wallet/WalletGreen.h"
@@ -14,10 +15,16 @@ using namespace Common;
 using namespace Crypto;
 using namespace CryptoNote;
 
+struct ContainerStoragePrefix {
+    uint8_t version;
+    Crypto::chacha8_iv nextIv;
+    EncryptedWalletRecord encryptedViewKeys;
+};
+
 class GenerateWalletAsyncWorker : public Nan::AsyncWorker {
 
   public:
-    GenerateWalletAsyncWorker(std::string, std::string, Nan::Callback *);
+    GenerateWalletAsyncWorker(std::string path, std::string password, Nan::Callback *callback);
     void Execute();
     void HandleOKCallback();
     void HandleErrorCallback();
@@ -30,12 +37,6 @@ class GenerateWalletAsyncWorker : public Nan::AsyncWorker {
     std::string address;
     KeyPair spendKey;
     KeyPair viewKey;
-
-    struct ContainerStoragePrefix {
-        uint8_t version;
-        Crypto::chacha8_iv nextIv;
-        EncryptedWalletRecord encryptedViewKeys;
-    };
 
     EncryptedWalletRecord encryptKeyPair(const PublicKey &publicKey, const SecretKey &secretKey,
                                          uint64_t creationTimestamp, const Crypto::chacha8_key &key,
