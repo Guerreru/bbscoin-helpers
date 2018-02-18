@@ -1,12 +1,12 @@
 #include "WalletBinding.h"
 #include "AsyncWorkers/GenerateWalletAsyncWorker.h"
-#include "AsyncWorkers/FilterOutputsAsyncWorker.h"
+#include "AsyncWorkers/FindOutputsAsyncWorker.h"
 
 NAN_MODULE_INIT(WalletBinding::Init) {
     Nan::SetMethod(target, "createWallet", CreateWallet);
     Nan::SetMethod(target, "generateNewKeyPair", GenerateNewKeyPair);
     Nan::SetMethod(target, "generateAddressFromKeyPair", GenerateAddressFromKeyPair);
-    Nan::SetMethod(target, "filterOutputs", FilterOutputs);
+    Nan::SetMethod(target, "findOutputs", FindOutputs);
 }
 
 NAN_METHOD(WalletBinding::CreateWallet) {
@@ -29,35 +29,46 @@ NAN_METHOD(WalletBinding::CreateWallet) {
     info.GetReturnValue().Set(Nan::Undefined());
 }
 
-NAN_METHOD(WalletBinding::FilterOutputs) {
-    if(!info[0]->IsArray()) {
-        return Nan::ThrowError(Nan::New("expected arg 0: Array<OutputRecord> outputs").ToLocalChecked());
+NAN_METHOD(WalletBinding::FindOutputs) {
+    if(!info[0]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 0: transaction public key").ToLocalChecked());
     }
-    if(!info[1]->IsString()) {
-        return Nan::ThrowError(Nan::New("expected arg 1: string viewSecretKey").ToLocalChecked());
+    if(!info[1]->IsArray()) {
+        return Nan::ThrowError(Nan::New("expected arg 1: Array<OutputRecord> outputs").ToLocalChecked());
     }
-    if(!info[2]->IsArray()) {
-        return Nan::ThrowError(Nan::New("expected arg 2: Array<string> spendPublicKeys").ToLocalChecked());
+    if(!info[2]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 2: string viewSecretKey").ToLocalChecked());
     }
-    if(!info[3]->IsFunction()) {
-        return Nan::ThrowError(Nan::New("expected arg 3: function callback").ToLocalChecked());
+    if(!info[3]->IsArray()) {
+        return Nan::ThrowError(Nan::New("expected arg 3: Array<string> spendPublicKeys").ToLocalChecked());
     }
+    if(!info[4]->IsFunction()) {
+        return Nan::ThrowError(Nan::New("expected arg 4: function callback").ToLocalChecked());
+    }
+
+    // tx public key
+    Crypto::PublicKey txPublicKey;
+    std::vector<uint8_t> txKey = fromHex(std::string(*Nan::Utf8String(info[0]->ToString())));
+    if ((txKey.size() * sizeof(uint8_t)) != sizeof(Crypto::PublicKey)) {
+        return Nan::ThrowError(Nan::New("invalid arg 0: transaction public key has invalid length").ToLocalChecked());
+    }
+    txPublicKey = *reinterpret_cast<Crypto::PublicKey*>(txKey.data());
 
     // outputs
     std::vector<OutputRecord> outputs;
-    v8::Local<v8::Object> outputs_js = info[0]->ToObject();
+    v8::Local<v8::Object> outputs_js = info[1]->ToObject();
     const v8::Local<v8::String> lengthString = Nan::New("length").ToLocalChecked();
     const v8::Local<v8::String> amountString = Nan::New("amount").ToLocalChecked();
     const v8::Local<v8::String> keyString = Nan::New("key").ToLocalChecked();
-    uint32_t outputLength = Nan::Get(outputs_js, lengthString).ToLocalChecked()->Uint32Value();
-    for (uint32_t i = 0; i < outputLength; i++) {
+    size_t outputLength = Nan::Get(outputs_js, lengthString).ToLocalChecked()->Uint32Value();
+    for (size_t i = 0; i < outputLength; i++) {
         v8::Local<v8::Object> item = Nan::Get(outputs_js, i).ToLocalChecked()->ToObject();
         if (!Nan::HasOwnProperty(item, amountString).FromJust()) {
-            return Nan::ThrowError(Nan::New("invalid arg 0: output " + std::to_string(i) + " missing amount").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 1: output " + std::to_string(i) + " missing amount").ToLocalChecked());
         }
 
         if (!Nan::HasOwnProperty(item, keyString).FromJust()) {
-            return Nan::ThrowError(Nan::New("invalid arg 0: output " + std::to_string(i) + " missing key").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 1: output " + std::to_string(i) + " missing key").ToLocalChecked());
         }
 
         OutputRecord outputRecord;
@@ -65,18 +76,18 @@ NAN_METHOD(WalletBinding::FilterOutputs) {
         // output.amount
         v8::Local<v8::Value> numberValue = Nan::Get(item, amountString).ToLocalChecked();
         if (!numberValue->IsNumber()) {
-            return Nan::ThrowError(Nan::New("invalid arg 0: amount of output " + std::to_string(i) + " is not a number").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 1: amount of output " + std::to_string(i) + " is not a number").ToLocalChecked());
         }
         outputRecord.amount = numberValue->NumberValue();
 
         // output.key
         v8::Local<v8::Value> keyValue = Nan::Get(item, keyString).ToLocalChecked();
         if (!keyValue->IsString()) {
-            return Nan::ThrowError(Nan::New("invalid arg 0: key of output " + std::to_string(i) + " is not a string").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 1: key of output " + std::to_string(i) + " is not a string").ToLocalChecked());
         }
         std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(keyValue->ToString())));
         if ((key.size() * sizeof(uint8_t)) != sizeof(Crypto::PublicKey)) {
-            return Nan::ThrowError(Nan::New("invalid arg 0: key of output " + std::to_string(i) + " has invalid length").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 1: key of output " + std::to_string(i) + " has invalid length").ToLocalChecked());
         }
         outputRecord.key = *reinterpret_cast<Crypto::PublicKey*>(key.data());
 
@@ -85,34 +96,35 @@ NAN_METHOD(WalletBinding::FilterOutputs) {
 
     // view secret key
     Crypto::SecretKey viewSecretKey;
-    std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(info[1]->ToString())));
+    std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(info[2]->ToString())));
     if ((key.size() * sizeof(uint8_t)) != sizeof(Crypto::SecretKey)) {
-        return Nan::ThrowError(Nan::New("invalid arg 1: view secret key has invalid length").ToLocalChecked());
+        return Nan::ThrowError(Nan::New("invalid arg 2: view secret key has invalid length").ToLocalChecked());
     }
     viewSecretKey = *reinterpret_cast<Crypto::SecretKey*>(key.data());
 
     // spend public keys
-    std::vector<Crypto::PublicKey> spendPublicKeys;
-    v8::Local<v8::Object> spendPublicKeys_js = info[2]->ToObject();
-    uint32_t keyLength = Nan::Get(spendPublicKeys_js, lengthString).ToLocalChecked()->Uint32Value();
-    for (uint32_t i = 0; i < keyLength; i++) {
+    std::unordered_set<Crypto::PublicKey> spendPublicKeys;
+    v8::Local<v8::Object> spendPublicKeys_js = info[3]->ToObject();
+    size_t keyLength = Nan::Get(spendPublicKeys_js, lengthString).ToLocalChecked()->Uint32Value();
+    for (size_t i = 0; i < keyLength; i++) {
         // key
         v8::Local<v8::Value> keyValue = Nan::Get(spendPublicKeys_js, i).ToLocalChecked();
         if (!keyValue->IsString()) {
-            return Nan::ThrowError(Nan::New("invalid arg 2: spend public key " + std::to_string(i) + " is not a string").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 3: spend public key " + std::to_string(i) + " is not a string").ToLocalChecked());
         }
         std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(keyValue->ToString())));
         if ((key.size() * sizeof(uint8_t)) != sizeof(Crypto::PublicKey)) {
-            return Nan::ThrowError(Nan::New("invalid arg 2: spend public key " + std::to_string(i) + " has invalid length").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg 3: spend public key " + std::to_string(i) + " has invalid length").ToLocalChecked());
         }
-        spendPublicKeys.push_back(*reinterpret_cast<Crypto::PublicKey*>(key.data()));
+        spendPublicKeys.insert(*reinterpret_cast<Crypto::PublicKey*>(key.data()));
     }
 
-	Nan::AsyncQueueWorker(new FilterOutputsAsyncWorker(
+	Nan::AsyncQueueWorker(new FindOutputsAsyncWorker(
+        txPublicKey,
         outputs,
         viewSecretKey,
         spendPublicKeys,
-        new Nan::Callback(info[3].As<v8::Function>())
+        new Nan::Callback(info[4].As<v8::Function>())
 	));
 
     info.GetReturnValue().Set(Nan::Undefined());

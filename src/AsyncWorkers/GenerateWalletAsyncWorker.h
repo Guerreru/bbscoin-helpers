@@ -5,6 +5,7 @@
 
 #include "CryptoNote.h"
 #include "Common/StringOutputStream.h"
+#include "Common/StringTools.h"
 #include "CryptoNoteConfig.h"
 #include "CryptoNoteCore/CryptoNoteBasicImpl.h"
 #include "Serialization/BinaryOutputStreamSerializer.h"

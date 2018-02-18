@@ -6,7 +6,7 @@
                 "src/main.cc",
                 "src/Bindings/WalletBinding.cc",
                 "src/AsyncWorkers/GenerateWalletAsyncWorker.cc",
-                "src/AsyncWorkers/FilterOutputsAsyncWorker.cc",
+                "src/AsyncWorkers/FindOutputsAsyncWorker.cc",
             ],
             "include_dirs": [
                 "src",

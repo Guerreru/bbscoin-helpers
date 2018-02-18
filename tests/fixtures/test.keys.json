@@ -1,0 +1,11 @@
+{
+    "address": "fySYVoeryY4WZmM6vpduKBccALWaLukXfQ6KwsFgg8pR8HhjHw3AeCiDrXfqEPSYnkgbK74CRBat9YETn8qwj7aN23TMRqiTh",
+    "spendKey": {
+        "public": "47d690ed0421b0c1cca770844e5ed4e02e07fd9e8dae8a0e9d130e04ae822b92",
+        "secret": "df7337a9834265daea678736001e535825a3027d13088f89bb94a55df4d6b60b"
+    },
+    "viewKey": {
+        "public": "69809a93ff234cd9454823cb0b21ecb3e06cb636fdeabab979cb3a985c977966",
+        "secret": "4335592ab38d5ac7273688199c0cee1b1cce4564ef708139cbe963fb3ea2ae09"
+    }
+}
