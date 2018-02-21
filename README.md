@@ -1,24 +1,39 @@
 # bbscoin-helpers
 
-Native Node.js module for BBSCoin, however this should work for all cryptonote based cryptocurrencies.
+Native Node.js module for BBSCoin. This should work for all cryptonote based cryptocurrencies.
 
 ## Usages
 
+Create a GUI compatible wallet with a single spending key.
 ```javascript
-createWallet(file_path, container_password, callback);
+createWallet(filePath, walletPassword, callback);
 ```
-Create a wallet with a single spending key.
 
+Create a new public/secret key pair.
 ```javascript
 generateNewKeyPair();
 ```
-Create a new public/secret key pair
 
+Create an address from public keys.
 ```javascript
 generateAddressFromKeyPair(spendPublicKey, viewPublicKey);
 ```
-Create an address from public keys
 
+Filter transaction output by given view and spend keys.
+```javascript
+const transactionPublicKey = '64 characters long hex key';
+const transactionOutputs = [
+    {
+        key: '64 characters long hex key'
+        amount: 100000,
+    }
+]
+const viewSecretKey = '64 characters long hex key';
+const publicSpendKeys = [
+    '64 characters long hex key'
+]
+findOutputs(transactionPublicKey, transactionOutputs, viewSecretKey, publicSpendKeys, callback)
+```
 
 ## Compilation
 
