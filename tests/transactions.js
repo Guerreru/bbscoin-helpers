@@ -9,7 +9,17 @@ const {
 
 const fsWriteFile = util.promisify(fs.writeFile);
 
-const blockHeights = [22733, 25605, 25606, 25616];
+const blockHeights = [
+    22733, 
+    25605, 
+    25606, 
+    26100,
+    25616, 
+    26107, 
+    26216, 
+    26218,
+    26915
+];
 
 async function prepareData() {
     const fixturesFolder = path.resolve(__dirname, `fixtures/tx-data`);
@@ -36,16 +46,39 @@ function readTxData(height) {
 }
 
 function printTxs() {
-    blockHeights.sort((a, b) => b - a).forEach((height) => {
+    const knownPublicKeys = {};
+    
+    blockHeights.sort().forEach((height) => {
         readTxData(height).result.transactions.forEach((transaction) => {
             findOutputs(transaction.publicKey, transaction.outputs, viewKey.secret, [spendKey.public], function(error, results) {
                 if (error) {
                     console.error(error);
                 }
-        
+
                 if (results[spendKey.public]) {
-                    const amount = results[spendKey.public].reduce((sum, current) => sum + current.amount, 0);
-                    console.log(`Hash: ${transaction.hash}\tAmount: ${amount / 100000000}\tFee: ${transaction.fee / 100000000}`);
+                    console.log(`hash: ${transaction.hash} height: ${height}`);
+                    console.log(`fee: ${transaction.fee / 100000000}`);
+
+                    let outputSum = 0;
+                    
+                    results[spendKey.public].forEach((output) => {
+                        outputSum += output.amount;
+                        knownPublicKeys[output.key] = true;
+                        console.log(`${output.key} received: ${output.amount / 100000000}`);
+                    });
+
+                    let inputSum = 0;
+                    transaction.inputs.forEach((input) => {
+                        input.keys.forEach((key) => {
+                            if (knownPublicKeys[key]) {
+                                inputSum += input.amount;
+                                console.log(`${input.transactionHash} sent: ${input.amount / 100000000}`);
+                            }
+                        });
+                    });
+
+                    console.log(`Final: ${outputSum / 100000000} - ${inputSum / 100000000} = ${(outputSum - inputSum) / 100000000}`);
+                    console.log(`===`);
                 }
             });
         });

@@ -3,10 +3,8 @@
         {
             "target_name": "bbscoinHelper",
             "sources": [
-                "src/main.cc",
-                "src/Bindings/WalletBinding.cc",
-                "src/AsyncWorkers/GenerateWalletAsyncWorker.cc",
-                "src/AsyncWorkers/FindOutputsAsyncWorker.cc",
+                'src/main.cc',
+                '<!@(ls -1 src/**/*.cc)',
             ],
             "include_dirs": [
                 "src",
