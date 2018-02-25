@@ -9,6 +9,11 @@ Create a GUI compatible wallet with a single spending key.
 createWallet(filePath, walletPassword, callback);
 ```
 
+Parse a GUI wallet file.
+```javascript
+parseWallet(filePath, walletPassword, callback);
+```
+
 Create a new public/secret key pair.
 ```javascript
 generateNewKeyPair();

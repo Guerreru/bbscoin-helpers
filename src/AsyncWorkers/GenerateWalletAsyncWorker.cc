@@ -10,8 +10,9 @@ GenerateWalletAsyncWorker::GenerateWalletAsyncWorker(std::string path,
 }
 
 void GenerateWalletAsyncWorker::Execute() {
+    ContainerStorage storage(path, Common::FileMappedVectorOpenMode::CREATE, sizeof(ContainerStoragePrefix));
+    
     try {
-        ContainerStorage storage(path, Common::FileMappedVectorOpenMode::CREATE, sizeof(ContainerStoragePrefix));
         ContainerStoragePrefix *prefix = reinterpret_cast<ContainerStoragePrefix *>(storage.prefix());
         prefix->version = static_cast<uint8_t>(WalletSerializerV2::SERIALIZATION_VERSION);
         prefix->nextIv = Crypto::rand<Crypto::chacha8_iv>();
@@ -47,6 +48,7 @@ void GenerateWalletAsyncWorker::Execute() {
         address = getAccountAddressAsStr(parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX, {spendKey.publicKey, viewKey.publicKey});
 
     } catch (const std::exception &e) {
+        storage.close();
         std::string msg = "Failed to save wallet: ";
         SetErrorMessage((msg + e.what()).c_str());
         return;

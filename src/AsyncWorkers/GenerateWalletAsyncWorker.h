@@ -3,6 +3,7 @@
 #include <initializer_list>
 #include <nan.h>
 
+#include "Common.h"
 #include "CryptoNote.h"
 #include "Common/StringOutputStream.h"
 #include "Common/StringTools.h"
@@ -15,12 +16,6 @@
 using namespace Common;
 using namespace Crypto;
 using namespace CryptoNote;
-
-struct ContainerStoragePrefix {
-    uint8_t version;
-    Crypto::chacha8_iv nextIv;
-    EncryptedWalletRecord encryptedViewKeys;
-};
 
 class GenerateWalletAsyncWorker : public Nan::AsyncWorker {
 
