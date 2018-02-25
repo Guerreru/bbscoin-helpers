@@ -2,12 +2,7 @@ const assert = require('assert');
 const path = require('path');
 const fs = require('fs');
 
-const { 
-    createWallet,
-    generateNewKeyPair,
-    generateAddressFromKeyPair
-} = require('../');
-
+const { createWallet } = require('../');
 
 const filePath = path.resolve(__dirname, path.join('tmp', 'test.wallet'));
 if (fs.existsSync(filePath)) {
@@ -21,9 +16,4 @@ createWallet(filePath, '123456', (error, result) => {
 
     console.log("Wallet key pairs");
     console.log(result);
-
-    console.log("New key pair");
-    console.log(generateNewKeyPair());
-
-    assert(generateAddressFromKeyPair(result.spendKey.public, result.viewKey.public) === result.address);
 });

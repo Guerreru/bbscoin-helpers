@@ -6,6 +6,7 @@ NAN_MODULE_INIT(WalletBinding::Init) {
     Nan::SetMethod(target, "createWallet", CreateWallet);
     Nan::SetMethod(target, "generateNewKeyPair", GenerateNewKeyPair);
     Nan::SetMethod(target, "generateAddressFromKeyPair", GenerateAddressFromKeyPair);
+    Nan::SetMethod(target, "getKeyPairFromAddress", GetKeyPairFromAddress);
     Nan::SetMethod(target, "findOutputs", FindOutputs);
 }
 
@@ -158,4 +159,23 @@ NAN_METHOD(WalletBinding::GenerateAddressFromKeyPair) {
     std::string address = getAccountAddressAsStr(parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX, {spendPublicKey, viewPublicKey});
 
     info.GetReturnValue().Set(Nan::New(address).ToLocalChecked());
+}
+
+NAN_METHOD(WalletBinding::GetKeyPairFromAddress) {
+    if(!info[0]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 0: wallet address").ToLocalChecked());
+    }
+
+    std::string address = std::string(*Nan::Utf8String(info[0]->ToString()));
+    CryptoNote::AccountPublicAddress keys;
+    uint64_t prefix = parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX;
+    if (!parseAccountAddressString(prefix, keys, address)) {
+        info.GetReturnValue().Set(Nan::Null());
+        return;
+    }
+
+    v8::Local<v8::Object> result = Nan::New<v8::Object>();
+    Nan::Set(result, Nan::New("view").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&keys.viewPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+    Nan::Set(result, Nan::New("spend").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char*>(&keys.spendPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+    info.GetReturnValue().Set(result);
 }

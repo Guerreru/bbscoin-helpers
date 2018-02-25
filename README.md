@@ -19,6 +19,12 @@ Create an address from public keys.
 generateAddressFromKeyPair(spendPublicKey, viewPublicKey);
 ```
 
+Get public view and spend key from a wallet address.
+Returns null if the address is not valid.
+```javascript
+getKeyPairFromAddress(walletAddress);
+```
+
 Filter transaction output by given view and spend keys.
 ```javascript
 const transactionPublicKey = '64 characters long hex key';
