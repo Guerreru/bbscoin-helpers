@@ -15,7 +15,7 @@
           {
             "amount": 63858764672347,
             "keys": [],
-            "transactionHash": "eda3433a8527ea9f40ea9aa5ff7f000026c50b6bff7f00000000000000000000"
+            "transactionHash": "0000000000000000000000000000000000000000000000000000000000000000"
           }
         ],
         "outputs": [
@@ -61,7 +61,8 @@
           }
         ],
         "publicKey": "d42f02dc30fce9a44c42d7186e8d2aa53f153721a73e5965c624b51e824a1b97",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518943245
       },
       {
         "fee": 10000000,
@@ -94,7 +95,8 @@
           }
         ],
         "publicKey": "371553ed0105ce4b798d96050320b815e44a790efa497cd9c1ca9637aa4baa34",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518943245
       },
       {
         "fee": 100000,
@@ -535,7 +537,8 @@
           }
         ],
         "publicKey": "877dde232836a9ade11f64d3f70423497e356c9604049a3f223b0a6254ac7d0d",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518943245
       },
       {
         "fee": 100000,
@@ -984,7 +987,8 @@
           }
         ],
         "publicKey": "378d7e3f7c258d4102dae63dfbf53ad7ccdcd5513285a247439bd56470c0de7a",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518943245
       },
       {
         "fee": 100000,
@@ -1440,7 +1444,8 @@
           }
         ],
         "publicKey": "445e8e90841f8dbfb44c8ea6c8cd64a6d91731e6fb3809c153cf07788fe009a9",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518943245
       }
     ]
   }

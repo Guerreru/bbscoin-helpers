@@ -15,7 +15,7 @@
           {
             "amount": 63711735934030,
             "keys": [],
-            "transactionHash": "f6561db51602340e40ea9aa5ff7f000026c50b6bff7f00000000000000000000"
+            "transactionHash": "0000000000000000000000000000000000000000000000000000000000000000"
           }
         ],
         "outputs": [
@@ -61,7 +61,8 @@
           }
         ],
         "publicKey": "1b4b3e9bc95da44958e703d1341f70a966fabe9235797a2803aac3f21614d15c",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1519014467
       },
       {
         "fee": 100000,
@@ -156,7 +157,8 @@
           }
         ],
         "publicKey": "186f4e18f318b206e9ff879259df8fe49513aace233a547c191cfdbf3ec35db0",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1519014467
       }
     ]
   }

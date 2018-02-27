@@ -15,7 +15,7 @@
           {
             "amount": 63856485665661,
             "keys": [],
-            "transactionHash": "155c8ace630110fd40ea9aa5ff7f000026c50b6bff7f00000000000000000000"
+            "transactionHash": "0000000000000000000000000000000000000000000000000000000000000000"
           }
         ],
         "outputs": [
@@ -61,7 +61,8 @@
           }
         ],
         "publicKey": "e23c6bc0142348a9914038b4533eba0892bca3fdb1dc545466a99a0824f36e25",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 100000000,
@@ -239,7 +240,8 @@
           }
         ],
         "publicKey": "745bf9b944e0818bb89fadacb8c6504eebae477768d8aa2377a28c37adc625e5",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 100000000,
@@ -454,7 +456,8 @@
           }
         ],
         "publicKey": "db21e4e9f5b596bcbc71262d97164f2f18f81955afa7b63e72299479de2c9d5c",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 100000000,
@@ -727,7 +730,8 @@
           }
         ],
         "publicKey": "76614dd827b45b18dfdca1d71ae3d0105aa55ed75f6bc06e64b42497a0eeb087",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 100000000,
@@ -1012,7 +1016,8 @@
           }
         ],
         "publicKey": "04598e1291aa90c83e3200f03caaeac3190f78f2b3062b504f658a4220a13f87",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 10000000,
@@ -1048,7 +1053,8 @@
           }
         ],
         "publicKey": "f82702daf4e4c1c8a8d3ccd4e166201f48d812d4bd2e286dff7845acbde5ab38",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       },
       {
         "fee": 100000,
@@ -1337,7 +1343,8 @@
           }
         ],
         "publicKey": "25c42ca55731f4b645b78c9d7a01a6a71b24e99631934b87b2e363903bf3b800",
-        "signatures": []
+        "signatures": [],
+        "timestamp": 1518944531
       }
     ]
   }
