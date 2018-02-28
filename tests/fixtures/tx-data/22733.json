@@ -14,49 +14,59 @@
         "inputs": [
           {
             "amount": 64549845706108,
-            "keys": [],
-            "transactionHash": "0000000000000000000000000000000000000000000000000000000000000000"
+            "globalIndexes": [],
+            "keyImage": "0000000000000000000000000000000000000000000000000000000000000000"
           }
         ],
         "outputs": [
           {
             "amount": 6108,
+            "globalIndex": 3,
             "key": "b2f0ef82573a9e0800323b5fceb4833408558a9d016ceb519cbf9b60d968a577"
           },
           {
             "amount": 700000,
+            "globalIndex": 3451,
             "key": "d9a8aacd367c5e5587aab8f8a3e14af4820b6732ac9bbe184b8cd25c3afc022b"
           },
           {
             "amount": 5000000,
+            "globalIndex": 3557,
             "key": "521b393e14f953655e55ad06889134eb604141d82be47d08da083c6ec981aba0"
           },
           {
             "amount": 40000000,
+            "globalIndex": 3473,
             "key": "e4c7fd13555e044f997c22b22641188af438870d83cd8c0b983531776a2b9fe4"
           },
           {
             "amount": 800000000,
+            "globalIndex": 31802,
             "key": "896453fbb197519875c26c3fd1189567911ac88637f4ed2a2bffbb5e07457608"
           },
           {
             "amount": 9000000000,
+            "globalIndex": 32561,
             "key": "9517da28869b860c9a8fa062dd47e557ae4cea95bc33f83ff1b6913533590e18"
           },
           {
             "amount": 40000000000,
+            "globalIndex": 32266,
             "key": "28ce4aaa64e132ce359a985c804bceaab4bff55f732c637349800635c8465cb1"
           },
           {
             "amount": 500000000000,
+            "globalIndex": 22492,
             "key": "33e34b3e13fe853558e482773262bbbfc78786771cce2b53e2f0b4f0d7bcaa92"
           },
           {
             "amount": 4000000000000,
+            "globalIndex": 11643,
             "key": "52c4c1d37a40624e71d58bc628a2bb7a36941f8b179f7b03eb10fcad2470ba7a"
           },
           {
             "amount": 60000000000000,
+            "globalIndex": 21457,
             "key": "dd57d5fb00984cdcedd8a927ffcb7107e965052ce74a8876d5fba16526161edd"
           }
         ],
@@ -70,328 +80,355 @@
         "inputs": [
           {
             "amount": 10000000,
-            "keys": [
-              "99c4d474bc6fe653ad88c36850e4fb42c23a7a78f6d8fd10e36501cebc96e5cc",
-              "17af10123b282f301b6c7d81b652d66895d6493404c9ce07c2f42452a806ad18",
-              "30f07efbd3fb9821e107f351a689a1c86f33580258f52e317b579673a021ec24",
-              "01ccad05f0e6ebf117beec1ea3e736653950b94348c4b82be9540ad60c5f1715",
-              "d9a6e73b8051cae63ea4f9f546bdd4d9f7bc40579ef02c3be4ad8f83830ead8c",
-              "88664aa6ea2709a5ce6122d3987be489f40f4b5eca1d6a0f6c4a030847c93ae9"
+            "globalIndexes": [
+              3546,
+              3547,
+              3548,
+              3549,
+              3550,
+              3552
             ],
-            "transactionHash": "4d064777badaf633883025df0ac9ef6000837f961c8d9ceabc88ca69293f7e38"
+            "keyImage": "e9c50f5f4944bbf2b7ddfe4632bb92ebd35b629773e3942f498793fdb9a908dc"
           },
           {
             "amount": 600000000000,
-            "keys": [
-              "abe0183d012a3dd3a52ed36efdbee44930f3bdebf027a71fa3eab2ff3f70f09f",
-              "4517ffa268ec8af7942cdfe9ee92f9e941e9e096cfaea49a42a9ca0f7eb1bc4b",
-              "44f38ed13bc62273e9a8bb17ed2b75b7c0a5ba19b669b309e1731dcc51bd5604",
-              "f8a725b184f36b02c963d2c84f7ecda3fc7bb5610da99ca8733acda6731b16a5",
-              "d27b5e33ab3895b4f61f611bb47b6cc3be5c33550d7fe364c206810a60046499",
-              "7448af5f1f51fb320b7f0e817a70b8c2d36787579ed974c4affa77d9f24f7af2"
+            "globalIndexes": [
+              18545,
+              18546,
+              18547,
+              18548,
+              18549,
+              18700
             ],
-            "transactionHash": "dc4fe6df92c36bb07d72c58180b7a778ab36d8998a6ffb90e993e356e05585bd"
+            "keyImage": "4f0768d9e1c50deb62f10acbd5a19f5b3eb43a5dbbc8560f72193c2743ca65c9"
           },
           {
             "amount": 20000000000,
-            "keys": [
-              "a3fdc6292e6e2ed894f2dcabf41927e2c60029bfa347c5bbb7c3442b37b26115",
-              "cc836bea34d79bc6eb0da80c29b3a5a218b899dbe709c96338a654be2e972341",
-              "04f8095b5ab589f135a30d2e90afbaff6682e85095d8114a63950700ea5da572",
-              "b63dbadb3052b6a36bc5b41801584f22ebea5245e891525d868760e36cda75a7",
-              "37d73f4ffbd20c2a5c75ac99fc8b4092928bd889ffd3eb0e867ab3f4fd214c4d",
-              "31862d1ae33ca10e3c39ac9a8070c7eb754f4d847999da2b1e491813cbd49685"
+            "globalIndexes": [
+              32853,
+              32854,
+              32855,
+              32856,
+              32857,
+              36295
             ],
-            "transactionHash": "52eac6b38beb89a876c05901f3503120ae8ce1bec6e6b1232e5f7477ae82430a"
+            "keyImage": "b02b4eedfb29c50513b0f7dca0971664e25b339499bdd88b18b15f0d3dde39f7"
           },
           {
             "amount": 4000000000000,
-            "keys": [
-              "4b104ef0eb1e79d5467256fd0c1c3e0ea417246059d04e6c86df9782056e0c27",
-              "d8b30c60cb80520b4950986a30483f7c003221ad7652cc1e87068e5705c5b83a",
-              "628b423d97ad1a80ccdebf7aa153e9187c0e1ea529cfe9d68ab3e0e8b3269585",
-              "33db13f09a24e50700e09e54faf5bc275cccb85079d71751faecaa8ed5a3a0c1",
-              "f6e971cb9ab7e36d24279dfcdfeb41decad8859102313798f455ab275c2dc390",
-              "dbe86225573570ccc811178ee5b2db34ec6cfd84b56be645350d6a16c7498cf0"
+            "globalIndexes": [
+              10314,
+              10315,
+              10316,
+              10317,
+              10318,
+              11633
             ],
-            "transactionHash": "fd7102f83824cb43a5e76d25729e3ffad6837de639a56f5a0ed5e0953556be42"
+            "keyImage": "c0c7ca2053849b34e72888d8a1e2328cd33f30a10a48275a78fd91d9172a7a85"
           },
           {
             "amount": 900000000000,
-            "keys": [
-              "a15113b354f8666a068d3d924661e885a550e64fab6c95683a4550593a95a01d",
-              "20171250a41fd303a248ae2927e4c3a93a002e34b7506774d5067cb80909cf4a",
-              "dab60c150b3e50db4ab3e8aed6ac129f54bf82a3d46eae4c4870e2305a71bb10",
-              "570ae820564190a10a1c37d59471269530e7e5a1f160c51b37a551c60369abb4",
-              "5fd4d69230dc2c52a33bcebc7c618b0d71c4afd705df1adf992c1ea633cd7bf3",
-              "7218d521d772f466f47d88bc6bab343d226efd8e246c4cebea505555617b3abd"
+            "globalIndexes": [
+              17549,
+              17550,
+              17551,
+              17552,
+              17553,
+              17661
             ],
-            "transactionHash": "0db0b83209b1e32cd990a1d9a52a397328f51e0e7cb599029f4eb052acb044a3"
+            "keyImage": "be9593ebf6c4bcb87bf2644abae21b3b69699cb9d01612cf772f6ade62d42358"
           },
           {
             "amount": 300000000,
-            "keys": [
-              "49921bb3fccaa53349d61fcd34a4e9eeb074e8d44f209d5aa0a92d3087f76323",
-              "eddb633e2e29cf7f0951e9d545fe1c9c7eeddfe458e4045f6c7e04fdee427d25",
-              "02ae7b829aa9b6a65c16176c0e0c68205aa04a5b8d8d507182a64f131b0f7dcd",
-              "3a1b338e2517164f0e63bdc5223702afc1048419d34d4268a710609c0d750c60",
-              "06930d8f6d90021b723190342f0c8704f17472a1d39ff55863d5938380ecd1a9",
-              "8f896878b27d0312085789426dd4abfe1c84dab5d8f83bed2e602d84700d3629"
+            "globalIndexes": [
+              28829,
+              28830,
+              28831,
+              28832,
+              28833,
+              31736
             ],
-            "transactionHash": "4c1e6be570b3b45f3bca2f243e1376502ce9507b83fe892cbcfd99845a121d7e"
+            "keyImage": "d469b237127cc05cf7758831216acbce6362d97871de8b80442eb96c369fc895"
           },
           {
             "amount": 500000000000,
-            "keys": [
-              "92b293f7400e4b8807c82b568f88f1f0e17a8e1d31e2532232350516ac39344f",
-              "5caaacf3bdff92ed3b9666726be1d16d5d6f3ab595300ee11d141c6a05fbdaab",
-              "0a1d1eeb75f7741bb3f12127baf1d28b662e02e9ff4f0396d6febe461e3dcaa0",
-              "33ced95cc1036dd25013c5266b5150085ad87e19369cf6455123791524e13c43",
-              "6b8bcbd94902040ef37ce2175d23aea5dce3eb9e4d769558fca5f2011700cb88",
-              "73a5b3cae86a64bb878a2b91e62b66e8b461dca8368dc5ea27fcf3760b78da97"
+            "globalIndexes": [
+              20481,
+              20482,
+              20483,
+              20484,
+              20485,
+              22293
             ],
-            "transactionHash": "24e6cdcf39edd7812c69d2c10503273e45136db36c7a5401ea43a3c15298abc7"
+            "keyImage": "7f85aec94e2b141c5145c81b24fc4d0f62c0e722ddb585a158d3174ad5f47949"
           },
           {
             "amount": 200000000,
-            "keys": [
-              "b9029c258dbb6ffd2121758ca181b2fecdec54cbb548f042549617a1390bc4bf",
-              "309a8ef77464afaabec1e47b95968fe318e312226b1d538d89850f0a86bf51dd",
-              "ff4872f2b583c686a27cf5b9b742280a1d02be07d4179af0c1f736bbb68e4a74",
-              "a1d7c66810c07c3519cb0323e3664b93911364aadf06b358286b8d327fb6ac17",
-              "ef0ea855ea516a7030fc925eb710b8112492aed8f7fb8984fbde891772446a47",
-              "3153b2e2914de92151078727bc7216364495cb00c5e438f0711def535d68598c"
+            "globalIndexes": [
+              28488,
+              28489,
+              28490,
+              28491,
+              28492,
+              28550
             ],
-            "transactionHash": "83dd63c3d26b29cfc1a701cad5138698fff74d9a1e1d93af99a726c2a8f83717"
+            "keyImage": "372a3209fa28db5ff504a414b246b7dd15ff0e35c83fe186ee10df0405bbf1d5"
           },
           {
             "amount": 10000000000,
-            "keys": [
-              "bc05585ac46a6973aa157c90be4cee257a81d5aed1b10a5b6bc99695587a8bc5",
-              "5a0d8d2ca5207435cd6f6479483ea4ab1cb478633a0843cd06889d3d65085054",
-              "28b0b8b52085a3bfeacf329bf5864adb43ae0eeba20cdd5fc8ed432efc33ba28",
-              "0624895b3dc79a1565a72494cab14e8d4940c06e7b50dc932d4144ed21b1cdda",
-              "99a75b56c8f1273b507bd5d2282a3a99f03990d408fad85750537fecfd68fc6f",
-              "32e1084b7f193724ab4671947f650bb2d22c9e6705676b47d00f3ec41c858dd5"
+            "globalIndexes": [
+              36330,
+              36331,
+              36332,
+              36333,
+              36334,
+              36737
             ],
-            "transactionHash": "77ea17908133fa30caa18dc91429fa15e45518e1b0111cd9254effde624195b0"
+            "keyImage": "9fadcd8ccf8ca05078d12d69988f0eb06b4ffdb3ffffd1da1eddad2ed70fa559"
           },
           {
             "amount": 9000000000,
-            "keys": [
-              "cf82edc0dc4f631693f1c1219b1e730c1dea7aecebeeda8e4fa6d71101d5613f",
-              "900fc932bfe7d30c488937a4902cce857040e99e07925931055d04f2aee66aba",
-              "0e5c9156466c2047342328581a84518fb3d5295cff75f34707ed5f36766a803f",
-              "4f0c2dd9694f9248132f5f11663b6986155ea8819893be853e4548cba5e059e7",
-              "7d145cd9006b321788209fef6b80034d1ebc46524b6d1d61ca9db1b27311f703",
-              "a9db83d5a8e56264e60a856a61264e4f17c3bc4d46a982b07f9a5c086cc532b0"
+            "globalIndexes": [
+              29643,
+              29644,
+              29645,
+              29646,
+              29647,
+              32551
             ],
-            "transactionHash": "4702aa0e8e9e9632dab681ba08cc05e42d4f5c60cce155597eb5a281929f2d9f"
+            "keyImage": "aee94790009bf7d1166e01aa0f8ac7a3a1a059b674a5a81c846ca487bfd98aed"
           },
           {
             "amount": 300000,
-            "keys": [
-              "8ca1bf78fbb744bb2895fa3ec31389b4fd14f0fa4410f15a97e0f50e5c4fe2fc",
-              "ff05cd60bf088e36cb79c67fe07857c40459fc6eb2055987b2534c070a284cb7",
-              "73866bcfdbc7e8673bd013deb1f94e394861cec3add504371a1f74215c7d544d",
-              "24fe4c677b9ba8f09597718eb1c9e3a4685f23a8306c38f9f3da35ac9d45b6c3",
-              "3509f5e334cea348ca38de89f7317a6ef9df75808672b0853092b446464e28c9",
-              "494f601f9373ccee300cf561df787b03250ce1a4be1e6cb6b8c73b9798ea07d7"
+            "globalIndexes": [
+              3478,
+              3479,
+              3480,
+              3481,
+              3482,
+              3490
             ],
-            "transactionHash": "f27a25dc31027333e01dcd3fc483521822064bea469e117a855b853eb805e4b6"
+            "keyImage": "f6afe0d2688c117461d532ae2d6aa6bded13ead76e7c055ae89250c80e883f35"
           },
           {
             "amount": 30000000,
-            "keys": [
-              "8eee5a7e02fdf47d674a1cf1643aa9b8c26e815932137d13287639d7b09c9b6e",
-              "4b1d48cea63a2fb70937f8d76833a0d4867f4d6fa072f79a087d9a52ef08129f",
-              "950ac159ab364fd31eea236c8eb8f63316faa91ebfbae9565d597c78cd796194",
-              "16a8fe6df430d490b2b31cfec8c9b73a46f5853586e0602f0086406f98d336e3",
-              "2ffc3236780f8d89ca99872d706c6260f573c79da491180f1261e23a4f134982",
-              "f72534c70496a3ae3e9b6614a291f3b14a2f241fdf02ea72f4982080fa76478e"
+            "globalIndexes": [
+              3282,
+              3283,
+              3284,
+              3285,
+              3286,
+              3445
             ],
-            "transactionHash": "e0f97a2b74c803d4e1e5cdaca871db4bccf93a43a3fe5c30d7c9ae57c99464e2"
+            "keyImage": "ceb08a4752880fcdcdebc7507b34a5e2969fa6f9a6e1869d12ca5ee3c0c5bca2"
           },
           {
             "amount": 9000000000000,
-            "keys": [
-              "2a09aff2940e2b694d1b06c73f8291f23b3867fd6ed3b29101786a864943ad3e",
-              "caf24d6862a2aa015157f07f803216bfacd201df0fc8bfe87b662cacd8acedc4",
-              "1878dbb45bbee22d9e72cd67624349e0a71d3e9206002c0450c0b271e3235cf5",
-              "5ad9e3caa70f24ba8020a91aa195d57cbed7b36fd9597f9674e81ecb62e2d995",
-              "95dc556800ed4f4209147eced7731d41ba4ee97956a8782ce478779177252746",
-              "5acd78273c79acae97c0a1810889ad26f4088785fa67aeff4c9eafb87d0a6260"
+            "globalIndexes": [
+              8634,
+              8635,
+              8636,
+              8637,
+              8638,
+              8925
             ],
-            "transactionHash": "823afa0cdf1e1589892a7c1d99e39589678d06c8d00584b01898c4d300407932"
+            "keyImage": "f8a1e10b6cec01607372a4b33a7ab1407778a7101e2e776d507db672266c3851"
           },
           {
             "amount": 10000000000,
-            "keys": [
-              "bc05585ac46a6973aa157c90be4cee257a81d5aed1b10a5b6bc99695587a8bc5",
-              "5a0d8d2ca5207435cd6f6479483ea4ab1cb478633a0843cd06889d3d65085054",
-              "28b0b8b52085a3bfeacf329bf5864adb43ae0eeba20cdd5fc8ed432efc33ba28",
-              "0624895b3dc79a1565a72494cab14e8d4940c06e7b50dc932d4144ed21b1cdda",
-              "99a75b56c8f1273b507bd5d2282a3a99f03990d408fad85750537fecfd68fc6f",
-              "b96f1b3b9921cfb318a987e709a6ed7c00407fac0f2dcb0a46c21d9d9158e27b"
+            "globalIndexes": [
+              36330,
+              36331,
+              36332,
+              36333,
+              36334,
+              40261
             ],
-            "transactionHash": "b3bf2901dc5603141021d8c7be0bffce298d6e3ea46c0877b32a2153efed395c"
+            "keyImage": "080f8d8b31bbcba01e0bd0af26f38ad863d3c486edb7e4a13ac3e5ca995a407c"
           },
           {
             "amount": 500000000000,
-            "keys": [
-              "92b293f7400e4b8807c82b568f88f1f0e17a8e1d31e2532232350516ac39344f",
-              "5caaacf3bdff92ed3b9666726be1d16d5d6f3ab595300ee11d141c6a05fbdaab",
-              "0a1d1eeb75f7741bb3f12127baf1d28b662e02e9ff4f0396d6febe461e3dcaa0",
-              "33ced95cc1036dd25013c5266b5150085ad87e19369cf6455123791524e13c43",
-              "6b8bcbd94902040ef37ce2175d23aea5dce3eb9e4d769558fca5f2011700cb88",
-              "9f8964e61ea4e2ecdfa9d114b6d336141706c8fc2781bc5755394c5821762e78"
+            "globalIndexes": [
+              20481,
+              20482,
+              20483,
+              20484,
+              20485,
+              20593
             ],
-            "transactionHash": "d36496ad970bd579fbb9a69c4ee2b53ba1ca85be2a43b5931055cbfbc9127ac1"
+            "keyImage": "74f448523892636278500213b795ef18068d38e9537d461d98054184a9dd005d"
           },
           {
             "amount": 5000000,
-            "keys": [
-              "52aec5468f32bab35e978a8f4853557791b4b058fde11a83afcddfd0519ea054",
-              "b09627ce65eafe327ad3a07c1232b4acc69137fabc22f2a1e8c2fe865e5b7d6c",
-              "9dfa502710f8a4dc92b10867ea2168dd037fcc8abdf0293d09a3ceab9193301f",
-              "abd080b22df09bb17aaabc076f64dba93e9a5ab174ddc08c13554ea7c9a0a71f",
-              "890ec3af7e93f7b2aed909a0c14d2723dc778f99db2a99452134082fd2f2904f",
-              "fb2bc22cb2885e4375ec2d2f411217143f5e6895e7264ed2b7cac6816218a58e"
+            "globalIndexes": [
+              3378,
+              3379,
+              3380,
+              3381,
+              3382,
+              3383
             ],
-            "transactionHash": "ea604ae3108c4ae3e19d45ac967718aa690ead09da6a1396fba469aff583a858"
+            "keyImage": "f8acd551e440cc8fc2fc12aa9dae241f796b6deaf57d48372fe3e592fa74319b"
           },
           {
             "amount": 70000000,
-            "keys": [
-              "93993611cd957b7d54c8b37ce6c7c8ae414a35746bd34b1ad34fa8003a3508b8",
-              "8607c1d8953deee11a9274a661b5a011fb73d6136eea94ae446bad16459623ed",
-              "c39dda8d7b26acb9ffe1c3144f58ecf1b808b7ed2310c0a0fd141694b5a9ab6c",
-              "638fa443c4fde6e2cd08d474e7e9ea0d27394eb20082d7032450ec408807ee15",
-              "ce1109c5a1f829e1ff467bc8b74b9d6b76e67ad1e2f03b394a6a282f5bb0feaf",
-              "ac3a7af2f65a8dedaaa562acd64b2b0f1b5a1e91df977e1cdeda1fcde372dc52"
+            "globalIndexes": [
+              3380,
+              3381,
+              3382,
+              3383,
+              3384,
+              3562
             ],
-            "transactionHash": "b75f72b35f41a77707edecc4f4f21a29a6de874220ff3c6afcceb73caf60f192"
+            "keyImage": "795361171670d88210bc1c25cc4727f0e9997b7b2fc33360074744367c243199"
           },
           {
             "amount": 60000000000000,
-            "keys": [
-              "3143cb48e60f744169b89b03f7453d803ff8ca78bfeafab690419f8d6098182c",
-              "cd7d71b40b0950d13c58232f7defcb36b9c5d863d492859733bb3aec34c96452",
-              "cbff65deecb0bb25f4374ec4c5fa5af3dd58fcae618e8d07c36c3b5ab788e310",
-              "d71924556fb61909052e35694033d972742b699e8b3c9cd0a4043f084ae2a7c6",
-              "4cf0444709bfe8082179feaa8218162bae90c8c348cdaf624e36fa202d31516d",
-              "0fb42f4740c8d24627e12c05e509595f373f9de2c5f39b13c295986deeefd7e1"
+            "globalIndexes": [
+              20592,
+              20593,
+              20594,
+              20595,
+              20596,
+              21388
             ],
-            "transactionHash": "6fa47cbcea4207faaaf4433e0166983461b05f07f593e5e35211b99a1bb905d6"
+            "keyImage": "dfea27f6490844349abd288b948d68cb6eecf1f52042240b01487e6c567e4a15"
           }
         ],
         "outputs": [
           {
             "amount": 300000,
+            "globalIndex": 3656,
             "key": "512491147f910b7b88924003edca2f24f0de3b56dd6007d921c6338b02299192"
           },
           {
             "amount": 5000000,
+            "globalIndex": 3558,
             "key": "25ea434bfa0bcf7229547d1d4aa7f2d5824fadcc00dc009842541e0c42514b0a"
           },
           {
             "amount": 10000000,
+            "globalIndex": 3727,
             "key": "b33251f3ee8bbd64cd9537b8d3ff085ffe5911d3f46085ce785e795a8086251c"
           },
           {
             "amount": 100000000,
+            "globalIndex": 31959,
             "key": "ef666e4ea7b7d874efd02f7bcf861d2ca2fb1f4f4b7566b868d28f4e73165b1a"
           },
           {
             "amount": 100000000,
+            "globalIndex": 31960,
             "key": "924110692f4cc0998359005415e6d3b9afbebc8a877456ba0e0f91f6a2cc3859"
           },
           {
             "amount": 400000000,
+            "globalIndex": 31847,
             "key": "61e571f97e2309b9db734116bfd47dcd7d213084cc3299060736e0a6872177fc"
           },
           {
             "amount": 500000000,
+            "globalIndex": 31553,
             "key": "157f3f4627c1cdac849052a03ae1961edbaf9d3d9c881591a06ec27eb7aac111"
           },
           {
             "amount": 600000000,
+            "globalIndex": 31575,
             "key": "ddcda3874c3757ad4df45fd1ec19b2a2fc972581c3dba213b8fe6b7b801fb0f3"
           },
           {
             "amount": 800000000,
+            "globalIndex": 31803,
             "key": "c2e9c907429b2232a6d3b1a688a87ecfabe7e54749f225c88623ac6eb766fb1e"
           },
           {
             "amount": 1000000000,
+            "globalIndex": 32559,
             "key": "2f4362b349841ffc6d734229749d43e2fdaa011303143bf386eff33fd0860bd0"
           },
           {
             "amount": 1000000000,
+            "globalIndex": 32560,
             "key": "f9549cd31034142dc1bff32e12aa487070113e890cb4b228ba5da65b35e7d726"
           },
           {
             "amount": 6000000000,
+            "globalIndex": 31305,
             "key": "c6b2fe76c5e7ed581832cd05bd8971e7a3010716e0a770329855672322966d5e"
           },
           {
             "amount": 9000000000,
+            "globalIndex": 32562,
             "key": "37735c63c4c49871f399abd4761599d9edafa2a57be2a066e3e374d25e8e2849"
           },
           {
             "amount": 20000000000,
+            "globalIndex": 36306,
             "key": "96ce77c266c02fe99185b7066b32c24a31abe7136352d9faa2ad73e8005a7caa"
           },
           {
             "amount": 70000000000,
+            "globalIndex": 29482,
             "key": "6316207ccc4e47eb05d906ed63956e88a113df95c7105cae47ea0a579db0a034"
           },
           {
             "amount": 70000000000,
+            "globalIndex": 29483,
             "key": "61b5c62f174b4d4f5c9be62ca8042adbe18a0215172fb07a88e39a66af216a74"
           },
           {
             "amount": 80000000000,
+            "globalIndex": 28457,
             "key": "0e2e527fbb71744ac3782dd2492b95bb6acdac5519ae54a4ce14328d1921e39b"
           },
           {
             "amount": 90000000000,
+            "globalIndex": 29136,
             "key": "a2747fdf88109e6d504ce02e0e8ef6cf7cb8f8e05c4fb899ea190f596f16be4b"
           },
           {
             "amount": 100000000000,
+            "globalIndex": 47547,
             "key": "50dd1ebe98b7534ac0dd23be985623a530d6ade3396537fe102a7c8b09dee1fe"
           },
           {
             "amount": 200000000000,
+            "globalIndex": 35596,
             "key": "55cd23ed4638fa6c51f0430423e059bf81b9d83ede5033463da6635f58d665a2"
           },
           {
             "amount": 500000000000,
+            "globalIndex": 22493,
             "key": "63a9479d1da123ce44541e7a8062e0942b35f5566b4e6c19f1098e0b5234795c"
           },
           {
             "amount": 500000000000,
+            "globalIndex": 22494,
             "key": "4d1a19f8ea38eb059e87ae78f0a374f132cea37589395f2a59a8872b5407aa93"
           },
           {
             "amount": 900000000000,
+            "globalIndex": 18862,
             "key": "5dd6170e27d1067fb194809308efc7cec9ff72eeeeb054d97a187d41b715c10e"
           },
           {
             "amount": 6000000000000,
+            "globalIndex": 9668,
             "key": "665bbe6541bff3eeac6ccf290c955c5e52fda6824b43cf1ac235e17cf7e00b55"
           },
           {
             "amount": 7000000000000,
+            "globalIndex": 9814,
             "key": "51c32f7ff9a3c0ff56a300df0187f21960c1f2bf348538d400a2d48f984f5047"
           },
           {
             "amount": 20000000000000,
+            "globalIndex": 4711,
             "key": "e2f6c20540f2633c0224c136a91fa3a1cff7e0ef6f501f708e6115f832e7d501"
           },
           {
             "amount": 40000000000000,
+            "globalIndex": 3267,
             "key": "5ceef3c940890e5c34e114c173df24e0d90540880c770cc6d4717fe2cd1191f6"
           }
         ],
@@ -405,49 +442,57 @@
         "inputs": [
           {
             "amount": 10000000000000,
-            "keys": [
-              "e2185819dcf138dc8cb46cd366a1df514250a4a8a35beda0bcc4004627907765",
-              "28cac0e1410390bf65b12713845b8f8b57a97f0bf2d5a0997c726998ae73229b",
-              "dfabd959a0ce245f92c3c0edd8d5c77884be3c8aa45fdea9bbf2b5e5b778aefa",
-              "3dbd99350918d758cc8a214d7f5a433596dd9760f75f8747545430886f9967cb",
-              "f5b54ac6d71b0f4fd7322fe7719e4c511cd1f241671a71326e23197a56e4569e",
-              "4051424591d17654d1604f2532eba1b39ad91ed46b41b96f8d790abefe065bc8",
-              "0f60d47e25768e27bcf8c499436dc6f7e9cf9bec8216042768177c123a407f0f"
+            "globalIndexes": [
+              635,
+              693,
+              2554,
+              2678,
+              3916,
+              6771,
+              8109
             ],
-            "transactionHash": "74749a49ec0c7e6d5b9e3ad441f2bf0ebb8a9a817453bc04a523edda0a6a1d33"
+            "keyImage": "530558088fcc97725dd073f801ffca2a3f54fead5638fb279769d985a4225c6b"
           }
         ],
         "outputs": [
           {
             "amount": 9000000,
+            "globalIndex": 3901,
             "key": "05cfe4dae220f8eb501f211c45fdc2798821ea24cf47833dd3e01547f88ee00d"
           },
           {
             "amount": 90000000,
+            "globalIndex": 3998,
             "key": "8ae30362b122d2a3c19e83da5d1bed33930b6610878384214904826c3a9d89ea"
           },
           {
             "amount": 100000000,
+            "globalIndex": 31961,
             "key": "8b066138cc932f21778ddf6edbd5b7583ab176c6e44e68393d9b6c182f45030b"
           },
           {
             "amount": 800000000,
+            "globalIndex": 31804,
             "key": "3484afe09aaf6c54f251c156b7fd0b68bd47da2da9fb4ca7bf83bd1d339c19ce"
           },
           {
             "amount": 9000000000,
+            "globalIndex": 32563,
             "key": "ee751297dfe1ed69f22ab17963c0590566cbed184f27d7446bca9d5b3854e85f"
           },
           {
             "amount": 90000000000,
+            "globalIndex": 29137,
             "key": "0573a9e6a71d2965034ebb65043299f44b07eb3ff352929aca8681a53a93ecc2"
           },
           {
             "amount": 900000000000,
+            "globalIndex": 18863,
             "key": "0de9850fdefe3b77250557aebaac77ea96ea8d98a3899c10c1d323a05ada9dc5"
           },
           {
             "amount": 9000000000000,
+            "globalIndex": 8941,
             "key": "1c0f860c7e01ebc49f70ec9be1764dd094e120ef30ad299644c2b92221fa8f0e"
           }
         ],

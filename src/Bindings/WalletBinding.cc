@@ -82,6 +82,7 @@ NAN_METHOD(WalletBinding::FindOutputs) {
     v8::Local<v8::Object> outputs_js = info[1]->ToObject();
     const v8::Local<v8::String> lengthString = Nan::New("length").ToLocalChecked();
     const v8::Local<v8::String> amountString = Nan::New("amount").ToLocalChecked();
+    const v8::Local<v8::String> globalIndexString = Nan::New("globalIndex").ToLocalChecked();
     const v8::Local<v8::String> keyString = Nan::New("key").ToLocalChecked();
     size_t outputLength = Nan::Get(outputs_js, lengthString).ToLocalChecked()->Uint32Value();
     for (size_t i = 0; i < outputLength; i++) {
@@ -99,14 +100,21 @@ NAN_METHOD(WalletBinding::FindOutputs) {
         // output.amount
         v8::Local<v8::Value> numberValue = Nan::Get(item, amountString).ToLocalChecked();
         if (!numberValue->IsNumber()) {
-            return Nan::ThrowError(Nan::New("invalid arg 1: amount of output " + std::to_string(i) + " is not a number").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg: amount of output " + std::to_string(i) + " is not a number").ToLocalChecked());
         }
         outputRecord.amount = numberValue->NumberValue();
+
+        // output.globalIndex
+        v8::Local<v8::Value> globalIndexValue = Nan::Get(item, globalIndexString).ToLocalChecked();
+        if (!globalIndexValue->IsNumber()) {
+            return Nan::ThrowError(Nan::New("invalid arg: globalIndex of output " + std::to_string(i) + " is not a number").ToLocalChecked());
+        }
+        outputRecord.globalIndex = globalIndexValue->NumberValue();
 
         // output.key
         v8::Local<v8::Value> keyValue = Nan::Get(item, keyString).ToLocalChecked();
         if (!keyValue->IsString()) {
-            return Nan::ThrowError(Nan::New("invalid arg 1: key of output " + std::to_string(i) + " is not a string").ToLocalChecked());
+            return Nan::ThrowError(Nan::New("invalid arg: key of output " + std::to_string(i) + " is not a string").ToLocalChecked());
         }
         std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(keyValue->ToString())));
         if ((key.size() * sizeof(uint8_t)) != sizeof(Crypto::PublicKey)) {

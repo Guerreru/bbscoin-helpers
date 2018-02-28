@@ -63,16 +63,18 @@ function printTxs() {
                     
                     results[spendKey.public].forEach((output) => {
                         outputSum += output.amount;
-                        knownPublicKeys[output.key] = true;
+                        knownPublicKeys[output.amount] = knownPublicKeys[output.amount] || {};
+                        knownPublicKeys[output.amount][output.globalIndex] = output.key;
                         console.log(`${output.key} received: ${output.amount / 100000000}`);
                     });
 
                     let inputSum = 0;
                     transaction.inputs.forEach((input) => {
-                        input.keys.forEach((key) => {
-                            if (knownPublicKeys[key]) {
+                        input.globalIndexes.forEach((globalIndex) => {
+                            const key = (knownPublicKeys[input.amount] || {})[globalIndex];
+                            if (key) {
                                 inputSum += input.amount;
-                                console.log(`${input.transactionHash} sent: ${input.amount / 100000000}`);
+                                console.log(`${key} sent: ${input.amount / 100000000}`);
                             }
                         });
                     });

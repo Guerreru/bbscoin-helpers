@@ -13,6 +13,7 @@ using namespace Crypto;
 
 struct OutputRecord {
     uint64_t amount;
+    uint32_t globalIndex;
     Crypto::PublicKey key;
 };
 
