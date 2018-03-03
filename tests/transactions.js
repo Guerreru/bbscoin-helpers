@@ -3,9 +3,7 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 const request = require('request-promise');
-const {
-    findOutputs
-} = require('../');
+const { findOutputs } = require('../');
 
 const fsWriteFile = util.promisify(fs.writeFile);
 
