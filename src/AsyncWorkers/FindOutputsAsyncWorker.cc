@@ -1,5 +1,5 @@
-#include "FindOutputsAsyncWorker.h"
 #include <nan.h>
+#include "FindOutputsAsyncWorker.h"
 
 FindOutputsAsyncWorker::FindOutputsAsyncWorker(Crypto::PublicKey txPublicKey,
                                                std::vector<OutputRecord> outputs,
@@ -26,7 +26,7 @@ void FindOutputsAsyncWorker::Execute() {
         underive_public_key(derivation, keyIndex, output.key, spendKey);
 
         if (spendPublicKeys.find(spendKey) != spendPublicKeys.end()) {
-            results[spendKey].push_back(output);
+            results[spendKey].push_back(std::move(output));
         }
 
         keyIndex++;

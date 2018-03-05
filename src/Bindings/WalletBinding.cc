@@ -10,7 +10,6 @@ NAN_MODULE_INIT(WalletBinding::Init) {
     Nan::SetMethod(target, "generateAddressFromKeyPair", GenerateAddressFromKeyPair);
     Nan::SetMethod(target, "getKeyPairFromAddress", GetKeyPairFromAddress);
     Nan::SetMethod(target, "findOutputs", FindOutputs);
-    Nan::SetMethod(target, "decomposeAmount", DecomposeAmount);
 }
 
 NAN_METHOD(WalletBinding::CreateWallet) {
@@ -78,14 +77,14 @@ NAN_METHOD(WalletBinding::FindOutputs) {
 
     // outputs
     std::vector<OutputRecord> outputs;
-    v8::Local<v8::Object> outputs_js = info[1]->ToObject();
+    v8::Local<v8::Object> outputsJs = info[1]->ToObject();
     const v8::Local<v8::String> lengthString = Nan::New("length").ToLocalChecked();
     const v8::Local<v8::String> amountString = Nan::New("amount").ToLocalChecked();
     const v8::Local<v8::String> globalIndexString = Nan::New("globalIndex").ToLocalChecked();
     const v8::Local<v8::String> keyString = Nan::New("key").ToLocalChecked();
-    size_t outputLength = Nan::Get(outputs_js, lengthString).ToLocalChecked()->Uint32Value();
+    size_t outputLength = Nan::Get(outputsJs, lengthString).ToLocalChecked()->Uint32Value();
     for (size_t i = 0; i < outputLength; i++) {
-        v8::Local<v8::Object> item = Nan::Get(outputs_js, i).ToLocalChecked()->ToObject();
+        v8::Local<v8::Object> item = Nan::Get(outputsJs, i).ToLocalChecked()->ToObject();
         if (!Nan::HasOwnProperty(item, amountString).FromJust()) {
             return Nan::ThrowError(Nan::New("invalid arg 1: output " + std::to_string(i) + " missing amount").ToLocalChecked());
         }
@@ -121,7 +120,7 @@ NAN_METHOD(WalletBinding::FindOutputs) {
         }
         outputRecord.key = *reinterpret_cast<Crypto::PublicKey *>(key.data());
 
-        outputs.push_back(outputRecord);
+        outputs.push_back(std::move(outputRecord));
     }
 
     // view secret key
@@ -134,11 +133,11 @@ NAN_METHOD(WalletBinding::FindOutputs) {
 
     // spend public keys
     std::unordered_set<Crypto::PublicKey> spendPublicKeys;
-    v8::Local<v8::Object> spendPublicKeys_js = info[3]->ToObject();
-    size_t keyLength = Nan::Get(spendPublicKeys_js, lengthString).ToLocalChecked()->Uint32Value();
+    v8::Local<v8::Object> spendPublicKeysJs = info[3]->ToObject();
+    size_t keyLength = Nan::Get(spendPublicKeysJs, lengthString).ToLocalChecked()->Uint32Value();
     for (size_t i = 0; i < keyLength; i++) {
         // key
-        v8::Local<v8::Value> keyValue = Nan::Get(spendPublicKeys_js, i).ToLocalChecked();
+        v8::Local<v8::Value> keyValue = Nan::Get(spendPublicKeysJs, i).ToLocalChecked();
         if (!keyValue->IsString()) {
             return Nan::ThrowError(Nan::New("invalid arg 3: spend public key " + std::to_string(i) + " is not a string").ToLocalChecked());
         }
@@ -205,27 +204,5 @@ NAN_METHOD(WalletBinding::GetKeyPairFromAddress) {
     v8::Local<v8::Object> result = Nan::New<v8::Object>();
     Nan::Set(result, Nan::New("view").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.viewPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
     Nan::Set(result, Nan::New("spend").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.spendPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
-    info.GetReturnValue().Set(result);
-}
-
-NAN_METHOD(WalletBinding::DecomposeAmount) {
-    if (!info[0]->IsNumber()) {
-        return Nan::ThrowError(Nan::New("expected arg 0: amount").ToLocalChecked());
-    }
-    if (!info[1]->IsNumber()) {
-        return Nan::ThrowError(Nan::New("expected arg 1: dustThreshold").ToLocalChecked());
-    }
-    
-    uint64_t amount = info[0]->IntegerValue();
-    uint64_t dustThreshold = info[1]->IntegerValue();
-    std::vector<uint64_t> decomposedAmounts;
-    CryptoNote::decomposeAmount(amount, dustThreshold, decomposedAmounts);
-
-    size_t count = 0;
-    v8::Local<v8::Array> result = Nan::New<v8::Array>();
-    for (const uint64_t amonut : decomposedAmounts) {
-        Nan::Set(result, count,  Nan::New<v8::Number>(amonut));
-        count++;
-    }
     info.GetReturnValue().Set(result);
 }

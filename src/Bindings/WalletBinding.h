@@ -12,5 +12,4 @@ public:
   static NAN_METHOD(GenerateAddressFromKeyPair);
   static NAN_METHOD(GetKeyPairFromAddress);
   static NAN_METHOD(FindOutputs);
-  static NAN_METHOD(DecomposeAmount);
 };
