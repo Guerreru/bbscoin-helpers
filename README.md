@@ -46,6 +46,21 @@ const publicSpendKeys = [
 findOutputs(transactionPublicKey, transactionOutputs, viewSecretKey, publicSpendKeys, callback)
 ```
 
+Decompose amount
+```javascript
+decomposeAmount(amount, dustThreshold)
+// eg:
+decomposeAmount(62387455827, 500000) === [
+    455827,
+    7000000,
+    80000000,
+    300000000,
+    2000000000,
+    60000000000
+]
+```
+
+
 ## Compilation
 
 First, please clone bbscoin project to cryptonote-helpers' root or create a symbol link to ./bbscoin.
