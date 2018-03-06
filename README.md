@@ -30,6 +30,11 @@ Returns null if the address is not valid.
 getKeyPairFromAddress(walletAddress);
 ```
 
+Generate public key from secret key
+```javascript
+secretKeyToPublicKey(secretKey)
+```
+
 Filter transaction output by given view and spend keys.
 ```javascript
 const transactionPublicKey = '64 characters long hex key';
@@ -79,4 +84,9 @@ As we will link static libraries from the build release folder.
 brew install boost
 npm install
 node-gyp rebuild
+```
+
+### Test
+```bash
+npm test
 ```

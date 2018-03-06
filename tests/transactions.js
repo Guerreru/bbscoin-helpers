@@ -1,3 +1,4 @@
+const assert = require('assert');
 const { spendKey, viewKey } = require('./fixtures/test.keys.json');
 const util = require('util');
 const fs = require('fs');
@@ -8,13 +9,13 @@ const { findOutputs } = require('../');
 const fsWriteFile = util.promisify(fs.writeFile);
 
 const blockHeights = [
-    22733, 
-    25605, 
-    25606, 
+    22733,
+    25605,
+    25606,
     26100,
-    25616, 
-    26107, 
-    26216, 
+    25616,
+    26107,
+    26216,
     26218,
     26915
 ];
@@ -27,8 +28,8 @@ async function prepareData() {
             method: 'POST',
             uri: 'http://localhost:21204/json_rpc',
             body: {
-                'method':'on_get_txs_by_height',
-                'params':{
+                'method': 'on_get_txs_by_height',
+                'params': {
                     'height': height
                 }
             },
@@ -43,27 +44,23 @@ function readTxData(height) {
     return JSON.parse(fs.readFileSync(path.resolve(__dirname, `fixtures/tx-data/${height}.json`)));
 }
 
-function printTxs() {
+function getTransactions() {
     const knownPublicKeys = {};
-    
-    blockHeights.sort().forEach((height) => {
-        readTxData(height).result.transactions.forEach((transaction) => {
-            findOutputs(transaction.publicKey, transaction.outputs, viewKey.secret, [spendKey.public], function(error, results) {
+
+    return Promise.all(blockHeights.sort().map((height) => {
+        return Promise.all(readTxData(height).result.transactions.map((transaction) => new Promise((resolve, reject) => {
+            return findOutputs(transaction.publicKey, transaction.outputs, viewKey.secret, [spendKey.public], function (error, results) {
                 if (error) {
-                    console.error(error);
+                    return reject(error);
                 }
 
                 if (results[spendKey.public]) {
-                    console.log(`hash: ${transaction.hash} height: ${height}`);
-                    console.log(`fee: ${transaction.fee / 100000000}`);
-
                     let outputSum = 0;
-                    
+
                     results[spendKey.public].forEach((output) => {
                         outputSum += output.amount;
                         knownPublicKeys[output.amount] = knownPublicKeys[output.amount] || {};
                         knownPublicKeys[output.amount][output.globalIndex] = output.key;
-                        console.log(`${output.key} received: ${output.amount / 100000000}`);
                     });
 
                     let inputSum = 0;
@@ -72,22 +69,47 @@ function printTxs() {
                             const key = (knownPublicKeys[input.amount] || {})[globalIndex];
                             if (key) {
                                 inputSum += input.amount;
-                                console.log(`${key} sent: ${input.amount / 100000000}`);
                             }
                         });
                     });
 
-                    console.log(`Final: ${outputSum / 100000000} - ${inputSum / 100000000} = ${(outputSum - inputSum) / 100000000}`);
-                    console.log(`===`);
+                    return resolve({
+                        outputSum,
+                        inputSum
+                    });
                 }
+
+                resolve(null);
             });
+        }))).then((results) => {
+            return results.reduce((result, item) => {
+                return item === null ? result : result.concat(item);
+            }, [])
         });
+    })).then((results) => {
+        return results.reduce((result, item) => {
+            return item === null ? result : result.concat(item);
+        }, [])
     });
 }
 
-async function test() {
-    await prepareData();
-    printTxs();
-}
-
-test();
+describe('transactions', () => {
+    it('should filter outputs', async () => {
+        await prepareData();
+        const transactions = await getTransactions();
+        const sum = transactions.reduce((sum, item) => sum + item.outputSum - item.inputSum, 0);
+        assert.deepEqual(transactions, [
+            { outputSum: 100000000, inputSum: 0 },
+            { outputSum: 90000000, inputSum: 100000000 },
+            { outputSum: 1000000000, inputSum: 0 },
+            { outputSum: 120000000, inputSum: 130000000 },
+            { outputSum: 260000000, inputSum: 300000000 },
+            { outputSum: 12345678, inputSum: 0 },
+            { outputSum: 39900000, inputSum: 60000000 },
+            { outputSum: 379800000, inputSum: 479900000 },
+            { outputSum: 31234578, inputSum: 542345678 },
+            { outputSum: 249934578, inputSum: 350034578 }
+        ]);
+        assert((sum / 100000000 - 3.20934578) <= 1e-9);
+    });
+});

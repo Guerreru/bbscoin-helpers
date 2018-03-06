@@ -6,6 +6,7 @@
 NAN_MODULE_INIT(WalletBinding::Init) {
     Nan::SetMethod(target, "createWallet", CreateWallet);
     Nan::SetMethod(target, "parseWallet", ParseWallet);
+    Nan::SetMethod(target, "secretKeyToPublicKey", SecretKeyToPublicKey);
     Nan::SetMethod(target, "generateNewKeyPair", GenerateNewKeyPair);
     Nan::SetMethod(target, "generateAddressFromKeyPair", GenerateAddressFromKeyPair);
     Nan::SetMethod(target, "getKeyPairFromAddress", GetKeyPairFromAddress);
@@ -48,6 +49,29 @@ NAN_METHOD(WalletBinding::ParseWallet) {
         new Nan::Callback(info[2].As<v8::Function>())));
 
     info.GetReturnValue().Set(Nan::Undefined());
+}
+
+NAN_METHOD(WalletBinding::SecretKeyToPublicKey) {
+    if (!info[0]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 0: secret key").ToLocalChecked());
+    }
+
+    try {
+        Crypto::SecretKey secretKey;
+        std::vector<uint8_t> key = fromHex(std::string(*Nan::Utf8String(info[0]->ToString())));
+        secretKey = *reinterpret_cast<Crypto::SecretKey *>(key.data());
+
+        Crypto::PublicKey publicKey;
+        if (!secret_key_to_public_key(secretKey, publicKey)) {
+            info.GetReturnValue().Set(Nan::Null());
+            return;
+        }
+
+        info.GetReturnValue().Set(Nan::New(toHex(reinterpret_cast<const char *>(&publicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+    } catch (...) {
+        info.GetReturnValue().Set(Nan::Null());
+        return;
+    }
 }
 
 NAN_METHOD(WalletBinding::FindOutputs) {
@@ -176,16 +200,21 @@ NAN_METHOD(WalletBinding::GenerateAddressFromKeyPair) {
         return Nan::ThrowError(Nan::New("expected arg 1: string view public key").ToLocalChecked());
     }
 
-    std::string spendKey = std::string(*Nan::Utf8String(info[0]->ToString()));
-    std::string viewKey = std::string(*Nan::Utf8String(info[1]->ToString()));
-    Crypto::PublicKey spendPublicKey;
-    Crypto::PublicKey viewPublicKey;
-    fromHex(spendKey, &spendPublicKey, spendKey.size());
-    fromHex(viewKey, &viewPublicKey, viewKey.size());
+    try {
+        std::string spendKey = std::string(*Nan::Utf8String(info[0]->ToString()));
+        std::string viewKey = std::string(*Nan::Utf8String(info[1]->ToString()));
+        Crypto::PublicKey spendPublicKey;
+        Crypto::PublicKey viewPublicKey;
+        fromHex(spendKey, &spendPublicKey, spendKey.size());
+        fromHex(viewKey, &viewPublicKey, viewKey.size());
 
-    std::string address = getAccountAddressAsStr(parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX, {spendPublicKey, viewPublicKey});
+        std::string address = getAccountAddressAsStr(parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX, {spendPublicKey, viewPublicKey});
 
-    info.GetReturnValue().Set(Nan::New(address).ToLocalChecked());
+        info.GetReturnValue().Set(Nan::New(address).ToLocalChecked());
+    } catch (...) {
+        info.GetReturnValue().Set(Nan::Null());
+        return;
+    }
 }
 
 NAN_METHOD(WalletBinding::GetKeyPairFromAddress) {
@@ -193,16 +222,21 @@ NAN_METHOD(WalletBinding::GetKeyPairFromAddress) {
         return Nan::ThrowError(Nan::New("expected arg 0: wallet address").ToLocalChecked());
     }
 
-    std::string address = std::string(*Nan::Utf8String(info[0]->ToString()));
-    CryptoNote::AccountPublicAddress keys;
-    uint64_t prefix = parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX;
-    if (!parseAccountAddressString(prefix, keys, address)) {
+    try {
+        std::string address = std::string(*Nan::Utf8String(info[0]->ToString()));
+        CryptoNote::AccountPublicAddress keys;
+        uint64_t prefix = parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX;
+        if (!parseAccountAddressString(prefix, keys, address)) {
+            info.GetReturnValue().Set(Nan::Null());
+            return;
+        }
+
+        v8::Local<v8::Object> result = Nan::New<v8::Object>();
+        Nan::Set(result, Nan::New("view").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.viewPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+        Nan::Set(result, Nan::New("spend").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.spendPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
+        info.GetReturnValue().Set(result);
+    } catch (...) {
         info.GetReturnValue().Set(Nan::Null());
         return;
     }
-
-    v8::Local<v8::Object> result = Nan::New<v8::Object>();
-    Nan::Set(result, Nan::New("view").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.viewPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
-    Nan::Set(result, Nan::New("spend").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&keys.spendPublicKey), sizeof(Crypto::PublicKey))).ToLocalChecked());
-    info.GetReturnValue().Set(result);
 }
