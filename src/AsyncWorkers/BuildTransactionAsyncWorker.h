@@ -44,5 +44,5 @@ class BuildTransactionAsyncWorker : public Nan::AsyncWorker {
     std::vector<InputInfo> sources;
     std::vector<OutputInfo> destinations;
     Nan::Callback *callback;
-    BinaryArray binaryArray;
+    std::unique_ptr<ITransaction> tx;
 };

@@ -16,7 +16,7 @@ BuildTransactionAsyncWorker::BuildTransactionAsyncWorker(uint64_t unlockTime,
 }
 
 void BuildTransactionAsyncWorker::Execute() {
-    std::unique_ptr<ITransaction> tx = createTransaction();
+    tx = createTransaction();
 
     for (const auto &destination : destinations) {
         tx->addOutput(destination.amount, destination.address);
@@ -33,13 +33,35 @@ void BuildTransactionAsyncWorker::Execute() {
     for (auto &source : sources) {
         tx->signInputKey(i++, source.keyInfo, source.ephKeys);
     }
+
+    if (!tx->validateInputs()) {
+        SetErrorMessage("Invalid inputs");
+        return;
+    }
+
+    if (!tx->validateOutputs()) {
+        SetErrorMessage("Invalid outputs");
+        return;
+    }
+
+    if (!tx->validateSignatures()) {
+        SetErrorMessage("Invalid signatures");
+        return;
+    }
 }
 
 void BuildTransactionAsyncWorker::HandleOKCallback() {
     Nan::HandleScope scope;
+
+    Crypto::Hash hash = tx->getTransactionHash();
+
+    v8::Local<v8::Object> result = Nan::New<v8::Object>();
+    Nan::Set(result, Nan::New("hash").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&hash), sizeof(Crypto::Hash))).ToLocalChecked());
+    Nan::Set(result, Nan::New("data").ToLocalChecked(), Nan::New(toHex(tx->getTransactionData())).ToLocalChecked());
+
     v8::Local<v8::Value> argv[] = {
         Nan::Null(),
-        Nan::Null()};
+        result};
     callback->Call(2, argv);
 }
 

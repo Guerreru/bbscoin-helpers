@@ -48,8 +48,8 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
     //             amount : 0,
     //             realOutput : {
     //                 transactionKey : '',
-    //                 transactionIndex : 0,
-    //                 outputInTransaction : 0,
+    //                 transactionIndex : 0, // Real output index in the outpus array below
+    //                 outputInTransaction : 0, // Output index in the original transaction
     //             },
     //             outputs : [
     //                 {
@@ -158,7 +158,7 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
         OutputInfo outputInfo;
 
         // destinations[].amount
-        outputInfo.amount = Nan::Get(transactionJs, Nan::New("unlockTime").ToLocalChecked()).ToLocalChecked()->NumberValue();
+        outputInfo.amount = Nan::Get(destinationJs, Nan::New("amount").ToLocalChecked()).ToLocalChecked()->NumberValue();
 
         // destinations[].address
         v8::Local<v8::Value> addressValue = Nan::Get(destinationJs, Nan::New("address").ToLocalChecked()).ToLocalChecked();
@@ -177,7 +177,7 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
         extra,
         sources,
         destinations,
-        new Nan::Callback(info[4].As<v8::Function>())));
+        new Nan::Callback(info[1].As<v8::Function>())));
 
     info.GetReturnValue().Set(Nan::Undefined());
 }
