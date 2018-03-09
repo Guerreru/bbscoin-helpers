@@ -71,8 +71,8 @@
           }
         ],
         "publicKey": "d42f02dc30fce9a44c42d7186e8d2aa53f153721a73e5965c624b51e824a1b97",
-        "signatures": [],
-        "timestamp": 1518943245
+        "timestamp": 1518943245,
+        "unlockTime": 25665
       },
       {
         "fee": 10000000,
@@ -109,8 +109,8 @@
           }
         ],
         "publicKey": "371553ed0105ce4b798d96050320b815e44a790efa497cd9c1ca9637aa4baa34",
-        "signatures": [],
-        "timestamp": 1518943245
+        "timestamp": 1518943245,
+        "unlockTime": 0
       },
       {
         "fee": 100000,
@@ -563,8 +563,8 @@
           }
         ],
         "publicKey": "877dde232836a9ade11f64d3f70423497e356c9604049a3f223b0a6254ac7d0d",
-        "signatures": [],
-        "timestamp": 1518943245
+        "timestamp": 1518943245,
+        "unlockTime": 0
       },
       {
         "fee": 100000,
@@ -1027,8 +1027,8 @@
           }
         ],
         "publicKey": "378d7e3f7c258d4102dae63dfbf53ad7ccdcd5513285a247439bd56470c0de7a",
-        "signatures": [],
-        "timestamp": 1518943245
+        "timestamp": 1518943245,
+        "unlockTime": 0
       },
       {
         "fee": 100000,
@@ -1498,8 +1498,8 @@
           }
         ],
         "publicKey": "445e8e90841f8dbfb44c8ea6c8cd64a6d91731e6fb3809c153cf07788fe009a9",
-        "signatures": [],
-        "timestamp": 1518943245
+        "timestamp": 1518943245,
+        "unlockTime": 0
       }
     ]
   }

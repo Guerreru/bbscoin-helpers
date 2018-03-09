@@ -32,6 +32,9 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
     if (!info[0]->IsObject()) {
         return Nan::ThrowError(Nan::New("expected arg 0: transaction object").ToLocalChecked());
     }
+    if (!info[1]->IsFunction()) {
+        return Nan::ThrowError(Nan::New("expected arg 1: function callback").ToLocalChecked());
+    }
 
     v8::Local<v8::Object> transactionJs = info[0]->ToObject();
 
