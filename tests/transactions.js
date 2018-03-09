@@ -59,15 +59,13 @@ function getTransactions() {
 
                     results[spendKey.public].forEach((output) => {
                         outputSum += output.amount;
-                        knownPublicKeys[output.amount] = knownPublicKeys[output.amount] || {};
-                        knownPublicKeys[output.amount][output.globalIndex] = output.key;
+                        knownPublicKeys[output.key] = output.key;
                     });
 
                     let inputSum = 0;
                     transaction.inputs.forEach((input) => {
-                        input.globalIndexes.forEach((globalIndex) => {
-                            const key = (knownPublicKeys[input.amount] || {})[globalIndex];
-                            if (key) {
+                        input.keys.forEach((key) => {
+                            if (knownPublicKeys[key]) {
                                 inputSum += input.amount;
                             }
                         });

@@ -14,8 +14,9 @@
         "inputs": [
           {
             "amount": 63711735934030,
-            "globalIndexes": [],
-            "keyImage": "0000000000000000000000000000000000000000000000000000000000000000"
+            "keyImage": "0000000000000000000000000000000000000000000000000000000000000000",
+            "keys": [],
+            "txHash": "13a0018401e901ff01f801621206b0019701362bc601a601dd01a101ba0106e6"
           }
         ],
         "outputs": [
@@ -80,68 +81,73 @@
         "inputs": [
           {
             "amount": 900000,
-            "globalIndexes": [
-              1178,
-              1398,
-              2666,
-              2742,
-              2825,
-              3121,
-              5511
+            "keyImage": "0adc4c3ae2115519ef310b0da99600d1de99e3cd1db3a3ad467bfdd8827a7377",
+            "keys": [
+              "5cd3e242aeb52f5673cd922d788b13639840a5ea2c39dcab763c17cc89f7db7a",
+              "eb9d9c35bbcd725fd95282d51a56b93b785c5ba3e8f852708d6d1bf684f9b374",
+              "635c828193ee56977d450baf7a9208d1dc11ab272fc918aedd8cdaabe70e1e68",
+              "deb0cab6ff1053c3b70a9077d99fc02dfdf7530609804a8df6cdb573bafca7f0",
+              "77bfd484cacbe9f5d84b1bd080f87c0d9aa72c3c6efaaad8571da23f3ffce2b6",
+              "2a3564cca30419eb3beeee7a51289a31155a71e5248eb3a6d0d8f053b0ce2b35",
+              "4179c6762009caff545541c50b3af1f6b295af6294eb54f77db1a27603507b05"
             ],
-            "keyImage": "0adc4c3ae2115519ef310b0da99600d1de99e3cd1db3a3ad467bfdd8827a7377"
+            "txHash": "424b5dc4e3430e6d09854cef99c962d999c27652a8b9dd0849f93bf23ef2a177"
           },
           {
             "amount": 60000000,
-            "globalIndexes": [
-              917,
-              1274,
-              2044,
-              2550,
-              2772,
-              3987,
-              5220
+            "keyImage": "457884085fb88e7c878d87ae61c12ad7f7d8886e0df0f930fc8d17e2e097d71c",
+            "keys": [
+              "8518b811c0a7570a7578fc1dac952a4572e240432b7448bdc540b5309316e09e",
+              "1add64ddaa87029e2cc4077aa5b940993a983ebb929ff03ab8b2bc3dea8d4341",
+              "0101783987df079c28edf2fbc9a49aa8528b87729730505ade235142eef4969e",
+              "e48f3bd6402177e3b3f0ecef478b547801b49b52f411ef9a95e5f503c8d8f5b6",
+              "4ef954550a364c57b20e8a2ac0884079edda0d116c2a60394b66de8f070ccec8",
+              "c50f85398e265e79b028665a24fafbba07b92dfb94ff35b63427ad82ef8cc9ba",
+              "154749a2255e4d1060c5b57f3ab60a18dcdc15e356dc383e8cc51d4a1bf930c3"
             ],
-            "keyImage": "457884085fb88e7c878d87ae61c12ad7f7d8886e0df0f930fc8d17e2e097d71c"
+            "txHash": "995ee3aa69119d85a89cf8bf44ac331270a499b64c0b4a514c55e291fa7db8ef"
           },
           {
             "amount": 9000000,
-            "globalIndexes": [
-              693,
-              1875,
-              2967,
-              3242,
-              3301,
-              4290,
-              5363
+            "keyImage": "a5553e98ee92fe2b04617e6d1cbb42fe4fa89cbe279becac6c94ed94d6d49955",
+            "keys": [
+              "cad0ba23f80f9cb7e4564bde84e3594a937c359b0c0cd22ba46113bbb97f3ff3",
+              "15bc94510398b6adf7344b49a5f3d4691f8c8bc0057a3f0f7c01dbaa098f7400",
+              "53ca13a66f0d9d716b82a2bc382c753c880904850b787fb9a271d57a35bbd31d",
+              "7dd38270a74954ea2d701a7f763dbaf3c361f360c58233b39beec06ddad6994d",
+              "6d30003f718ac97ad4ccfdff3e3c1ec859504cac5eb788e5ad74f44c5a0aff90",
+              "90c85e237478578618ec5df6761a7732aed5e7ba549a6b98dfbd10b5e0e8fb68",
+              "de4da421b421774586a475a5c001bfdac8a27c9aa300683c18e31321d3a0aae5"
             ],
-            "keyImage": "a5553e98ee92fe2b04617e6d1cbb42fe4fa89cbe279becac6c94ed94d6d49955"
+            "txHash": "424b5dc4e3430e6d09854cef99c962d999c27652a8b9dd0849f93bf23ef2a177"
           },
           {
             "amount": 10000000,
-            "globalIndexes": [
-              15,
-              2072,
-              2380,
-              3322,
-              5018,
-              5398,
-              5506
+            "keyImage": "bd82f9108bec25f8783d90a16de706894364eb84a5bd1cf2601923553f2f53eb",
+            "keys": [
+              "ecd209310b5a0d5399047463799a488417cf29c9941e392f535a9069b8510055",
+              "6348361c0a73bd83b121504baeedcd05ac3566e9b1ce8a464e3042f13f4853ed",
+              "7252c090e3966a359f8491895f117a222d28b4a8dfb2c1fbce7f2a68f0f30680",
+              "9a2b919465c5639958eebcb3e4ceb9cd100b1a0eaab6e93a0a50e8e6771abf5d",
+              "82217460760167879da4c2743cc55f38c15712c709693a8cbfbaca7f845b8bcf",
+              "e967769c2298f6ee46cd02cae4e78312f3c1304dd5fc1ea7e622a090d6cd314a",
+              "d11aa1b003081a7d89c979bb9deab513ab5ccec6bcd25052a4d802337a50cf97"
             ],
-            "keyImage": "bd82f9108bec25f8783d90a16de706894364eb84a5bd1cf2601923553f2f53eb"
+            "txHash": "3d4779d7e28ac279f29c6b5765b0f3ec11ee22682564067091532482559a3f3a"
           },
           {
             "amount": 400000000,
-            "globalIndexes": [
-              5032,
-              10413,
-              14152,
-              22262,
-              24084,
-              29388,
-              46865
+            "keyImage": "e32aa5be2f17b8065310bc12fee6efa7291fe2b6b2b2b18aa6987b256a7d8fef",
+            "keys": [
+              "ceadf313937f3a56ecb8069c1164aac35041e9270ffaf2763491bd0e54bf207f",
+              "7b7fd8114a16d1f3df4cd4a99bea3842c90a344511e863a8377a9ca20c4c0dd3",
+              "ee5ae2d8fb167424722a8912e6bf3617be431d990a38e3b9c1686a785031daca",
+              "ab70e0774b7e9846fc9f6408492a45be9b5c5262845fbb77fac0652edfb94972",
+              "a245c65ec35f0c1405b2f4c6bd8ed6977fb411712560f6ea3b1256e97ed5cf11",
+              "f8ad4707ebffa0404ad3710d444ace44bda14cae48bbc98506b8469d7229a143",
+              "b43a59bd22bfecf74d80b5e88be1304defb9fbf03826ac6f51234a6fd0c7452f"
             ],
-            "keyImage": "e32aa5be2f17b8065310bc12fee6efa7291fe2b6b2b2b18aa6987b256a7d8fef"
+            "txHash": "997d26f550e86c989bdede49191377183a07d3a7e6c33bb4157388cdeacdb296"
           }
         ],
         "outputs": [
