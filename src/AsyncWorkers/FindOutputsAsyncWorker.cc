@@ -45,7 +45,9 @@ void FindOutputsAsyncWorker::HandleOKCallback() {
         for (const OutputRecord output : result.second) {
             v8::Local<v8::Object> outputItem = Nan::New<v8::Object>();
             Nan::Set(outputItem, Nan::New("key").ToLocalChecked(), Nan::New(toHex(reinterpret_cast<const char *>(&output.key), sizeof(Crypto::PublicKey))).ToLocalChecked());
-            Nan::Set(outputItem, Nan::New("globalIndex").ToLocalChecked(), Nan::New<v8::Number>(output.globalIndex));
+            if (output.globalIndex != -1) {
+                Nan::Set(outputItem, Nan::New("globalIndex").ToLocalChecked(), Nan::New<v8::Number>(output.globalIndex));
+            }
             Nan::Set(outputItem, Nan::New("amount").ToLocalChecked(), Nan::New<v8::Number>(output.amount));
             Nan::Set(outputItems, count, outputItem);
             count++;

@@ -128,10 +128,7 @@ NAN_METHOD(WalletBinding::FindOutputs) {
 
         // output.globalIndex
         v8::Local<v8::Value> globalIndexValue = Nan::Get(item, globalIndexString).ToLocalChecked();
-        if (!globalIndexValue->IsNumber()) {
-            return Nan::ThrowError(Nan::New("invalid arg: globalIndex of output " + std::to_string(i) + " is not a number").ToLocalChecked());
-        }
-        outputRecord.globalIndex = globalIndexValue->NumberValue();
+        outputRecord.globalIndex = globalIndexValue->IsNumber() ? globalIndexValue->NumberValue() : -1;
 
         // output.key
         v8::Local<v8::Value> keyValue = Nan::Get(item, keyString).ToLocalChecked();
