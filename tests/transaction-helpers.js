@@ -41,11 +41,5 @@ describe('transaction helpers', () => {
             viewSecret: viewKey.secret,
             spendSecret: spendKey.secret
         }, '486ae678af345ff7cbd7cf7800ae1d11a7d39f7ee80a6e096afe2313cf93a1da', 6) === '56ef7da1fce4f142d44defcd392709ec94ad2bd3d68786372269f8a94b31936f');
-
-        assert(generateKeyImage({
-            address,
-            viewSecret: viewKey.secret,
-            spendSecret: spendKey.secret
-        }, '6f207dcbf690a8f797e46d912f47cc387a70dbae4e1b4f3bd5f8ac5dc7339dba', 4) !== '93cf75d53e98402ef54bec30169e678eb7ce9efecec37cf8fe7c699defe89510');
     });
 });

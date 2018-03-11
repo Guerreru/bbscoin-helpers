@@ -14,7 +14,6 @@
         "inputs": [
           {
             "amount": 63856485665661,
-            "globalIndexes": [],
             "keyImage": "0000000000000000000000000000000000000000000000000000000000000000",
             "keys": []
           }
@@ -71,9 +70,7 @@
             "key": "bce30cf442fb92587fab64ff04ba3ed20c614bd6f97e244328de019fd15a6008"
           }
         ],
-        "prefixHash": "d076fd86f20753b4914386bcca406334526f5833b056e842efc6a94503589510",
         "publicKey": "e23c6bc0142348a9914038b4533eba0892bca3fdb1dc545466a99a0824f36e25",
-        "signatures": [],
         "timestamp": 1518944531,
         "unlockTime": 25676
       },
@@ -83,9 +80,6 @@
         "inputs": [
           {
             "amount": 200000,
-            "globalIndexes": [
-              4485
-            ],
             "keyImage": "982da74594c237e5bcc89ab1f49ecd85e492cc1b364e2abab6a962e61bdda158",
             "keys": [
               "e9b6b6174325d843fbba34bc4f17107b77a7fc1a16bf7937a9a83dd8322dccc5"
@@ -93,9 +87,6 @@
           },
           {
             "amount": 800000000,
-            "globalIndexes": [
-              46805
-            ],
             "keyImage": "bb89f123c4c37a984e32055ab95cbcd8993c27feb5bbe59e400f77e22fc335dd",
             "keys": [
               "982b20854fbd185ebcfb8964ed9a3de0397e847b2554c579305cde7ce97e918c"
@@ -103,9 +94,6 @@
           },
           {
             "amount": 700000000,
-            "globalIndexes": [
-              46536
-            ],
             "keyImage": "b33fd3fa9de38cdb3d62dc368be0ac49818fb96c7ee841b8512cc6d898bf53da",
             "keys": [
               "1a1dcab9de59e7f5724bbda96b58652e96a9b9df2c9524e9f8d1537f171f233f"
@@ -113,9 +101,6 @@
           },
           {
             "amount": 4000000000000,
-            "globalIndexes": [
-              17827
-            ],
             "keyImage": "91b59a267bfc11c204dae4b53453000e4c96e77cd6fb0264f38b725254cb35a3",
             "keys": [
               "85ff24b77e02fbb753f9c17e1f395506196723fd2261285147955bdef2c6d4b3"
@@ -123,9 +108,6 @@
           },
           {
             "amount": 10000000000000,
-            "globalIndexes": [
-              13578
-            ],
             "keyImage": "069f689106b310c671d9b2f98491cbdcd4e96b8a193a929ceaeb412c59b15938",
             "keys": [
               "12b42b8f22abe64a83fe4574ada7f01101011d4d92de56b91969af5ed674ec76"
@@ -133,9 +115,6 @@
           },
           {
             "amount": 2000000000,
-            "globalIndexes": [
-              47229
-            ],
             "keyImage": "f9b3e4f1ad82db3ce7854aca6b56bb5255a592e6a0893648c5aec9adb4098d8a",
             "keys": [
               "76c219fb74fb1e4b7c51febf6c7c31d7a076a82947c72444ed3ed7f98d05b526"
@@ -143,9 +122,6 @@
           },
           {
             "amount": 30000000000000,
-            "globalIndexes": [
-              5719
-            ],
             "keyImage": "bede73bde548219d8c784c13f8817117577491e9771623790e00158b257168b3",
             "keys": [
               "e105a97fe218a4fe5fdc8d67dd485ff6d5526938a385bca08521a8b8ef8e6938"
@@ -153,9 +129,6 @@
           },
           {
             "amount": 25608,
-            "globalIndexes": [
-              8
-            ],
             "keyImage": "3404b21952857a6ed33516a7e235567544d019bf979c7ae3b4a04e19188a7e3b",
             "keys": [
               "34ce6cbf83e3c635fee343070fcf65f59c558ccfa4c808f4e734d4524de81505"
@@ -304,50 +277,7 @@
             "key": "fecdce568e964b93fa764b9d5c7c0e3bd5a422b084e2c025feafe9c8e9f6569c"
           }
         ],
-        "prefixHash": "93fe98c9df95cea5a27d7ec8c2de839516cc00ab874c3055cbfed1569c568c8a",
         "publicKey": "745bf9b944e0818bb89fadacb8c6504eebae477768d8aa2377a28c37adc625e5",
-        "signatures": [
-          {
-            "signatures": [
-              "a601a8c3efe6206f8a7511857184b3a1eb854286acd6b8bfee889afc503f9d0ece6c99658da07c5db6270c808abe537346264d9a4ed3ec1d89311e526f425708"
-            ]
-          },
-          {
-            "signatures": [
-              "59bf5a6281599a3492d0656dfaeb88dd8e7a181e79f74dcf484576492e743b0267513a985f8614d731d781c0e02888a566c61c0ad6fb23d2a56377ede8dbc808"
-            ]
-          },
-          {
-            "signatures": [
-              "a0a420f0c95c02e21eb46462f31834fcbbcbce919325638a467ab5acdc4b350904426ef32452080f313d4ef9643dbd732ea5da89d14ad9215c8eea31c4758106"
-            ]
-          },
-          {
-            "signatures": [
-              "be5aa65c576048195746f0ee4d0d5755541efcf8f7ff612c8aa8c79a4253b006d8f10ef996f7d19a3d852a3c86e4a766a077d4d8b2b9bf5f949abdf902d4e50e"
-            ]
-          },
-          {
-            "signatures": [
-              "a7ca16b26bd3dff60460b45df409912c1abc9a374bc916e0d6c943001f420a060bf05b07a1e1d8ba7359d2de6a7528d0f7fd09cc63d4bc47a8a61de7d45fb20b"
-            ]
-          },
-          {
-            "signatures": [
-              "8de08eb0e1b3f4f3e16b89b37b18528f25b5a9ccafd550d9b0cc3323b9bba20e62155c4361188b0ba74902e4a179edda3696ac2aa70ccf5ab589327fe5015e08"
-            ]
-          },
-          {
-            "signatures": [
-              "afcbc559706a7570b6d45bc1ba019610bbeca1bdc7bac90215c2ea160c856f055fc78e9ce876c3423c0c9dd5a2805640a53012088af1d9294eb99d1a41f32405"
-            ]
-          },
-          {
-            "signatures": [
-              "6169de7e7273d0d517aa2f105f0fc6f7fd429fd4d6836c377b79b7619de82405c57c2839b992cab2092ecde344185e9a5bff73e195b44dbb367411c66e72c601"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       },
@@ -357,9 +287,6 @@
         "inputs": [
           {
             "amount": 700000000,
-            "globalIndexes": [
-              46390
-            ],
             "keyImage": "71a93700c7d09acdae8e8af3b2cb65ea67554da92facdbe5b7fffebef3acc538",
             "keys": [
               "bd26c3fe43d44906b35dac07d378318f8c6e15e51d551f6c3957eae7e1b3fdf7"
@@ -367,9 +294,6 @@
           },
           {
             "amount": 6000000000,
-            "globalIndexes": [
-              45237
-            ],
             "keyImage": "04eff8d7a2236604dc1cde4e2d0f92ae2cce99eba9d02ee87a0814680156385a",
             "keys": [
               "ad9a5c35c8a370974dcab81ac7617db89dd72b8493dff9f84f9dc3fcaa3fd142"
@@ -377,9 +301,6 @@
           },
           {
             "amount": 60000000000,
-            "globalIndexes": [
-              43389
-            ],
             "keyImage": "a7e0ce899773d2688560a4171d769ebea34541b12e9f0a1bf62f99283ba9b93e",
             "keys": [
               "2ef158046df5a812ecf9e7f5174453b501485aabaae80d6fed3043c2ffa4520c"
@@ -387,9 +308,6 @@
           },
           {
             "amount": 70000000000,
-            "globalIndexes": [
-              43076
-            ],
             "keyImage": "ee14b5c3d265244044e114575815df36dd6bd832776870940790915c1b7a5b85",
             "keys": [
               "3fbb4d7e89e51207926e6094aa3683c6ac640642fae3b7955121adb8d399439b"
@@ -397,9 +315,6 @@
           },
           {
             "amount": 500000000,
-            "globalIndexes": [
-              46770
-            ],
             "keyImage": "a228dd1729a9975938362fdadc6e7cfbb48f598d3dc589dbe9890a09b0df7b0e",
             "keys": [
               "501f638a9ada780a677910121574cb6d46819ad3c4755bdc83983dfde9e1331d"
@@ -407,9 +322,6 @@
           },
           {
             "amount": 60000000000,
-            "globalIndexes": [
-              43493
-            ],
             "keyImage": "8e668f7ee98427b368e8e6a55ca32ff5f0be4631e735e857a8f06437d505ed1c",
             "keys": [
               "2484fbe68c4ce632b7e902e428316410193a82c6e0d3a5a494b0dc737acb6bf9"
@@ -417,9 +329,6 @@
           },
           {
             "amount": 70000000,
-            "globalIndexes": [
-              4502
-            ],
             "keyImage": "0c9c9d8684b0b5bedd8ae40e587abf2be607e5eaf56d5c0cdadad8f861e07d6c",
             "keys": [
               "7f6ed2872aa2871cdc62c14d9fc9f231b40c1acf597e56ccf7c329c1f790b8af"
@@ -427,9 +336,6 @@
           },
           {
             "amount": 3000000000,
-            "globalIndexes": [
-              47097
-            ],
             "keyImage": "2d828bde9f460d75b17a1d4c277f892f62e970dc465c25dd6aa7809849b46062",
             "keys": [
               "a13790c17d04cc75d54efd9b39b51c84fa8456dc3f244e67c00ee23df5156774"
@@ -437,9 +343,6 @@
           },
           {
             "amount": 5000000000,
-            "globalIndexes": [
-              46602
-            ],
             "keyImage": "3e7d6184334dab12d6bf008a59a2852ee1eadbef11b154dfb60f624daf105157",
             "keys": [
               "417371276ac8e701a649f39a10249207cdb15806bf893e2d09f702b98d5aface"
@@ -447,9 +350,6 @@
           },
           {
             "amount": 900000000000,
-            "globalIndexes": [
-              26335
-            ],
             "keyImage": "65ce7e11492bb0c6adcba361948fa13576b7754189fd957450f96a58e3bf52de",
             "keys": [
               "c94516f9fde4a0a2fb0f3b29206b16aca0e09664b72c810b854fa696afd7cf2a"
@@ -457,9 +357,6 @@
           },
           {
             "amount": 3000000000,
-            "globalIndexes": [
-              46955
-            ],
             "keyImage": "f25379cba79cb0a03cfa6aebef9c578fa159f0caf5e1302fc43589872802ef34",
             "keys": [
               "3c1dd800a0045d647bb5d939db2fceb754dae557d9889a58748152783e8c7294"
@@ -467,9 +364,6 @@
           },
           {
             "amount": 500000000,
-            "globalIndexes": [
-              46862
-            ],
             "keyImage": "0c70b421bb5657a3867d739866992c75845147ba41db0396dc92d84486543cb3",
             "keys": [
               "b7b7856ec3e1919143daab62e964ff939fd3a5fabe5db71a41323e84f94aef03"
@@ -477,9 +371,6 @@
           },
           {
             "amount": 400000000000,
-            "globalIndexes": [
-              36063
-            ],
             "keyImage": "4f0b73b315ffb6bb5261482be27cc6aeb576aa768f29c7dd2288f729555fbea4",
             "keys": [
               "0beae144146480492259f09cc4625b4b698cd3c3072a308c5ff90bd84af598d2"
@@ -487,9 +378,6 @@
           },
           {
             "amount": 2000000000000,
-            "globalIndexes": [
-              26027
-            ],
             "keyImage": "c609d8cc24363a13adb8ff5446a43d882caf5fb8d94ee7f06d685f9ced0284e2",
             "keys": [
               "c0e06630a5bb3144d9110d18a2d4fba34748a9137a3f3d355d75621a23cf2004"
@@ -497,9 +385,6 @@
           },
           {
             "amount": 100000,
-            "globalIndexes": [
-              2887
-            ],
             "keyImage": "7884dabf1fe98d684ae3e24e68f602e3d32ee4ecbbacb8f294878c6b5c7ac771",
             "keys": [
               "fdf7ed1e5caff43a0c9fdac732aec2e19e47d688dd4c96c9a64f62e09d927b4c"
@@ -633,85 +518,7 @@
             "key": "2807f7c6a69ce86d39e4f88c0852d3a6009fd53c0ee99dfb3e587b3df3a83be7"
           }
         ],
-        "prefixHash": "751c090990222f4f3aa474171647bdfa82b69e9fee9dd616b6682e4564714213",
         "publicKey": "db21e4e9f5b596bcbc71262d97164f2f18f81955afa7b63e72299479de2c9d5c",
-        "signatures": [
-          {
-            "signatures": [
-              "5fc4606f4022beaeb42f5fb9b0a2676c46cc61a2b634a630424b0865388aad04d6cc4f8a8df3f327218644b4e983c236b25db0243ce7a803bb32ff9c39717306"
-            ]
-          },
-          {
-            "signatures": [
-              "6abd2c999bc29a1ef7c3246873a63400b2c2a70068557100267a667d98e6db003f0f83855dfbc5129a44583ea201481809d084afa05dcdf98ad60e6fc4e52a0a"
-            ]
-          },
-          {
-            "signatures": [
-              "cb52c2f3a62df464dab27396b7fcdc39d49a5ca530c56ab9e0d6ab2fd0a2c502011e3505925dcaedb52221b806f3c03da8fb2ceabfb08794a184b4e99cb7740c"
-            ]
-          },
-          {
-            "signatures": [
-              "4bf87e13d2e12530a010c36aefb3225a1e32851e27dabc3a17c843767857c40ba5a4ef442857ac349d3e14d7a5d953d719c84976d513d9dfcd70b40b09fba002"
-            ]
-          },
-          {
-            "signatures": [
-              "04f0496f070e20760af19f0acd83980869d055ddd3254d47efd710f725c94f0ffe0aa2e51c32fe45d2906bb6c8dda0e5bd15a9db78244ab593f56e3f29243b06"
-            ]
-          },
-          {
-            "signatures": [
-              "520c20a989c555606ea6e5627351ae2e34c48f692d0250f1ecafb23ca0e99b0bad6a9641e0fedaaa914efd9909f3565f9cb87802639afee64ad1beb246eb5909"
-            ]
-          },
-          {
-            "signatures": [
-              "8729b225622b5ce2dbe7595e11732593a75790a5362867afff5a4065e59e990d250f671a2d21dae716d0e2fc1b4fb2629acc4497409983bc122406f7e2fadc0a"
-            ]
-          },
-          {
-            "signatures": [
-              "94398d46db7abdeee1de213fef1f5581763405485dba499442c1ac412ad2e50194f78dd3f3df2897cad3edcce2c5ff412602f8ae9585826d85862d094e9c7402"
-            ]
-          },
-          {
-            "signatures": [
-              "7908d120d7c451c608e2f99455248ec9855e199b4ad1dbe7316a3f5b17a2420659370b0f533dc449112d6d30751ba8cb8ede037205c9f863de14e64463cda70a"
-            ]
-          },
-          {
-            "signatures": [
-              "e6ec8f0b60df299b5ac7bd08342f1a76db627b6318bb3159cf4b4b8727abf20bc63830793bd7ac88c1d6600c00277de2bfef18a89704892ea0032e8fc991e606"
-            ]
-          },
-          {
-            "signatures": [
-              "2a1f26c5acc537819409c00c268a6877a7e6432f4b63b2706f879b4019450d07bebea833f32253a5169d24b16c3300aa7c4ebb94ff03eb2a224dbc4c26ba560f"
-            ]
-          },
-          {
-            "signatures": [
-              "1dc56a6badbd5a9a509a347b54201f54ea0d9a1ad25c508839e8796d1d6721090f0a63e7daaa61ce941b1f09438a9edd27a49df86c4a3c6339498f2f45157e04"
-            ]
-          },
-          {
-            "signatures": [
-              "2851092b07121bfd84b38a35ec7114def9bb12fbe42615dd9560c204edf7a40ed504646f9ee439187b8fe1a51bbe5fff70e57be0123b1aad738e903e27fefc04"
-            ]
-          },
-          {
-            "signatures": [
-              "4c765d903e3ce3b4cab4fba59731e359d4401d707a178964c1a93c6b8e061f0c9fcdb7775be7455ffa22687f82fcb416d8517c3f203a879a20955e25e46be306"
-            ]
-          },
-          {
-            "signatures": [
-              "1b0de4b570fdd373f587280920b950a07a6277a20416e89f7fe7cbb51991b10a9a33233d18703b14686ba38cad4696424718437822894bb3e4df4f8c1c75cc04"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       },
@@ -721,9 +528,6 @@
         "inputs": [
           {
             "amount": 40000000000,
-            "globalIndexes": [
-              47802
-            ],
             "keyImage": "875080a3b558c9e090eb65bcda16737a256bd873badd0e3aa505305d292bfbc4",
             "keys": [
               "528045e9f7726c292cbc5c5f85374d36dabac70a14e69b5263278d015014f8ea"
@@ -731,9 +535,6 @@
           },
           {
             "amount": 5000000000,
-            "globalIndexes": [
-              46391
-            ],
             "keyImage": "b565bc5f2ef59dc27788e376335605ff026d089d71776f268451f60eb161aa41",
             "keys": [
               "49ca30d82362dfb9fa6b7e618f0d4791f72c430a03faf1a3be2ab1503ebfeeb6"
@@ -741,9 +542,6 @@
           },
           {
             "amount": 6000000,
-            "globalIndexes": [
-              4497
-            ],
             "keyImage": "e20ebc01b3b990580b012795de3fe8c06ee3efea458a235c7c7ea70b1704b498",
             "keys": [
               "50a61c5ce8c544aa64762f409908fabd0bc7a48103eb95ef0c013bccdd63d89d"
@@ -751,9 +549,6 @@
           },
           {
             "amount": 900000000000,
-            "globalIndexes": [
-              26361
-            ],
             "keyImage": "d2cd0fab9b4fdb88556f6e5b45ad12da9c14214df8d2192b69acee2af8eb941f",
             "keys": [
               "12b2cb7f83020c027e50b55434e9bcb0c29ae489f17ec8c2288ee7910818772f"
@@ -761,9 +556,6 @@
           },
           {
             "amount": 3000000000000,
-            "globalIndexes": [
-              23919
-            ],
             "keyImage": "3db662ec6de8152cb543a90e038952d881800d52ba84607b88df76f55fec96ea",
             "keys": [
               "82b100101f357f393dc2959d6f562f8b093841be7113820476ad80af7ccaf9dc"
@@ -771,9 +563,6 @@
           },
           {
             "amount": 70000000,
-            "globalIndexes": [
-              4522
-            ],
             "keyImage": "789d1b5916ff24a65623e1057175dc05820e02ae35c7ed5d123843edacf67f6b",
             "keys": [
               "dae3acc987c1630cd27caf1e8267ef969dae804ae02e332d5a4621dcf39b8063"
@@ -781,9 +570,6 @@
           },
           {
             "amount": 70000000,
-            "globalIndexes": [
-              4525
-            ],
             "keyImage": "29aba88bc8205a5f8fc6d3c9ddded1531c1592cb213cf798213cf2fab3b2dfa9",
             "keys": [
               "9e480bc122ff72279344e4ae040f13567efbf4d6a6b0c4d8e7ed69535002f7ba"
@@ -791,9 +577,6 @@
           },
           {
             "amount": 600000000000,
-            "globalIndexes": [
-              29008
-            ],
             "keyImage": "23f9785b3869359ef221ad56f2cb6ad3d91b70c7514fcfecf07cfd5cb2a55ea0",
             "keys": [
               "19c1300295f00dfd2ff4690a987123d54f71b1cc0907b4619ab38617094d64e1"
@@ -801,9 +584,6 @@
           },
           {
             "amount": 40000000000,
-            "globalIndexes": [
-              47774
-            ],
             "keyImage": "bca04399523c3729e984879ac086b0d7d41e06c755536b7b7bca6a23e4cbcfc3",
             "keys": [
               "043b9882f6639c382090bef805d7da591a76e2ae8b13f0763479630c4368ed92"
@@ -811,9 +591,6 @@
           },
           {
             "amount": 600000000000,
-            "globalIndexes": [
-              28964
-            ],
             "keyImage": "d1bfa11d13175475e208061ef061ab4d23df3d2708cdebe8258fe87f787975fe",
             "keys": [
               "5d24a906069c88edcdbf7626ab3f448218b82a0b7a442033731beb7ed715f603"
@@ -821,9 +598,6 @@
           },
           {
             "amount": 7000000000,
-            "globalIndexes": [
-              46445
-            ],
             "keyImage": "1f12747a5b02de4cb43c8edfc41b343ca4cdf0237a3e6594ba8b8e423df98323",
             "keys": [
               "1ca2b182c90d76876ab5c5bf49152be73ae2c0d3b03ff90d2efa9d91c9268ca1"
@@ -831,9 +605,6 @@
           },
           {
             "amount": 900000000,
-            "globalIndexes": [
-              49503
-            ],
             "keyImage": "ce1ee62311014e736d2c4c4ec8560fe2fcfa816d222468bb4a541a10be038e7c",
             "keys": [
               "2fbffce8476aa24149e9cafa2a2ead6051dbe1fe80d961c53709571624c326b2"
@@ -841,9 +612,6 @@
           },
           {
             "amount": 6000000000,
-            "globalIndexes": [
-              46143
-            ],
             "keyImage": "0927e89a66fc6f5f0e8068ef00fdc17de5626ab5e5d9f888f58d3e01cda93a88",
             "keys": [
               "ae85a02814bc6db196d670c1f2e0b9fc1612386d2c1f9ca92b18e000fd0c741a"
@@ -851,9 +619,6 @@
           },
           {
             "amount": 9000000000,
-            "globalIndexes": [
-              47672
-            ],
             "keyImage": "db41ba9a2eb1ed98c3722733d9053ac9c67d0d16311e3a47937d6f73617fc99f",
             "keys": [
               "fde8a1918d48abd3c42adba58bb901175d33406946c00bf0017c800999633d43"
@@ -861,9 +626,6 @@
           },
           {
             "amount": 20000000000,
-            "globalIndexes": [
-              54568
-            ],
             "keyImage": "98ff2fa4a63ee76612c2cafedfae6754cc2a20890056d6e3436e47ec7dc76c04",
             "keys": [
               "526c425fa25528a29c66007889a6e11d4a1281e569ba86bb9eda44cec4bf034a"
@@ -871,9 +633,6 @@
           },
           {
             "amount": 400000000,
-            "globalIndexes": [
-              46827
-            ],
             "keyImage": "8c81067f62bf1501978668c863f5f6f535f209b623d5af702b9272d7e6b90bc2",
             "keys": [
               "871fb1487406c89e0a858eb10eb34ebfdaaa60b29a27f84ded33f2357838136b"
@@ -881,9 +640,6 @@
           },
           {
             "amount": 800000000000,
-            "globalIndexes": [
-              25281
-            ],
             "keyImage": "212ac18b324b428f2226a5faf9458e1a6c58a8cab128a13d28fc3f2806b13476",
             "keys": [
               "8ae7319256ded743c675f709d079edf3615930ab5dbe1d8b8c383971233f720f"
@@ -891,9 +647,6 @@
           },
           {
             "amount": 9000000000000,
-            "globalIndexes": [
-              11731
-            ],
             "keyImage": "0d90590b2de71b5dcd188af1079d7dd2bd0fbc3e5b2ce52dc287532afd3a53db",
             "keys": [
               "feacb15545fd74b659288d0ae1b768e648d31fbb867772678e204d91a7b59e09"
@@ -901,9 +654,6 @@
           },
           {
             "amount": 3000000000000,
-            "globalIndexes": [
-              23886
-            ],
             "keyImage": "0a163ce0b433cb745f6a8f83d919392ed37191b8edd02d0b697c4b713e151c78",
             "keys": [
               "3de588612c81a3529e4c9c37e95f59ae9461e762b259375df8cab75f5b4039d6"
@@ -911,9 +661,6 @@
           },
           {
             "amount": 30000000000000,
-            "globalIndexes": [
-              5738
-            ],
             "keyImage": "ad94d1b7d8001d2ef4cf0750806c8be68c5deb30bbe50941fb5e572ef1199e33",
             "keys": [
               "8b8be7840c5245c349277f773d9f5f39491910c1a66cc295e9328dbc85f81217"
@@ -921,9 +668,6 @@
           },
           {
             "amount": 69522,
-            "globalIndexes": [
-              0
-            ],
             "keyImage": "a257623cd44567e556b1e04b9bc9061fbbd68a77c3397ce14eee292e2adffb27",
             "keys": [
               "de799b27bd95d60536da119e3d488946bbdd28ca534fef725f8aab164cd09443"
@@ -1077,115 +821,7 @@
             "key": "bd1c904d9ec742f2c8b5abcea8a7ceef0e7c94fa2b69162b1f46ee267d226ebb"
           }
         ],
-        "prefixHash": "ff1cadeb7e5461747feb655f310f72a6f0e54d633db99c559c796f92e490ce40",
         "publicKey": "76614dd827b45b18dfdca1d71ae3d0105aa55ed75f6bc06e64b42497a0eeb087",
-        "signatures": [
-          {
-            "signatures": [
-              "3cdaebbb48c95d76ffa0f286c942ab79ae48afb2347863e56e9c14f5061eae06f7181e81fb66e46367c4ebac1204c68547d858f32d9077a965519b3c59409e05"
-            ]
-          },
-          {
-            "signatures": [
-              "985a8e688c5a8b8e48e37e580d45db6deacf2e19fa8993579053fb49ceb5d50b85e7237e84b5c23570becfc2ef02b1f6062cb2a58f118aa4c988a4d06c59e90e"
-            ]
-          },
-          {
-            "signatures": [
-              "69c6b95216277eab6643cd09b2d56a771ff19e2c44d1403bfd17de6118a0bd0af7b20d334988c77e0b89a8304366069f5ed36e5e72c7163fbbd44edb24ba1807"
-            ]
-          },
-          {
-            "signatures": [
-              "cea7258c2771a38714742b11b850b1a7e843b40471ded40f9aa34bf35ed2ae0d3ac36ea3daefe30db7baee7417bbfddbfce640536adc00c3bc79b3a0fdd7a60b"
-            ]
-          },
-          {
-            "signatures": [
-              "65f0a60ca1b0e727deff334c392bad09e79be442ddcf755d4107f66a615b41098171a8cd7975ec17d2348494eec51c7903a2c4bd5f0fec475f6fde65d7665f03"
-            ]
-          },
-          {
-            "signatures": [
-              "d44472e714d4f7540d733a22b49552bed42a85867f4eca40581b29ac6b29da059816a7dbcf27ad7fc02dc6bfd19cde6f3a463550fb4a29ba028d536047474903"
-            ]
-          },
-          {
-            "signatures": [
-              "8eb30cf47112a9936171db755af8ac62393ea79ffbdedfcd413252bd9d73f3032604934cd8d3e8297c441f38ce0d86a9687b2fb6e1341f0932514d660cad4c09"
-            ]
-          },
-          {
-            "signatures": [
-              "b5ba82cd78dfeabdcb719f0f8894fbc99ad6b3d0fd40f3efd5f89bb6e470ea04d59f4e3c232109c85337444e2527b107e0ef07ab163d4d3161a4d49ea7039806"
-            ]
-          },
-          {
-            "signatures": [
-              "f7497f5d22e80e0bddef35d8591d8fe5d661f95a88db434458c0e18235a6550810ce6a3ca69779de9f08604a431a167b78857448ce98cea86dc369111d935604"
-            ]
-          },
-          {
-            "signatures": [
-              "d8a9bcd230f8eef54133464b067697c3466fd96e1bebb7740e031a03676e0c0579e4b161ce84461c5327f8c3f229fa39a102f7bcf75fc34a342bdd3d1c80cf02"
-            ]
-          },
-          {
-            "signatures": [
-              "fc649831d9ef82cd20acd4116dcef5fc5e52545b8271530a5e2553222180660d07a49ee520de4705875500c7d7346ea13a96bd1a7a7dad4b0ecd7a60a4717c0b"
-            ]
-          },
-          {
-            "signatures": [
-              "de1d8a05d450b87ceea7ece6dfc84b38da406bc758d168cea0059ffd8c21440f8bd722bf4435c4e108d9ddbc46f4b8dbf5befd376a1bee8f97ace90618e7e40c"
-            ]
-          },
-          {
-            "signatures": [
-              "a48433d72b2d1a6b7554c2dd4b86bb2815f73872883f96bddc56dcf3f0f8f507137de589c8ba05479530c52fb78991100f9fde892d618ee36eac286b914a990f"
-            ]
-          },
-          {
-            "signatures": [
-              "ae6d070f024287dbb8cd034397522fa2598e437078fb2cdffe19cb00327e7c02ff16f1a73112c129c36417bf79925faca2a579f9c2408c5e4d383dd134bc7b04"
-            ]
-          },
-          {
-            "signatures": [
-              "9f6a7e59f94ebb6f9651da506d095f099b86de5032303fc748a91ea35955dd0ca60aa9c28794be736bda3270e67870823738cacba8e79bef5568541c1aefb008"
-            ]
-          },
-          {
-            "signatures": [
-              "9fcafbed3273e9b2d3fb9f8107ef9d2068961ed6c12077466f15ebec5517e20bc46e300dab2cf33e3b016741207a5b9e1927ec7b6b18763056960581c05a830b"
-            ]
-          },
-          {
-            "signatures": [
-              "776593fd4dd8e5a62db6621224f2283c715849535ef1ed8fb94e676c339dd901eb3f7c648aea7c90062a14112ec840d25859995f2de0db10712e452ec75ffb0b"
-            ]
-          },
-          {
-            "signatures": [
-              "182f7cefbf9a95fe821ac7edb9155f8c5af08bf7f4419ed651dd5ad36f32cd0a1e0afbf2ebbbc4f8c000ed761cdfcf23d553efca7dbf78b19a8574887663860b"
-            ]
-          },
-          {
-            "signatures": [
-              "49c3b37578092b8b7c427ab5c542f49658cb428225f5d1c8715ffc4abdba670658a341a4df3555dbaf5bb29b7b6949970a5c7188ce385941ccd3af4c24b62702"
-            ]
-          },
-          {
-            "signatures": [
-              "3cddb7948ed090ae621bd6e866f8388d73f14b628c4f89e064b4ce59273f0401b7063398888e89b641d1009e5539eac817f8c03d478572d3a311014029b56908"
-            ]
-          },
-          {
-            "signatures": [
-              "a8587b60ac2c03be9c7bc307b156f1277936d1b47802578cfe63856b83e1060e51b76261490b30e95baaba47bc6bad3d98c853723f3abb232d54bde304eb1105"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       },
@@ -1195,9 +831,6 @@
         "inputs": [
           {
             "amount": 300000,
-            "globalIndexes": [
-              4635
-            ],
             "keyImage": "ef5536eedd616c33317b469294dbbc140b5a902cffcb5ab85975ca46519ceadd",
             "keys": [
               "9e3dbd3b601b361fb45d7e1da0d995ddcdef1307cbb02511922d45e72624d98f"
@@ -1205,9 +838,6 @@
           },
           {
             "amount": 8000000,
-            "globalIndexes": [
-              4363
-            ],
             "keyImage": "2f9a2b2218d2d208680c0b3e38a39dedf8e4dcfe3f7cbdfe704e792408c4f3dc",
             "keys": [
               "b083042996941f7a66952e40ab12309085170a9f3997671ab8073944372df9ac"
@@ -1215,9 +845,6 @@
           },
           {
             "amount": 600000,
-            "globalIndexes": [
-              4453
-            ],
             "keyImage": "e1d0daadd053f77d1ea14e036a3938a7bc13dd4bfa8872ee12a5526d7963d067",
             "keys": [
               "2c598185342f898eff1afa5cdc7b4a7b3db20c52ea7b363c5731b27b1cdf1ad5"
@@ -1225,9 +852,6 @@
           },
           {
             "amount": 300000000,
-            "globalIndexes": [
-              46898
-            ],
             "keyImage": "244f106b1837ac2459045ddc4ef8bfde23d779f78cf6ef8e0957bf2648cd59f9",
             "keys": [
               "1320a70c65f48165e26341d6682a3fd6b11f2a59f84bfa2efa84297a8c0f539a"
@@ -1235,9 +859,6 @@
           },
           {
             "amount": 3000000000,
-            "globalIndexes": [
-              47037
-            ],
             "keyImage": "a6a4b271f3f01b0cbb2a23c17c3d3b5ab8ea24adf3e429aa5abad2f7b9d8a318",
             "keys": [
               "0ac69c91fbb5c03e8009e60ffc5b93facb87ca44222edcc63225a2dfaf148a0c"
@@ -1245,9 +866,6 @@
           },
           {
             "amount": 10000000,
-            "globalIndexes": [
-              5469
-            ],
             "keyImage": "74201d8478d7d62657759e4a1bdf25d073f46fa796f5184560aa54d6bcf59ddc",
             "keys": [
               "eb61ee283737d18ebb908890445094406b023d73bc5e87f88a9729643d1e7216"
@@ -1255,9 +873,6 @@
           },
           {
             "amount": 1000000000,
-            "globalIndexes": [
-              47767
-            ],
             "keyImage": "491671adcfbfdef019edb311b46e8b910987aa972d93a9dad2de32e5f97c6e0c",
             "keys": [
               "d31d2a93d8f9227d3c750233893a1aa2d21e6225e674e2a6b137ff1d630a1d2d"
@@ -1265,9 +880,6 @@
           },
           {
             "amount": 200000000,
-            "globalIndexes": [
-              46179
-            ],
             "keyImage": "a2f97ac9d9ff495174d97379f7ed4c3140d5deed6503aeb46d194714dc9acaef",
             "keys": [
               "2369bd1d2c01b6267379e16a6aeb51e5a11f30d3b9b2cc6e7f584d608e286adc"
@@ -1275,9 +887,6 @@
           },
           {
             "amount": 30000000,
-            "globalIndexes": [
-              4540
-            ],
             "keyImage": "aeb5c70543f4155f4809ae52be706af276c376b72b9dcc5db498fd23834b4aa6",
             "keys": [
               "191f619eb180e79d51e972f811aad1d57945f03d4f07e2531ada7eeae9352b13"
@@ -1285,9 +894,6 @@
           },
           {
             "amount": 10000000000,
-            "globalIndexes": [
-              61217
-            ],
             "keyImage": "abc9813ca5679d28c50425acab4d4927bf1292b4336eef59bfe6719152ea5166",
             "keys": [
               "0d31e84358bfb5f4060bd78d65657a7148c1e1922a9273bc65dcb6d0fe3f7632"
@@ -1295,9 +901,6 @@
           },
           {
             "amount": 6000000000000,
-            "globalIndexes": [
-              13279
-            ],
             "keyImage": "52c6ad5a21a0542f2ed59b9f6931ea78be4beedfe2a756aaef4e6ce327196852",
             "keys": [
               "70790a5b04b83a14f4a5d5e4f678273b5598f601bc7a59b764b939ce9a844cb7"
@@ -1305,9 +908,6 @@
           },
           {
             "amount": 500000,
-            "globalIndexes": [
-              4441
-            ],
             "keyImage": "688c2d9796efb4a64769dafeb982bb48a8c0dc0389312fc619e7f82dffc97b9d",
             "keys": [
               "d6d5ae03ac2c6a67542a615b865f2d2cc555251ba24c46938b1dfc918acd2301"
@@ -1315,9 +915,6 @@
           },
           {
             "amount": 70000000000,
-            "globalIndexes": [
-              43065
-            ],
             "keyImage": "7ce227710882355a0eaeb08a01451be79ff827a3e178df764183bbeb78e049d3",
             "keys": [
               "a348f0a5b13013c5a0d6d66bae3e507981e21f7a9ededec1219d606d1f15fe56"
@@ -1325,9 +922,6 @@
           },
           {
             "amount": 70000000000,
-            "globalIndexes": [
-              42800
-            ],
             "keyImage": "fa8b2983137fb7fc848f03c6fabb91854917a52619ab0403fba12db37db6c6a9",
             "keys": [
               "5a48cdfd7c841f07b354314dc48d78e43d7a0c68b6693915faeb7c013c1965d8"
@@ -1335,9 +929,6 @@
           },
           {
             "amount": 4000000000000,
-            "globalIndexes": [
-              17823
-            ],
             "keyImage": "f9e19168a82b02679edcaec321de071e9a586be1386e3f58d08960a5fd902859",
             "keys": [
               "e376dd060cb86c8e5fc22b3df87f7c93a3d1f05b1b5f5a53881591d86369944f"
@@ -1345,9 +936,6 @@
           },
           {
             "amount": 400000000,
-            "globalIndexes": [
-              46801
-            ],
             "keyImage": "8ae72de35246a0811c5972bb37e039b5ba13deceac4842203e0a1164d6ebf7a0",
             "keys": [
               "6510aed01e7c5f0954a68a31682df2232294e8db7704fb2e0e0c90859a16cabc"
@@ -1355,9 +943,6 @@
           },
           {
             "amount": 40000000,
-            "globalIndexes": [
-              4390
-            ],
             "keyImage": "d25f60f6bfb99969d36b94fb29e14dc017a9a25ebc827dfd1a5bbbe41da41407",
             "keys": [
               "0e9b9ed8b4e78e63bf0fa96666da132e0fb3aa9aa7d31dd978a185a6b0a3601e"
@@ -1365,9 +950,6 @@
           },
           {
             "amount": 200000000,
-            "globalIndexes": [
-              46416
-            ],
             "keyImage": "570f8a810726fe440d809598d82b0ed2425992191323aa971271b31e419d7dff",
             "keys": [
               "f1d71ec11978a07e587c2a574a9d0b4d4926865545cd62757124243b8b3354bf"
@@ -1375,9 +957,6 @@
           },
           {
             "amount": 400000000000,
-            "globalIndexes": [
-              35839
-            ],
             "keyImage": "679e5c2d59da46bcfc7924f47ce013553f79e9ab4974c139b3e8a8acd33ae925",
             "keys": [
               "cc71df8490fd975a7f7634dbb29792de170f13a92e2627119336920f203ca9f8"
@@ -1385,9 +964,6 @@
           },
           {
             "amount": 30000000000000,
-            "globalIndexes": [
-              5743
-            ],
             "keyImage": "2b2c5d11d85c4a466994c905643500cda4ccad6b08b6e3c98b86ac19b5de6fc2",
             "keys": [
               "5888c547ede48c53f87c447cbb289ed185e35eb58087263b4bcd2e610caf1047"
@@ -1395,9 +971,6 @@
           },
           {
             "amount": 60380,
-            "globalIndexes": [
-              0
-            ],
             "keyImage": "dd7237dc8ca2e9e39eced2d8e59f7c7b970f92c5617aa63b8d0a916fab6d9e70",
             "keys": [
               "ad9c9e4e5cda637bfc9c9a5fd85c83dc757b28f2277560ac2af4dded86448125"
@@ -1566,115 +1139,7 @@
             "key": "2d344f6709d93100dc7c59afacf8204908bd292d596d0d06480d3ff455e02ddb"
           }
         ],
-        "prefixHash": "d22d7fdffa738355e600f39b41930cc21dee76e450f419b9bebb53fb3a299591",
         "publicKey": "04598e1291aa90c83e3200f03caaeac3190f78f2b3062b504f658a4220a13f87",
-        "signatures": [
-          {
-            "signatures": [
-              "252fe82ae6a4367d5eb17cb20ec508720d8b464af52fed88d3ba71ac0a728804ae604a61c35d414b13e6650eaa9893a8435dc3331560263f7421a14224b9920f"
-            ]
-          },
-          {
-            "signatures": [
-              "72ca9c1d896cc9ab71c363f5bacea9326f3a21f885c5c4eddbd607a911bbcb02c507d580dcce58f81d33aebd05b6738badf7786ebe329b51049bfabd67b98704"
-            ]
-          },
-          {
-            "signatures": [
-              "d50a57c68806b2944ab330f211d98ca2049381bdecc82b01a43e6e4f52306c0cce61bb822b80df9a50b18f43a4e9fffcb8cc84f9508b98a92f1f8d1f67cbc003"
-            ]
-          },
-          {
-            "signatures": [
-              "5aec129034b32a1f0d2d004f900b36d26a13acc3ab23784ce33b767a7ee0b90c694626a0c06a5d8d17ac1bb2ff638e8cab86f43e9970fbfc22bc6808e1f8e700"
-            ]
-          },
-          {
-            "signatures": [
-              "a8f75c970e93a5b61fbfb1d583ca82a1db45d4859d8d16f608e4a338f7940602062bfefe3b1fb11dbef919389858f461d150086f654098edca323ac1c7082701"
-            ]
-          },
-          {
-            "signatures": [
-              "9d2828c1fb614e8bc4922c10a9e8a323071f622ef953122962632d367c7d2a0b129d5d988345898c0b946970c3815450d84d2f650bab3f465c843e78ea1f620b"
-            ]
-          },
-          {
-            "signatures": [
-              "39923d09c0fff72109103640be2e5f9a1d759fd8416967eea307d687015b0f0ef379c7beb80f88c54b874854f4d57145878555cd727d74634ca9204e8a044d03"
-            ]
-          },
-          {
-            "signatures": [
-              "dfa741a90aad0a01f32fcfa795ffb381d4744d8b63e591c6640638aa9b622d0fe1ee5aae7b129cfce12ca7a8b0300cf82532f3c26b11082054f050200130ac02"
-            ]
-          },
-          {
-            "signatures": [
-              "59f15f5ce6cd67a441a24fe8767cdddd6a371ed2bd2efdecf3837c68af70f905d25c5e6ecc8aa079885ec5f903fe0af0bd42281d3f49607a8888d52d6903fc0a"
-            ]
-          },
-          {
-            "signatures": [
-              "f39d43eb1de6b310c3de779cef37b0275b8f888547aeb5e1574a3ae495de0800340e901441901eaefcac06083aa6e9529d9efb8fb7003be3ec1317f0cc340c0a"
-            ]
-          },
-          {
-            "signatures": [
-              "c0d9c7ff867210f6f3b718aa07caea584460200e8061dba3616fb5a1c27d40048be3e7d1815672890e949ad060d510e87a57818dbb0912bae71042234dc1f005"
-            ]
-          },
-          {
-            "signatures": [
-              "19896e12849632f3608071deefe237f8775cb3427fddfaaa4eb600ddbabfc903510c9cc9ee11af4d671dbce6f44154291cf20f832ee2e96b6090ddb2986d0b01"
-            ]
-          },
-          {
-            "signatures": [
-              "fd39615a5b834bd07da8a9748da92b64fd10968cd42f21aad46637a7f7bdd60cded230b71f31fda8ffdd6e2c8649f76f4fdee9dbd64f419a28f1220c1381770c"
-            ]
-          },
-          {
-            "signatures": [
-              "7cf12f0cf9688ecef5ca3219e478120b622fdbb7cac4e581d5f4dacc45907f0296dde448f273ca5cd35368c5c89742a1bfa41ae80967f2949253561c4ba93e07"
-            ]
-          },
-          {
-            "signatures": [
-              "1d80abab30db0c9e16100352d92ff37db7b4269d0c80491874e61a9a2716550323df0dcb008a4e4cbca2d2643dc81e4f7de8cfd85915361e6e809e7ac6ddca0e"
-            ]
-          },
-          {
-            "signatures": [
-              "f22784bc677c351cba314ad7fa5300eaf9fc1f045fe09e23f1c5f9447b617107cca21dfdb2927ceeb2291f99468ecf81b765faf3d01afe30247b32cecc8b4e08"
-            ]
-          },
-          {
-            "signatures": [
-              "143e360f5f496d1616312539723526f9c490d68fb4f48ab07b96e15962b1d20f37481a173d6d65c213652c0d946a284e55676d84154de602d5feacd53d742f01"
-            ]
-          },
-          {
-            "signatures": [
-              "64a87b9add9191920649db43a0121c731963e25e0948ba388fc9e3d70e4aa004890d0c93bea8ed991e32356dd6b96255e261af9a9c54df7dbab23a8caf5dc60b"
-            ]
-          },
-          {
-            "signatures": [
-              "cb6e585d4cb679dfd1676935d9c2ab983cea8aa3240f0ea76074c19532c2c10ca484f3808dd06f5a81e9ef37be8e1904d2c3f6e57daa1295b0ce27ba17917002"
-            ]
-          },
-          {
-            "signatures": [
-              "7f24150db0eeb545cd095811b645cee6606c88797338105937468949f05fcd0e47e0139bbfa3a5e6d5d34bac322ae4c399077cbacba915ba4c96ce5e0bb79a08"
-            ]
-          },
-          {
-            "signatures": [
-              "bccacd30b99e21f96102c00580f2a0eded00992ab63e0398e39165774143c5049bd17bb7aea1fcac69467c73b872e8df48f265a31764d39f7f041d7c63e6b10d"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       },
@@ -1684,9 +1149,6 @@
         "inputs": [
           {
             "amount": 30000000,
-            "globalIndexes": [
-              4557
-            ],
             "keyImage": "1a8857700797a2b0a6ce85ee996b03ad8aa1d21fdb5af95f065c44241c566b6b",
             "keys": [
               "3c4efa4f59b56bca6bc7c05dfc851dcb7446932070d0c66e024ededc341be9d1"
@@ -1694,9 +1156,6 @@
           },
           {
             "amount": 100000000,
-            "globalIndexes": [
-              47171
-            ],
             "keyImage": "7a9e3686598e7e60845b07dbf267a4e65eae55c7267c23f0a25f5c0b91a5b1af",
             "keys": [
               "b7db6d23c26bdd004bb730e6a4c978f322be2e62851f79d8cfed65dc4647c175"
@@ -1720,20 +1179,7 @@
             "key": "0aaa50f362183e27c0de8acf6d4aa397ccd7d8b0509d62ecf699f5a9edef970c"
           }
         ],
-        "prefixHash": "11d0864651e2983027a83a00cc6fc1ea4b5740c264a179b4c3405ab762f3e559",
         "publicKey": "f82702daf4e4c1c8a8d3ccd4e166201f48d812d4bd2e286dff7845acbde5ab38",
-        "signatures": [
-          {
-            "signatures": [
-              "97d6207a41224177f7debb1ab489e76858e1e79f408429e93dcbe319dba7c501abf32a614d47a87bec67ed3fc6152f2a4ecc844059fdcb55d2785801554f630d"
-            ]
-          },
-          {
-            "signatures": [
-              "91db3644fb0125f21aab0842cfb0536b371bc869347cd9082f512c7f3746d0011c254f9218640d8fd99eb37b4dacd3059a7f3ac6fbb5a52a14156dbea2a54609"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       },
@@ -1743,15 +1189,6 @@
         "inputs": [
           {
             "amount": 70000000000,
-            "globalIndexes": [
-              1414,
-              3927,
-              12858,
-              15256,
-              16829,
-              23003,
-              31117
-            ],
             "keyImage": "51afc2f0d9a110b3ea085b4f29b22179c1229b7dff1355bf18371f991c7d8b5a",
             "keys": [
               "2178d257b37ad3fe532abc36f26ee6a21ac71e4d9be19605b1e0cbcd5f23fc4f",
@@ -1765,15 +1202,6 @@
           },
           {
             "amount": 100000000000,
-            "globalIndexes": [
-              3052,
-              5064,
-              9926,
-              12150,
-              12375,
-              17530,
-              49840
-            ],
             "keyImage": "abc3e4aee88d2f1d6bddca5f83946d7045df746064c1ddbc4c00140f7a296ab9",
             "keys": [
               "225fd39de377eb2c0b7c60c14638fce6a5e2e6ff170b6d7bcf344979e122f91d",
@@ -1787,15 +1215,6 @@
           },
           {
             "amount": 9000000000000,
-            "globalIndexes": [
-              2443,
-              2915,
-              3384,
-              5182,
-              6030,
-              6800,
-              9098
-            ],
             "keyImage": "c1a594f32f4f9c03f1a07d613760ab1fa219f7a7e56a96ca142b51d93527b455",
             "keys": [
               "ad9fb2b19bee3fdda0345fd2be5bb999500039cd45dedb2b035feda96d95a85e",
@@ -1809,15 +1228,6 @@
           },
           {
             "amount": 4000000000,
-            "globalIndexes": [
-              13604,
-              17299,
-              19392,
-              20154,
-              21432,
-              22354,
-              31127
-            ],
             "keyImage": "784def1f7cee4ee6142c5a3ff24b1809b49e98ee3ae0c4d667533fdd50a1eb54",
             "keys": [
               "9897d0bd2f9705cebeef74da8376b923b860abf7adfa5bd6e2bcce60728802dd",
@@ -1831,15 +1241,6 @@
           },
           {
             "amount": 100000000000,
-            "globalIndexes": [
-              2201,
-              4447,
-              15534,
-              18383,
-              33896,
-              38030,
-              46231
-            ],
             "keyImage": "d5ee40719f77fa7390604d97dfb2548923966d1a7919e9086877bee12eadff77",
             "keys": [
               "c7a14150ad37a587de8048f3da9fb222ce54e8f3bce09efc99874bda1ca3677f",
@@ -1853,15 +1254,6 @@
           },
           {
             "amount": 20000000000000,
-            "globalIndexes": [
-              141,
-              713,
-              1161,
-              2221,
-              3849,
-              3886,
-              5014
-            ],
             "keyImage": "040cd8f22b95ed9b5b1c39a36804332f187c47f7b8af3f5d0713e46c9022850c",
             "keys": [
               "03fba7eab07c43bd68427b713b858a875796e4064af0a8a308844b73bf87a403",
@@ -1875,15 +1267,6 @@
           },
           {
             "amount": 1000000000000,
-            "globalIndexes": [
-              3096,
-              3790,
-              5439,
-              13629,
-              19416,
-              20081,
-              37187
-            ],
             "keyImage": "9dbc15f7de957a6e278808c1d5636e1a5acec23d41c1316d9f5bc3b9cd5c4c12",
             "keys": [
               "1ca8c7eb0b9eba0fa10754e5442f21d4a03cb5132137daa1631a50a5afdb7f80",
@@ -1897,15 +1280,6 @@
           },
           {
             "amount": 100000000000,
-            "globalIndexes": [
-              3030,
-              13367,
-              23425,
-              39496,
-              40986,
-              42343,
-              49460
-            ],
             "keyImage": "c36e850fec05d1532d76bdb518ba719cca0e79dea95cb1ba7fa3318a1c4653a0",
             "keys": [
               "709794cc5c9abf8dbd604372cef356f6e77eb42d69fc88a0263b74fd2685ea27",
@@ -1919,15 +1293,6 @@
           },
           {
             "amount": 8000000000,
-            "globalIndexes": [
-              875,
-              4954,
-              7086,
-              18863,
-              21399,
-              24168,
-              33003
-            ],
             "keyImage": "359a396a26eaee667d1c2fdbe071a7d1213dda26e252ef25724a57045231e7cb",
             "keys": [
               "a09906368e0fb1dbc7c36f4fa35cb36c4f3c80c74b501dcb72d321106d6d3974",
@@ -1941,15 +1306,6 @@
           },
           {
             "amount": 10000000000000,
-            "globalIndexes": [
-              1535,
-              3201,
-              3211,
-              4148,
-              7060,
-              7707,
-              10027
-            ],
             "keyImage": "edbb9a096829a48dc38ffdd35ec75ac3d50e327a623b626f0cb34dad9b1d8449",
             "keys": [
               "c705a9d04ecdeaa1ccf4cb909e46f564afe9bfe294db0579cbb31bb5d8e8cca2",
@@ -1963,15 +1319,6 @@
           },
           {
             "amount": 700000000000,
-            "globalIndexes": [
-              2775,
-              5437,
-              6378,
-              6671,
-              12848,
-              13881,
-              19326
-            ],
             "keyImage": "661a9a16ea06b621e5793f5df9560959a6c2f8c6b073d4cb27a1ae55c88df9ba",
             "keys": [
               "ad344a4b67a3a7fa209909aab15b7eb5146d1c2a6064131321d0fd297c4e359d",
@@ -1985,15 +1332,6 @@
           },
           {
             "amount": 30000000000,
-            "globalIndexes": [
-              3528,
-              13020,
-              14846,
-              15162,
-              20084,
-              20382,
-              32994
-            ],
             "keyImage": "a012ae54731227f05694e2659343ae09cfd51d2d2cc1e295d72fd002afea8e73",
             "keys": [
               "bf52350bbc9c036710e07d7903419966beb95a865d1f13f046a5eeade7671b81",
@@ -2007,15 +1345,6 @@
           },
           {
             "amount": 800000000,
-            "globalIndexes": [
-              1383,
-              11030,
-              12509,
-              20945,
-              22633,
-              30557,
-              31430
-            ],
             "keyImage": "c2259c0e82d40bec233d56846ba5e6ac3bcd8da8dd95cc2c41ac1def6838f321",
             "keys": [
               "984c52990e2cd9ba69dcc22db0cf6d5bc86e94d602aa1a7915b95655d4dc6855",
@@ -2029,15 +1358,6 @@
           },
           {
             "amount": 800000000,
-            "globalIndexes": [
-              2511,
-              3141,
-              4785,
-              16613,
-              22003,
-              26765,
-              31347
-            ],
             "keyImage": "94ef5dd1c74243d2efcd2cfd0c85e61fc8997d1a5fa35e6632bb4506d78cf768",
             "keys": [
               "6a11573c944815c107af48ed6faf87a376a69f6d30262c2849fae4182c99b776",
@@ -2051,15 +1371,6 @@
           },
           {
             "amount": 90000000,
-            "globalIndexes": [
-              1100,
-              2256,
-              3004,
-              3034,
-              3173,
-              3445,
-              4166
-            ],
             "keyImage": "75778546a115574d29fc92b9207932f4e042b3ebacc9204c175be15665575b3d",
             "keys": [
               "0247b18e74b74715c8d757f79410bea0b3319138755e13d1879c8264ed09bb20",
@@ -2073,15 +1384,6 @@
           },
           {
             "amount": 300000000,
-            "globalIndexes": [
-              5370,
-              7459,
-              12293,
-              19708,
-              23809,
-              25758,
-              30357
-            ],
             "keyImage": "b2c81bcdfc0ce8e38ba8d17a28e8c79482f4a3bd1235ae010feb5dd7029ce1b2",
             "keys": [
               "687ce6969572a81f69236c40568ca3db43fc9e6c0a052d7c7ba1869c0277cb2b",
@@ -2095,15 +1397,6 @@
           },
           {
             "amount": 10000000000,
-            "globalIndexes": [
-              4958,
-              5104,
-              7042,
-              17908,
-              25760,
-              30399,
-              40565
-            ],
             "keyImage": "824a81daf3a35e1298c44467ad6033830a2c004485250aba90f99577eb05c4b1",
             "keys": [
               "b509e7b0a25e4f135381d3473e94812fce651d1335d84035e86cdc5d6d26d857",
@@ -2117,15 +1410,6 @@
           },
           {
             "amount": 20000000000,
-            "globalIndexes": [
-              219,
-              2987,
-              21062,
-              21692,
-              27906,
-              32184,
-              37553
-            ],
             "keyImage": "54f3866912882fbb807237e312e0d3c456c433e519dfe6e47f4527894d1df8f1",
             "keys": [
               "dfac4595aa566c4e6198173321b252850a3cb8c556ef340ea74f63c13c97ebd4",
@@ -2139,15 +1423,6 @@
           },
           {
             "amount": 9000000000000,
-            "globalIndexes": [
-              2803,
-              2896,
-              5198,
-              6141,
-              7995,
-              8793,
-              9111
-            ],
             "keyImage": "fdb9a9de34564415e830e27b0dcd251d3311a11855c95effbd68dffbfca57be2",
             "keys": [
               "f2810f71a7cba770e7827bb44b20191bbf89c8875219ccea8696a9e46e2f5a92",
@@ -2202,219 +1477,7 @@
             "key": "476a625227474a1c4fc60e8b66e61d1dede3bc95886546e4fb67e0d42380b56d"
           }
         ],
-        "prefixHash": "bf7f5b829e3cd4617fecb32910192c4bbcb6069a16514f3ea433b4b4522a8598",
         "publicKey": "25c42ca55731f4b645b78c9d7a01a6a71b24e99631934b87b2e363903bf3b800",
-        "signatures": [
-          {
-            "signatures": [
-              "240b1a41364a500e868ba39dca8e4b8935c075c5f5ce273936837cfed5bab60597f6afddaf7631544a66826a54e854232a6f3296848a026cb5b41337a4810607",
-              "0d4663e88a7e97dca89ba9cd3431b275a314e308f187b436fde98076da29350be201fd6d0fea02afc069a8985d38365bd76fa1a4afa72270cb1e7efba0948a0b",
-              "e42cd858e56ca9e94dc8945f36eaaac6fccde24ea2f13297f7729e12f9d8b80f85320b8257ddadb8ae555cc0019deba92d5d2d406ba5a589553c881a9d78cd0f",
-              "c81cfa5d9d960b5547af504975c096498af50fb44573f7f616bfbd046692350368d226413b0b8fefbdb6ff98495b5116646606441c50827aae00cb74ff7d9507",
-              "5d256e73ff0b58a817020d78b1d495c98e3eaf8536ae580bb08e19d282280808f034f1ec716b23104a8cb42cad94722749de6f1142d45cb5076b76fa5306ce01",
-              "0fd37546109c141a0bd371d12485c0bd4a849d3ed7deb3e0c11d5b426590c40edd0ff8fbe120a70e30667435ae4865b33f10186f0d05e63b1917b43bb5f92406",
-              "7447795583175aefe2f204d552789ad5e80e45a818fc230b2fccfaca93338301c69ea41a5a2af64851993f4f0a62c555c2abf538c6bca6b80b68ce0286cdf806"
-            ]
-          },
-          {
-            "signatures": [
-              "2442f1e95cb4f8e69a40beb20038c46de91a0bc3c4e1ac2cbc7079c767de09022ae9da4630966bc4ac413a3f5eed975d66d4e9adf50b233a3d48773af8a94804",
-              "36e428940fa1ca4390e77ee18c1cf3047d9f473c010b7d22262a5f0089c31600884eda6e22d97f17ace17a335b1e5a1360ff0744a25f459c986e9c77a33f6a0b",
-              "c420358899eb0aa3df4a696fd56c78f9d4a5e6963b3b645d346849be8eabb902adb58793b2dfdaaed7663f77dea45a1af313521e43fbc5924f421afc628ea20c",
-              "a758493575f936ec4332eb664fe47c141290ad47e2387998215575b2d7b71d0001eea9380835fafa9e4dc3c90c86585b9df02a2dcce72875d11ebe3426686507",
-              "c87d0aafcc89bb0dbf68b890285b533874a0e6ae5e86ec134780023a8fab7e0701349644a41e644ee7c91aa483dea0f1e7a167552e23dfeb16ea5c0aaf307602",
-              "19c0e0704cbbc247d21ef35851e17af5c85c7458aeab7597698de40b59c6d303620f6b491779e2cb85be2bc3b2c4457a4d08fa68e27870b3b1b5fad727bb2c0f",
-              "0e59a24036a01e17a24159c52e876d3ae72a5a70abb6d1e1ebb2dd81889f960d09dc2a6e11418271f56c42d85f6f82806277e039c6acd124caaf565f8338aa06"
-            ]
-          },
-          {
-            "signatures": [
-              "05ad87b44034ab629cdced28e68e13c22679ee238f1ab184eeceada0e65fb90e5e88ef728a0e310745268c5c922085ab2fb3b54b0702e55b43c7e41df1948a04",
-              "f673c502cebaae17ccea35275ffca3a8a29d0a75cb7f24d24fd19183671dcb01cb0fc7c5509274fa687e016ee034c2dd86fcdabd482761c750c428f83886d002",
-              "070839e7c9999f66039578b6fb058d7313c3fee0da36e585b757a60d2e04900a0741ee1a645a0825c2f3ddf07e8bb0f7bfd7733f595796b77e34245384e1170a",
-              "efed63c5b164135e9ae03629104659faf165975db8c80ecc1aaa8e96fca7b90a5033e796fea2c24a830a5ebc8b84c9eabe432473ccf8eca479204d1882b70f04",
-              "a0788ad2bb550f02aee39baf1aeeeb100710c0b0c28e79af907f8d54124d9b0f829028bf7e2cc64dda1f2b03da68e7e92c538eb78cba5c2333d8a7bae8916108",
-              "21c2eff0b01fdd293d1d58761e50a7efefc8997f92c318ca5b9b3b65f50f79071dd56ad5578bb972625422224cbf4f596c96b29735de638de981a3fe8639050d",
-              "3887dbe6bb4b831cc742947fea5ddfb58de6a054dd01b58da079520cd76d400ff99fd919df4c417bf27399eb31bae5c7120eb660e9fcb57924ae8d19a568ad00"
-            ]
-          },
-          {
-            "signatures": [
-              "31656992c4443bd9580daf440d94b6cba301871c3f1ded3eedb6e153fdaea202d8f60084387029ed5407bd0b8f49d43ee1d10261aa76fa1a65c4a0e46302670c",
-              "0253d8bf24cf5dca101988a5a73de9154c6cb841d5f30428f2820f56bdd76b03363c7f302681da20f59adf8fffb8730a471c6b7d5f7bfb2d605c1b23d4a1e803",
-              "384c5f68c8acfbd36720ee03c77a2a3891fb123be3649d601f7276ea8571b907663b4c476c56b1fb70e9914d67bdb4caff5f87975f363f9fee9458476d84510b",
-              "5ce5c59159aef277cf9546a0ec0d457e3c2cc13f6fdc80c2fe2ad24a3da9420b6153fef0aeaf73e735d6a7e21fd1f081dceb15ff413cb119065a22dc39e7070a",
-              "2dab5626422a44d40487b1e8aecd906a89d3f7a79f5b9f5f627681be8ee9540acd7624ce0465d1df4f889b39391cea503ba75bbe74a4cb1b504fcaa491aa9302",
-              "18e99007f94efb5ce81c405005e844458faf94cfe03729acbf6159f288182001738d532cd0e9f6e2b452ba03b549387a8f9d1fb220f5a793b8cd017669938208",
-              "d5cad546bc5e112b0df110b1bd05306225f239654a5c44fd576566ace53fed06c595b8b7a4c548931977067e329cbc5e7a43ef23aa1e5b94b3b630993baa2e05"
-            ]
-          },
-          {
-            "signatures": [
-              "90ff83c690783ff979853c1edaa2aafa658c2a83bbbf213e176d5540e458d30e9012322dbe5b93538d86b1375f12d117b4f2a456013ed5cbdc36f4b8b6421e07",
-              "ede22655e161c0cfc1dbde0c5a155b2a48a55a950fbf1906eb15433493e56c0fcd8b31abf24d3a572119ec2648fa20b5fb0918ce316b6df8b4785077c29e4107",
-              "35ba10500adaea1b042e90acc1aa0126dbb05f39785506c283e9c77ae5980a090ea47b4164ef2d376f6460c0041c079af39b21d240bfef42422126111c71b20d",
-              "71a5519a7f1d7f9e69e9582476b5b3f9f1a1ff3ee29397ef4dae3990d5b4220484088ceab2c6d4c59b6f0c24fdad47cab42843d8f140444056a54d36357a440c",
-              "868266b366928bf572760e6794fb4451665221b114995ac06ada7f2daa8f790b617bce1802684f6c079707cb5563f61a26c063f2d225216c644c11b3991fe50e",
-              "9af86f3ec1f74325555aa7f86bbf7d382066b2e2ce2b2e1f1f5f1179e03a4f0c9e44b0410d040355b4668417b6258ee11cba824ba4aa4fbe39127e2ba116360f",
-              "820b68bf0051be46a16c96f12189a873a0b4002e90664fd9259de2d18a5dea043dff1716880316d468bb62bcf24f515eefa34816cb7222fff7b7cb29aaaf3200"
-            ]
-          },
-          {
-            "signatures": [
-              "1bc7b3200ca9f932e290fcfa1d3824d8578293569ddf46601bb20cedca92a70d165f41c414448f4da3c34de2a0c4cc51582963ba7f10579fd5ad64638f0d6507",
-              "ace64833ef94162d0197c6ec57ab3c2d13c6e9f9d370a9fe084cfd91c3270f0b9e4e2d91ae3aef74b175d10a5539c7ac793865f10d57c853e699a1edb5a94d0b",
-              "352331db10d8aa8e312c867fbcbd5edb5ceffb95086fade87269c1638982fb05239bb7ca5c7ca39673adccd011c369dc6c22169aeb7506213f3ebc04ee9a3909",
-              "b6436663e6bf323b54a0e38768618ca9dc7b4b23c187230dd054ed42b4d81b03311103aceb90a670e5d611695e10ea85c20655734fe63f3f97803f1780b8f00b",
-              "f97fbf3eb1167ffb7e82526791a0a2ae1e98794105a23b516018f767b1ebe80867ac8b33945e3c5b193a75cda5ecab1742ed138286dd76d41032df2b74f1f90f",
-              "dcd6005fb73d4df85513e11f8ac5e04777101612878af00cbb7b1319e57ed605c3941b7c44e9f773cc6ee92833f77d71e0d80a319cd53b4a324e4768e93b0901",
-              "b093cc3db4636631de29df567e17462538eb271f476c2c9869c83eb0ac9cc10bff66994a9cad1105146f2bf51227ca61c7f9a357dcffdaef2dd783cdddb7b405"
-            ]
-          },
-          {
-            "signatures": [
-              "f932e7445cf69dcc42e3206b9a282a85b81037fe0b8f539467041e0576f8420fbc318b222caeb42cf6b9649207115a8b04116de241aa52e8029f11bd7b728801",
-              "512d26254f4bd28938878c606d2fea22440a9b056846ad17ec8f843376918a0cc79803614b8b1a82eb0d9ece057bacf04963ac0d4a2e4c4b5e4accc179a8020e",
-              "2b432601b98c159c1d69fbccf540cc7d1e2209918091e2d593556f20a8fb790c22c748a95cb4e2a8c9e989f113ba3c21ad6c1540949ac0ed0f4c09309f0c0a02",
-              "a9eb8b9ab11b5e05a4fc9d66f9b5babe3290e7ad779fd2e8c16f9727c8bdd200b5ce1ef93fbef7e230008023117fb83d2d44ec0481f064f9ca1971d64e60160b",
-              "56c27ffee197b528d2cae9a58c691690f92327ab02de2f54bffd5cb94ef1430eeb95f56221ee56b3db194a0f5fb070077882e722d1246d636436ae6a2a8ae50a",
-              "089fa89908c0ca98473f2743b387cbad1040f71d99e0d40855e94ad268a69f0de388a5bcca314b53d90a6ab4ab2da986b103378303555e113e8d76493519a809",
-              "2ed286d7a32d555566dfc60b65c2167012157aa4d5aa82b0f53ec770a2ac8d077858b1116c2e195d213ec6cb47d036cb202f5785a49b8dd929b8a169ed603a05"
-            ]
-          },
-          {
-            "signatures": [
-              "d0392f235c69fb086b38953003956f330b625c18131cf2efd6f53757e9e95e0754e6aa6096ab9134987f54249998d27c87c52fd0346183956ca1ed133636e50a",
-              "2b4ad9abb5089b6f072a379eff64f2a2a60dd115ce04cb70cff6dc1e6c30cb0a560123757e6a172a2eb9d8a51709eac0e1e7883e6fb46275f6c3607405670c01",
-              "fb7bb331ddedcbec0aecb6f425037a9d68fb26d3129d2c8913c506bd7704290821565b36e6467add803c0d8af8fcf082dd9fa928f122f495da5e276f23887f0b",
-              "066c9157fe0f99669b5395a13feb72164e227a3fe61ec3b8686c8eaf31c3fe0f5618c4059e8b1783e5fed6922ba63a33f31e70a21fd062c38fac43f8b43b4605",
-              "ffbc5b014d515ed7115350aa8440630a8e50179bf0493b615d0c6c930ff9f801cef46cb605a28d6f46a62fac12dc9d25fd4742446adbf614391a59c1e9e04e09",
-              "fb20f6927cd98c894b6d30dd97e99ac87a444449e78d29740bb9f4e740887802b6eddd78a3bcf479d90cde907788774634038d27b7c8bd70d285f58e56763b03",
-              "4333c439a6c0133a65b9202be63e4fbed7e25e115baef7199aba0970ebe83304f4d38c0b3c4a97b702a829c17a4ddae07ba29ce94944964a068f6848d1d5330f"
-            ]
-          },
-          {
-            "signatures": [
-              "d7b1775e4ab370f53e5860f5d8b5802ef8a65afbb451a3037201ea5997dffb096e0bb9f67462c1319f677c568f15757b68f45bc0c1202ea84be2367e18b1b608",
-              "32b3e076841e8855a2561d48ff8b9171d280f55bbcfe2a0221372ea36f1d080d19136fa292ecadd863d3bedb54e50a8912b530480cbacc817a4d81709ef12c0f",
-              "463a754d446a28e0d725e5d47927a9cdfaab313703e780368177709f20c8ae0574277e2cbc1af8cb8006ea7a91a3fd498e98aa52a615da83017fcf7497a1d401",
-              "8a5043f1dbb930d22484a1d5974ddd48c85e66048c0842626ecbddb5f9e8a40cd2dc943be239c3915f17f0eba10a16cee9a86fef13e40f019b7173fa452e150c",
-              "21187a8c97c0b5d026da1b149614256e314ef20eedbf1697564d6bda8da609084131e9d9c748ea9c8d214f281e5ddf40ed69a0ca9fe5da30c580f6df4189450a",
-              "e2c345473017265a0b256dbd53a77243465dbe8e2a3c82fb29c99e043eaefa020766c121cab29d8aad9e67521e38f94295bca434da1f742823807d9c92946e0b",
-              "95d6f6bc4dfbe39eabe4d51f1212555dafb262e29c72d6bba0fe189af9910f0b20a81553c3856a20cf872bbeb1a6f9944ce13cda3420a12b780ce287c85fd20b"
-            ]
-          },
-          {
-            "signatures": [
-              "e0dc2c8bfaf7dfb0e262082e67754d5f3e8ee3dbaa16a65f9ba5e34dfc09eb01a33de73184f4c14be6ebf8b21060b042b8dc4dd0b373e0c73de3d5462483300d",
-              "0f50845037f993fba5e35078297127304926fb013eeb38adf58af07c81b01006bb7a4c62e774975ac177af9307a71531a6653b9640bce952c8228a068298340b",
-              "d210529fdf2d0527f451369c11d1591dd42d745711ad48588540f77a44bdc803767ede3363cf85ab961e91e62bbdbfead4d1da62f4023eceba57770b8d88de0c",
-              "3cdbbfc08b96e1eab6dbb6da30a8c9d21c011a6e1f4688978334bf119ddc6107ac956296b203f4dbe856b143ec7e6e3362fbc537faab9dc98408719640167c0a",
-              "0e7146753e9e757850805f3d2478c61b7625f9ae1a3fc58cf360d46e68e9ec0a0ab5cd485f80057a62d6a3eaefceb6b0c85b36300c7e8ac1c28f9787d57aaa08",
-              "430e630cd737c9b6ce3c5d49d2df2b37857826a707043eeecd5b9791ebab2502e919ba04d0b4b1b7bdf69e12bdb5a8413049d3229a166926ef223b1aea8bdc0b",
-              "5539092c23842016e72e3e73172615732b053f8fb304a999f2ca6b131cbbf604bc142137c702b6c266195068e95e78131962ce7b8545b4de54ae68922335900e"
-            ]
-          },
-          {
-            "signatures": [
-              "53fab34e43bc42297106c919f3d174bff7eff7870c3bc3881e275bf4a9b1210fd2ab371a843a7f49296a4ba54d6080ee0ffc72930dced06c1b18e7505af47b0f",
-              "85cda80cc441876454b546e827db8dd838281fd1f0d783b572e353b44fd129085bb02351bc8440dc64efcc3a565e950c432335308940b22a2fbd6c82a402500f",
-              "ca24b68c30307fce8838b356548fbe593058b1049a3dbcbaa5081ede2e338e0078aac74a2a9285f293ae217c5b4b6dfe77638d70fcc9c2b23d5f5a16c0b07209",
-              "ef4d457d319b7573d777d5930308cff4ca3e0d94cf1a4a45e16c12d063ada009cb497fda108c8758c5bfc98fd4e0a8b1753afd3079179486e3271d7bb95aa500",
-              "da1560964374a4a6f66fb95466c526b20611e5d4304178788bb7f47a68f8930116513441ce80fde601b51b02d7f7d69a4cedc12bc6b8bf404fd834a4a479400f",
-              "5147c9bc75572d91357358e5ef9f152f25dc06e660715177aa23ece64922bb00fca60eaf578fddde607d37a28ded429dc4e1b0981d4f1f42929d5bf726609400",
-              "1e761776d804ce0190d7c5a28e764b6e6e6041f8093ef6561bd731c7eb97380e89cfaae63d6a5ec403c94a2ba6a9c0fca962f9dfc8b312f6cb260670220e080d"
-            ]
-          },
-          {
-            "signatures": [
-              "87657db68e112dbceefe5d54acf58cbb1e7f7a7940ef7d2aa553ba3716641f052bb9cdde96493d32df9896197dd3475a9707723d72f2c5c561d3d3fbd33d1d00",
-              "c7f5dffa396bd61e4819a2439ba97748b45035ec3376bb51ff400b13d54024075c78936dcda2d6f59f6b02a10d5276714e2d2a240390a7154917dc491440510c",
-              "6c4a04f40291896c803b06844253eb89859dc6584f7a478db667e568e655d6000adf7257528536e47df3078bc5ba973e157aa80224a7307211c906ad9a1af601",
-              "f5dcc44e1b07633b8f8ee03afe021c3cb38b703170f13d78907cb6fc1eee890c5891a4975116da9eaf5697f9a92dfb8792a1a9b42a4f1c055733e37681effb05",
-              "7f3bbe2fffbdbc658ab07cb1a1bd2aeb8ffbc0b7c73af1ef043176a9767a5705f7eebeb28989fa61ac448a8059592df6e4aeae5853750a934eff63d7ed7ee906",
-              "8bd58952542c8f45a82ab77e4669ab9db02910195b34ab5b42bac06d8a72080d5458e3bc96ebb66c14bf2c2b33aa6f42dea063f481f729e5aedb6a201957c40e",
-              "883f139c6d0b5fecd9fb67de05805141a3538d9ccba6d182650daae537f8ba03480dcaa2ee9bdbbf62651525339caddfbd1386120cce5868f976d20dff8d7802"
-            ]
-          },
-          {
-            "signatures": [
-              "6fb1ecd5e21ab33748b465e25f79e98e2042bf83d76daefea6e87544de13e406bd6ac665fef8fff684ae1e79f71cf827c4a4538a51d78dce13fe20d07dc5020a",
-              "19aa9a20c24430994f7456ea8424090a7d438ae98323a3754e3e461ed203230ccc2ddfc1108b9dc214bb0af12d73b497e6432d375e9b2c995cecf22438ba9807",
-              "dab8999431cbee891142ef7a3f1e4c01407cbe77cbc9a917c809f9248ef6be0089359bdceaec18ed39b983a3dc0fc52f522af15e360991b00456eb6ce4626e0f",
-              "d0aa2b1eddb95a5b9feb0a978e9a898a702d20e3f97578c8464da39114fc7d05f79ce83b4aad1f1613412ac02a8574ba0eaead9f4bee02596cd2dee4a6ca2209",
-              "81e052693d484702453c8e810602f8c5de803051c18347e4ca3b6dc490505000ef76a797e4a2b030c0a98c42426624188c6fd604711496513d145d4b9506d105",
-              "6f0f9428e837ba532ed00ba6be94a06c05db845ad069ba26e161639f491d770914ea1d5878810b92c6523b5deb6d01be452507fdc92e8f8cdcf5af13500c8b04",
-              "ddd9fae503a4cc261f2e44731713a8e19fc903b4c37b2b809c7cd2da8a14b907911e03b346b9814863438c955c8d0197a88b35b57df0748c2fe001f84ab6d00e"
-            ]
-          },
-          {
-            "signatures": [
-              "d571239179d3c801d9d6beb5447e10e62fb2531eb0e538dad0fce05aa38b390e493bb4d5454b2e4b99820f5501e725c55591a9903a7c28220808c5406b501b02",
-              "eac294a56d0e8b9b32c78a8a6b5c06f9ff0969f878de0fc2c4440c3169332f0a28aad51c78b3dde0b93a72d0ce0ef01bca61eb6eb395e19f4ea81398fe4a3805",
-              "13452fbfcbcc6ff12e9bbb3c478b55851ef949defd517d3993a1bac90b149e08ae5eb1a57d733815320bd31cbbe9676cbf7d0adb95ef04d2f82adf0cfdfa4e03",
-              "d8f4a01ed742715740c0435af56d3c46e8b60aeb4bea94e4ffee2baa8697b1089f00ee6c4f4f3c6310eae43376653feafcfa9172e049c6c4f2dc0191f71eb501",
-              "5ee6e513a25fcc5dad70ea60ccc7b04f30f2a31c69436d90ade7c7df0a064a06801949a8f979ae4d00eb3002d99b0fcf5c40fcee528ebbaf1edcb8b84022f507",
-              "a765aa1483839c620c4b0efb2c4ec7ac899a18da794bba6905dc0a78a1384400621d6cb6401013d83f4a554a1692f20640f1b361e53e69217230f141d7624302",
-              "8ebcabd05845cf0cfeb00e072362942042cd716348115a6f75ffbbb66d6e530f2ba2aef1ca2eb2a38f0bbdaa8ce7b7b31498cd34da59ae3b825613e0e748c00e"
-            ]
-          },
-          {
-            "signatures": [
-              "8731d243efaeb94d93115d31fe956944ac9d53a8d16232a24541e7f5893a14039bd3376edc5757de579b56b3c480d36a665d7ece179b0eb9bf7c2a4b4ba24d0b",
-              "a361f6bc5f7a02b6a8b1dbb677bef90f64bb2e8860af12cb0be8958743840309df7a966b21c6fe0a24fae207d7800e04372f2189341eb7f6544b1425b207980e",
-              "2d14be49aad02b37165a05a9b656d03677b4632507b8a07ed64c6600cb49a300ff858ca9c3f62090ca8653ce934a6b53a1cc64d5782a03ef626bc94addc9e70a",
-              "af31ea470fa67df99f0f83501c7b6a0c4b7fd6c2942a7dbb382c33381394ac0462f901b6390166bc28f178d1b7abef6ddc5974ccc2b79c7ea8c25e33ff896f04",
-              "46397cc9f4c173f17e0c6f3ef010cf45d5ffc667208e0b8a6d2051008567e50b00e538770fb932b9435677e29a2b2d72155f62286b4d2cf22d3163955ac5080c",
-              "9c6d4538c517ee79f233eaa4b4e1db45c67c1d580328498d6a9c12a404076e02f1cb6eeef0a9d1b12a659211db647cba16207ed559f298b96d00d3addc16fd0b",
-              "530df0628f8c8d7b3bcf91c891955012cf352a7ce3ac95355cd323347cd83103ff5372e075c7e9c58dea532bb74ce5cbb5fe99eba3d5d815e2b9070c49bfe303"
-            ]
-          },
-          {
-            "signatures": [
-              "43f8ebd4a0f5315a8709d0eead07e9e6242abfe29950cc5553426e1c10a62c091fe785bee27f6de05cc637738fc1a4946e4b9bd00caf6c5460774afed86a3a03",
-              "d0a29c1cbd57fc860cf87ee1c1effd32ef0bcecd5c683521ac48e5795fa9cf03be9aff81e33e4d57db9d4bf0802372c076472566374c5dc4a2780a734d47750d",
-              "b7f0296d64d87ba8a6fb779d3e71e754464c2576564af2c35f4638939b01aa006e2aec2c12ce2e4c36f054dee1bbef5b6441201af3e213e7dc6a8c400863050d",
-              "8fa2f9e06d6208d0272af54d2b0422e76ada7bd7793a1c3f5eedc06c173e010e4a312cf95dce901de3ec55f83186ba3d3029084edb863c188e6001ddb7eb8004",
-              "66edbcc843de37c71a4bfd63cdd3876a87263f1665a6c279f72fa2f2d033e802ac97179abf632619e4a9ce30b85b102edd4a836c8c7c10383a9038703072a303",
-              "75400b05cfc2f47e0b1bac987ea5097177443c6c6d313d94ce860f716615e606bb36f024390c4f101c32138054344a136b8068cc41b6952a4d764aba10834600",
-              "e4caccc0b76546e5cc19ee4911b3a9f7ac58f7185764a92ef89b455aeaa318035078e169244d59422cb57f800988fe21ed486565c9472925489fb01f1ea5420e"
-            ]
-          },
-          {
-            "signatures": [
-              "840fa85ddba18216e7618aff7854c67baaeeb532bec14f074857561b72cd070f73c239a6784045c15697e4f956940d2cdc0264f70ac64908224a50af32e4e30b",
-              "f54b89d1d0af54f42f62dfc428fffb0374048b182d40e9a0cdaa34f3ab7e2106e42feddea3c9f06d3734486821539916500d8f695b6d5aeb721852ffc822830f",
-              "cb12f02b1f51265109a68d7048b4e47bec827b54435ab50b3e952273e29392045f46e362bb684390bd813b9e4f569ee201d6c9d29769bcbb99752292e3f7710c",
-              "169457a6f13374ebecd1ee462ad461ac88247d4ec6b63defd6ad79ae67deb20b9a6a85352ee584818b5472094616e040812e9aa140eab5ca434a536c9fe7420f",
-              "c15cfe98cd65db9792f2ce3544a6cdcb4d4e80e84ea4db900420d9332d6d7900f341624b0d07f398443f48ca055d754a30361c24060dd98ef97adb60a6a75c0b",
-              "0d268999a842b02913efe3c7209f1d5e74da2d7a5cfc83b0e31c922925f32c0c03a1473ef992ca45568047ce170e60cca6d4414a35a0549d6471a1b35d767c06",
-              "3fb7f2e9a2c9fb0b6ee46d7b24ae05f151636892a70ea0dd56e709fe1cf19c0b77d1d487c6a96fd389edb47fb3e09fabc71827f5dc97795858931cd443937d08"
-            ]
-          },
-          {
-            "signatures": [
-              "17853810c438c704ff1d3f463d3acc8e23c592ce8955a232f3485fca41a1d807584bb5a56b2a91fb201da20bf4afd68ae0a0e7f86174781ae40d3042d012e005",
-              "049b35a1b5743ceb32ecc4673cdd379029d493a45346490e6e470c0f6e41e00acfd46879e8cf9e19b78989496f3cd8a25ec1c06fe351445386fee1df975cc200",
-              "c695e8044423272917f7542b9bcffc6f4cd00dccf879e482acd914bf5ecc8504e1c4a838b040d9f017caf39983f384b954b41eb40d3a2fc0e67716c25395ad09",
-              "f3810ed6f3df9ce6ef6cf30f8b8cd26cf4ed5c239f21c9a0fd297b0ad8ff750425fcb86be834cb520157fe61188bef2b24f677ee22647c5b81fd315c8c84e609",
-              "1baf5116143cec17fc27ba86491cc172946d6447ef6ca68fc76626aa462112021894773b3ef47434213506c804c8dbb0403180f7bfad0fa3ee4457d096e3820b",
-              "e4f33688e52fd2c989e80abff1063af402cf3516cbe1e03aeb3141f2f8a0870e21d6d7b9096dbaa2f0f0055dbcb5072829769ac8bb404ece20a1a1d525dfee07",
-              "4e8b4b2e457924f9560bce4577d514cf70905d8ea2e3a659ef562a6f70b67602b1fb71e028f4a29241167639f291e73508d532b0306391839f63aab0a1338808"
-            ]
-          },
-          {
-            "signatures": [
-              "6c2ae9eab9f6666c6687d397b5349f3e5530a095f331aa1551d231268ee3360b71e2fce101145a34b291ae03100a45ce6cbb4d262bef0d3ebeead58dceb12a0a",
-              "87caef85fd709dc8a6a3ec342527f66d95d760013dbd3356a4891dea8d6fb20577a253e0b9b3c831fbe3edb9cd9c519f1c3660dc9bbae078384d68de5a8a260f",
-              "f196d2d875152f9a43bcb41bac34764383bd153d139f5d4fc1d1cc7c6453b00d21312489cb490ee4976ee455a853803e1763a65ed99f1668d23d146178a56b02",
-              "791c7be0e2373d57ebe5156c9d00e2d3965e81c227798ca9ac3b78c86d762308bb2a7940b9567ad3b83c20f52f7a98cfa76307aa56a20699693689a69a594d06",
-              "0b8d5b9b90d87c4f23c5968ea25d8687f616ac15e8f36a130f1bc8c0e38bb8085d928cc6cf27bdf6bdc8d8faac01e98df0784e1b7b8d5e5799e3bd64e647c90c",
-              "c148e7d7e76249ad29debe7a08b0169caf81f237ca8c9fe8174ab98be53b4008e2ace0018cb6b54fd5a6f1873f2f4b88932a158994dcd0976cd20d063d050e07",
-              "e3825969a5eeac6c23fa69016e837146254b288751fd143fb2c62337cc03e70a1827038b7ee7c62c8b9c78e60157f8119c32c0b30ae90bf6f54a50e41b81880d"
-            ]
-          }
-        ],
         "timestamp": 1518944531,
         "unlockTime": 0
       }

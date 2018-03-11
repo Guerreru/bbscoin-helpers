@@ -14,7 +14,6 @@
         "inputs": [
           {
             "amount": 64549845706108,
-            "globalIndexes": [],
             "keyImage": "0000000000000000000000000000000000000000000000000000000000000000",
             "keys": []
           }
@@ -71,9 +70,7 @@
             "key": "dd57d5fb00984cdcedd8a927ffcb7107e965052ce74a8876d5fba16526161edd"
           }
         ],
-        "prefixHash": "e09a498565bd5bde36e3f3cd5bebb6b050f4d2e068381a11bb9a3826d166ad11",
         "publicKey": "ed75d038a1fce035b08f8333056a7606bb6f87ecdafa4d02e07ed8f778b3cd39",
-        "signatures": [],
         "timestamp": 1518594264,
         "unlockTime": 22793
       },
@@ -83,14 +80,6 @@
         "inputs": [
           {
             "amount": 10000000,
-            "globalIndexes": [
-              3546,
-              3547,
-              3548,
-              3549,
-              3550,
-              3552
-            ],
             "keyImage": "e9c50f5f4944bbf2b7ddfe4632bb92ebd35b629773e3942f498793fdb9a908dc",
             "keys": [
               "99c4d474bc6fe653ad88c36850e4fb42c23a7a78f6d8fd10e36501cebc96e5cc",
@@ -103,14 +92,6 @@
           },
           {
             "amount": 600000000000,
-            "globalIndexes": [
-              18545,
-              18546,
-              18547,
-              18548,
-              18549,
-              18700
-            ],
             "keyImage": "4f0768d9e1c50deb62f10acbd5a19f5b3eb43a5dbbc8560f72193c2743ca65c9",
             "keys": [
               "abe0183d012a3dd3a52ed36efdbee44930f3bdebf027a71fa3eab2ff3f70f09f",
@@ -123,14 +104,6 @@
           },
           {
             "amount": 20000000000,
-            "globalIndexes": [
-              32853,
-              32854,
-              32855,
-              32856,
-              32857,
-              36295
-            ],
             "keyImage": "b02b4eedfb29c50513b0f7dca0971664e25b339499bdd88b18b15f0d3dde39f7",
             "keys": [
               "a3fdc6292e6e2ed894f2dcabf41927e2c60029bfa347c5bbb7c3442b37b26115",
@@ -143,14 +116,6 @@
           },
           {
             "amount": 4000000000000,
-            "globalIndexes": [
-              10314,
-              10315,
-              10316,
-              10317,
-              10318,
-              11633
-            ],
             "keyImage": "c0c7ca2053849b34e72888d8a1e2328cd33f30a10a48275a78fd91d9172a7a85",
             "keys": [
               "4b104ef0eb1e79d5467256fd0c1c3e0ea417246059d04e6c86df9782056e0c27",
@@ -163,14 +128,6 @@
           },
           {
             "amount": 900000000000,
-            "globalIndexes": [
-              17549,
-              17550,
-              17551,
-              17552,
-              17553,
-              17661
-            ],
             "keyImage": "be9593ebf6c4bcb87bf2644abae21b3b69699cb9d01612cf772f6ade62d42358",
             "keys": [
               "a15113b354f8666a068d3d924661e885a550e64fab6c95683a4550593a95a01d",
@@ -183,14 +140,6 @@
           },
           {
             "amount": 300000000,
-            "globalIndexes": [
-              28829,
-              28830,
-              28831,
-              28832,
-              28833,
-              31736
-            ],
             "keyImage": "d469b237127cc05cf7758831216acbce6362d97871de8b80442eb96c369fc895",
             "keys": [
               "49921bb3fccaa53349d61fcd34a4e9eeb074e8d44f209d5aa0a92d3087f76323",
@@ -203,14 +152,6 @@
           },
           {
             "amount": 500000000000,
-            "globalIndexes": [
-              20481,
-              20482,
-              20483,
-              20484,
-              20485,
-              22293
-            ],
             "keyImage": "7f85aec94e2b141c5145c81b24fc4d0f62c0e722ddb585a158d3174ad5f47949",
             "keys": [
               "92b293f7400e4b8807c82b568f88f1f0e17a8e1d31e2532232350516ac39344f",
@@ -223,14 +164,6 @@
           },
           {
             "amount": 200000000,
-            "globalIndexes": [
-              28488,
-              28489,
-              28490,
-              28491,
-              28492,
-              28550
-            ],
             "keyImage": "372a3209fa28db5ff504a414b246b7dd15ff0e35c83fe186ee10df0405bbf1d5",
             "keys": [
               "b9029c258dbb6ffd2121758ca181b2fecdec54cbb548f042549617a1390bc4bf",
@@ -243,14 +176,6 @@
           },
           {
             "amount": 10000000000,
-            "globalIndexes": [
-              36330,
-              36331,
-              36332,
-              36333,
-              36334,
-              36737
-            ],
             "keyImage": "9fadcd8ccf8ca05078d12d69988f0eb06b4ffdb3ffffd1da1eddad2ed70fa559",
             "keys": [
               "bc05585ac46a6973aa157c90be4cee257a81d5aed1b10a5b6bc99695587a8bc5",
@@ -263,14 +188,6 @@
           },
           {
             "amount": 9000000000,
-            "globalIndexes": [
-              29643,
-              29644,
-              29645,
-              29646,
-              29647,
-              32551
-            ],
             "keyImage": "aee94790009bf7d1166e01aa0f8ac7a3a1a059b674a5a81c846ca487bfd98aed",
             "keys": [
               "cf82edc0dc4f631693f1c1219b1e730c1dea7aecebeeda8e4fa6d71101d5613f",
@@ -283,14 +200,6 @@
           },
           {
             "amount": 300000,
-            "globalIndexes": [
-              3478,
-              3479,
-              3480,
-              3481,
-              3482,
-              3490
-            ],
             "keyImage": "f6afe0d2688c117461d532ae2d6aa6bded13ead76e7c055ae89250c80e883f35",
             "keys": [
               "8ca1bf78fbb744bb2895fa3ec31389b4fd14f0fa4410f15a97e0f50e5c4fe2fc",
@@ -303,14 +212,6 @@
           },
           {
             "amount": 30000000,
-            "globalIndexes": [
-              3282,
-              3283,
-              3284,
-              3285,
-              3286,
-              3445
-            ],
             "keyImage": "ceb08a4752880fcdcdebc7507b34a5e2969fa6f9a6e1869d12ca5ee3c0c5bca2",
             "keys": [
               "8eee5a7e02fdf47d674a1cf1643aa9b8c26e815932137d13287639d7b09c9b6e",
@@ -323,14 +224,6 @@
           },
           {
             "amount": 9000000000000,
-            "globalIndexes": [
-              8634,
-              8635,
-              8636,
-              8637,
-              8638,
-              8925
-            ],
             "keyImage": "f8a1e10b6cec01607372a4b33a7ab1407778a7101e2e776d507db672266c3851",
             "keys": [
               "2a09aff2940e2b694d1b06c73f8291f23b3867fd6ed3b29101786a864943ad3e",
@@ -343,14 +236,6 @@
           },
           {
             "amount": 10000000000,
-            "globalIndexes": [
-              36330,
-              36331,
-              36332,
-              36333,
-              36334,
-              40261
-            ],
             "keyImage": "080f8d8b31bbcba01e0bd0af26f38ad863d3c486edb7e4a13ac3e5ca995a407c",
             "keys": [
               "bc05585ac46a6973aa157c90be4cee257a81d5aed1b10a5b6bc99695587a8bc5",
@@ -363,14 +248,6 @@
           },
           {
             "amount": 500000000000,
-            "globalIndexes": [
-              20481,
-              20482,
-              20483,
-              20484,
-              20485,
-              20593
-            ],
             "keyImage": "74f448523892636278500213b795ef18068d38e9537d461d98054184a9dd005d",
             "keys": [
               "92b293f7400e4b8807c82b568f88f1f0e17a8e1d31e2532232350516ac39344f",
@@ -383,14 +260,6 @@
           },
           {
             "amount": 5000000,
-            "globalIndexes": [
-              3378,
-              3379,
-              3380,
-              3381,
-              3382,
-              3383
-            ],
             "keyImage": "f8acd551e440cc8fc2fc12aa9dae241f796b6deaf57d48372fe3e592fa74319b",
             "keys": [
               "52aec5468f32bab35e978a8f4853557791b4b058fde11a83afcddfd0519ea054",
@@ -403,14 +272,6 @@
           },
           {
             "amount": 70000000,
-            "globalIndexes": [
-              3380,
-              3381,
-              3382,
-              3383,
-              3384,
-              3562
-            ],
             "keyImage": "795361171670d88210bc1c25cc4727f0e9997b7b2fc33360074744367c243199",
             "keys": [
               "93993611cd957b7d54c8b37ce6c7c8ae414a35746bd34b1ad34fa8003a3508b8",
@@ -423,14 +284,6 @@
           },
           {
             "amount": 60000000000000,
-            "globalIndexes": [
-              20592,
-              20593,
-              20594,
-              20595,
-              20596,
-              21388
-            ],
             "keyImage": "dfea27f6490844349abd288b948d68cb6eecf1f52042240b01487e6c567e4a15",
             "keys": [
               "3143cb48e60f744169b89b03f7453d803ff8ca78bfeafab690419f8d6098182c",
@@ -579,190 +432,7 @@
             "key": "5ceef3c940890e5c34e114c173df24e0d90540880c770cc6d4717fe2cd1191f6"
           }
         ],
-        "prefixHash": "6e335a4671b90f399a1997ab9aed1b7f8cbf8f4d4e8721137dbf91405958dc64",
         "publicKey": "82308a4250c48004667cc7a084f8750c6f8f564ffa86d3600e8c16e38843a5cc",
-        "signatures": [
-          {
-            "signatures": [
-              "2c7f4337277c8692823d7bb8b16ca4ec9cb31f4979eff16d377f7bf063526604cc6dcf3b40861eff01477bbd14766ac991f5d2e174083a36b4aedcb8fbeafd04",
-              "6d3cebf61790d9a8b43f7374f66a7eb236df32d3176f2e21aabc2a2969da41024d8c229c4c0b4e9db33c3ee3b79f9bf905798926b378564dbc02e5da24da5603",
-              "c97199c5897b9e15599f6ac78d4dddce14441f3a5e975c8e2114119f6f67040630cbe92f20d150127c2cecea3422501b7b7eecac78ee827d876b819a9be6ee00",
-              "5037cf91e9a8a3ade62ed74511b18d97e96e766cfc6a9e8d4bfc35f55d9d660659cb1192584f95b0c276af18c44f121f1ac651af55a483e1fefd102a868beb0f",
-              "12754b8ece6283310aa3a6e41263497c7aaf78e6b3ba5d06459f86b8b98b6e0b545825056bc20ddcc9a2ac5af4ff6906e23bc521c44430db63a172f46c8f3409",
-              "02b48f21252ba680f85d938dd2b3e66b2a1461516fd2a9f67c62f9065dc5d902e7143bec7c4b198e599c8917662da66c732cb2cebf578157175e8b09bf9d9107"
-            ]
-          },
-          {
-            "signatures": [
-              "b61850cb3d606f86d997531a93ca1de4679f8aaceedaeaac742d816089542000c685a9ee6725a6441537466256a7cbf5c09291c9e22901f35052e85d5aa3e40b",
-              "596815363f3a60617518c2975751654aab74c71737645e0e77b8528f8bf36f02d6f92d59e45cf265d71227c55791022ca800674e33c0fc22acb18077723c6b0d",
-              "56d2ac6a346af862f7a9ad2886e50b185616c5084155c9916b5c1a953c126502c3553b6c9b16936abb0db039c914aadc6f6bf60df33c7bd46e832ff41da2be04",
-              "25bd6b7d99c4e21e554fc417ef768dac25d962148418d48f112cfe65774b910892ef09ac727d19fe853ecf58107f80e841e8bf0f500723589df67c1a447f3d0f",
-              "c871d67297663ce63afdd9bacea1295e960f639a23375da26c48a44c6e11d705594e8a5e917ce3693721328605beb75c912e61dbd7302dee05af202881b91504",
-              "522159568ed21b231d02628924e1f6fcb270bcffcf094dbbada0593fc05f9b03dea6f0ce03f68bf2630114621937acca554c3c744404cc51f76ee104bed68f07"
-            ]
-          },
-          {
-            "signatures": [
-              "4d2f01519adaad93a7891bf67c48039e07d13ed97443badb37b77ab6f09bc104734354ac2e3524ee9db2cd17ab63cb3b2e6c0e0b1b0a8c4a8122832fe2b36d09",
-              "4c3c088a478025f8040f5d8fdae6077366c8f71cc0834c10971414e3c708a70a395e915c3316fce826ff98f04c49cd5e57ba880b47e5b44018f8f81ef7521e08",
-              "fdab1c8f3a653a09209402b5b452bd3fec1e90e9076fa222c932cae420a3c4058f1384128bd663b6bf87ffb29db63b46e59d138406d45690bebf8ac0fadde609",
-              "7a5f4ad8f6f6f4abc4e1f6229749f421e5be42a3f24d0f3b37ba58b2dcefe00c8d1da5dd157c0f4c658a7fa4255dc2774ddf6f66c8d46e4f9a21f3c574f19a0a",
-              "14351ed11e61ed2f06d855051f3f3bf3e4775b998ef451e31771c63596232a0a1eac61b7e27daf69bb30e70ebc7ab233c2e757ecb73052323f6b88304a639302",
-              "3617a4f88692ae0fb4027ee51dd51acc649f11a4034f5da3cec6671af707b5036813d682d8f8bef52873ed186674d53ca6947c48bd4b9508024abb1552886a02"
-            ]
-          },
-          {
-            "signatures": [
-              "1f5bfb1571f3f82fb3f88a78fa6dd6072f8c2a07668db496e04ceccbf246ee0e2d09f27b35ffb34d13a94af3e32e2cae9bf7e43bf7c70d525f2cb0b70bc0c501",
-              "d43b6f599cde286df1322a3091b8066fd532734e747260d3af51ad806729920ae3f96fef052104404c7911e1a9ca0225ddd99f6b3c7b5de6f905000ab2f72702",
-              "f5db06795b1dba76b45e8b9c29b97a89e892b778d4fb7ce2a491aa5c47bcf001556d64ec83caff20b81d1752172b626a1936078aa14f7ecc16f04fa944c4aa0b",
-              "7e9a84dc33945ee80fd52715d9655ec970648a92e3760ae2be2bd4e508f76b0bbd64bb97a49f3e348cc9915790648ff25f255e371c6f671b330c15b78f8b5309",
-              "b47f39fe3628fc6932f509d1447ff13a89116a4c3bbb80cc45136a47775d5601e20804ca8020017f28681f278f21865a75f191e5738e07b7ecb5bbccf188c303",
-              "43118939a2ab2d699905645d2c947665b8df147dfa8a1a5fd8e266105536d307704aed6fcba63df8d7d548f72869468ca409f17285542723cd5bbfcaadbc9507"
-            ]
-          },
-          {
-            "signatures": [
-              "64583297180b96eec47399b01866156dacba218cae42540fb1a2999c38759f06ac1f5e8ed1198d287f255417853d42c167594e60487f4a92fd3f072652bae102",
-              "92cf283912e9b13ca494d8b452cbe3a0891923ab5d057cc3171f04af8205f209421d210a04c2f5630fb8d6d547da44538afb02180c8a562ca857062ac667ae0b",
-              "2c3b5d0b74fa8c8373b66042d4999a74029aad05ab693c0234d9438b177bdd0bd71a6efc5581df29844c8a6b2499703fba7e4ab212e917349b1ba927c93b9b06",
-              "217804321b5ed04f9259eefb6f1ccf5c73b908c53aa81a8428cef2fa3ab53e0f15eefa9fcb3632b691fbfc2d013085a33120bb0a3f8d494b754666b9cd19000c",
-              "48af4a186553f4a853e3116e73868bcc61b462d7a1478d3b4c6e5830cbaad0049f7df1a017e372956ad7cf6157365a7c721da3ab37332df5204092cf5e19b009",
-              "cd856e21c8e903d1f4c145425c425a9d73efea11e1b615807a73dabfb612030cacc042cdcdc99cc353c12e898c0fa1727b382de006e5d0bc7f5350ab78a4f00b"
-            ]
-          },
-          {
-            "signatures": [
-              "a3ea202677988bfc86d46b342d0afe27385f1c4bf5a4ceb62bb6efafad24bb082188363541a26ede2689208cf96e0ab67d631d6ceb8b2be8e12e89a44aac5009",
-              "d2de3791ff1a6cef0b15d65055dbcb9b800e7f487914c1e5a36affbdd1791606dcb042f329964cc7fe5bbd340920ebf69a04c51408cebaf41fba37ae6cf92b04",
-              "a4434a52927cec69263c6f99f222fa49f3b6c864cf6590883feb318efac1c80b0750716621b3680c3e51fb2d9690010baef4136e668a36997a7fa1e44f731b0b",
-              "162237570aa8728612dfed1b519c7386ca5ca4ad170694a663be09c72b6e260bb91d8ecda2cf8ddeee1ac8a205724107b9c05d10bd3049127b4d628220bb8c0c",
-              "8df265f1ff6c397692c0bc76e4caca59a77cbd983198760f10f9b2c4a2ffc6085938e7e6fdb5445dcf8cb250013185aa612eee6424930701a7fa5f468500040d",
-              "a05541b8ec41a8a3348ef5f89dcea3418096923ecda1121ab06324f5fd946000873521a229002831ce07db52d0d0954ecac875c079cf46e5dd24a8a5f119570f"
-            ]
-          },
-          {
-            "signatures": [
-              "7007a678c30b4564e0f5855a242695578611e98d420ef8e0dace2475c7b31f0dc009c43bad43a0e764ac38fdb6f0488488848d6c2f85ea7d2677e1d2f86a1805",
-              "a750fd622865c3c71a4e6ad8a19d283191733da3d40e4317fcc3b104f768110f4cbf816dc8edf33b662dbf0d36434e3b3e2fd64098c38788eabbbfb144760305",
-              "72a535506de95630a3e9e09bf0d4991856a025b05fa979301dc99516a90d1802529d7b611cb6faa34e5f02091cab4472f40df4c307c263e3ab18c9e34a5d1e05",
-              "d10eb64a26f14df93bb17670e3af6f5963aea9984834931f0f0a6bfeadedb607d897574d8715bb1adf0cd6dc895e35a0b4ef71927f215788a840f8aa847c2b0a",
-              "2adcbe30ef35fd1b234fc523e3185c207aa31332be26150dcbe7c14bb74f670c8f1de69f54f787ebf1756cad32ac38c51c6071ac6587b52bc8d8ecc3c914ff07",
-              "62478c08f48fc8208e8bae946b181081f74740fb0ffed811352a763b4357a002e46196086bd28d905b90a60ca799e9eeb7f96073fc4763a1a5b67071bc7fcc0f"
-            ]
-          },
-          {
-            "signatures": [
-              "1bc4e9f76ac86b8c7a0d0a51d1d404d29893ce95c879db41404d090c04e62200b5b7dc9c4553de0816861c0c6c5f09fd59ebe813b682e2611bf2cdb95c65720f",
-              "fbdb8f4644f9a9e330d475ba0ed7055978f2df37174931f4f55f3f582c541707845f12625e83655628742b26de4fa3a2de8b4726fc6427cc9846402ee6d9d907",
-              "5bb8234cfc6aadb4d964297464e79ed37ea0904799893bdfdb42a6b4380b9e0391685383a145f298e5ad5d75b76e18b9c98c8c0c538efe2cf05e839f3c170800",
-              "b78d8e52ddf21b1001072e9e258335f19aaa869f75d62a64d73efd014462ab0224a6cb9961f95592496e520eb5843381ce5944fad801b2dfe00b26cf94d45905",
-              "80f2d0613fb4aa722c23e423d2f4500a166f3ba10aca4fa64987878ca57c800ea3d497b61387cc6710c5d014dff0c115b0f1626839b22fde211ce819f3c05f0b",
-              "820d1b82204172a0230a8b7fd831ffeb45a1d44109bfa47b4efe9039b277a006159d2c9186836d9bcf72451480e7fb21296fb9482110cf2f0bcc6f5704c48803"
-            ]
-          },
-          {
-            "signatures": [
-              "4149c0e2e2d1c4d01478759bf27bed3c220dcb7a1c6dcb6589d51f3fda5034043631d9adf8bd20c35f84837a7580f98b9dee370e225e3d345c7c94fe3f411006",
-              "b646869e5ea03ecd67d702901e6fd11251fc76bc6d4b9bffd98aef5c50825d061d916f4f34137a748ef9d0bf705f8c8ac2612b0d6c6256083136be2995852107",
-              "08f3556ab0367342e06ed9a7f43ac8f177a666954c37db3dc813f48e01aff40d7beec5f3e38fb9e3a61c4448ddcaeb7c4506f8b9e7e21d37ea1be8999b18260c",
-              "ed5606c4be2f8a420f700236058626c06a331611b21ebeadf1d87d12ec28ba043f49a332fe403058b68b3fa65e59d41ef6f60b7787a12d8bb46f0e0f2e90e001",
-              "eb8f57895f344f989f65b23293198d650aefe88dea3aa3dc94bae511b605170dc44b0c42266d56b7b20553f5fe080b2422f0ab3eea14f23498ed04d021e3cd04",
-              "8f7c8627a7416ba41748a9dce8d105a1201265f2672396a57799bab4b935260bd3700d1ae683e506efd814eb2b6d230464c383cbc07fd5fefebde1813a3ebb05"
-            ]
-          },
-          {
-            "signatures": [
-              "e59709142b98252dceaf2f3927a78e083b25a7c7e901086824b72d2b7adc2c02f4cee68abb405eb86d8fe9447bb1fcf479c02516c5bef223541e189c80fd5f06",
-              "8242fd9596e7fa5d65fc023b030538509af81486ef16442b6fee44dec647bf05248dbaba3e84a94b36d272d34fc16c9bbaabb527ca04f38458e132a5bafdd503",
-              "61ce91d4c886122ce5e3753395bd30c3dadd352ec45a3247e400bc389e300c0274b57037d26bcbdac1b6f43794cabbb854b1efde62c706c763cc592cff197002",
-              "3aa0f57be5720fafcaafd8dc39a20d33d6218dc31350a096bc29824141114a0d45502b10212c94c917660b6b650cfbec6882991f93ac90739204c5bd34947507",
-              "c9f8bc19c208e5c809fb325a566d5dc9ebae81dd8432770dab83b571816c180cf22e1bb0184df43c28cd73878eeab9c528da87cac08360d125bf0d0c3bf3be01",
-              "fb088cb01aa70c2a61dc5ee06b7ba867c83efa38fd9fe86f475ce141868648005c96c1c4e9f0001a80e5a2826b6f22d34d82d43989756933e8b439de76ff9a0c"
-            ]
-          },
-          {
-            "signatures": [
-              "bb7f5afdee9bf8f035cbde0496ca15c2de74c599fd391dc000d75bf07b065b091b7a764101baff78883ebe0896b9b768caec92e6170bae8a4cecb64e14ff7b0f",
-              "400b99449d8f8ba9a7d7b5e21be5712ece4cf5964c90c87b6805bf89e9c8d30d319257841ec4e5249de6e09e5864a911ffaa00fa7713de7dc5ff504c50d94804",
-              "69c2ec0a8c9e86acb7a81cfbe010ca1925e2e7b47024c387e18f5cdacbf01f0e5928168978ba28fccfcf19c4e30e4ffdf23eb8658f0b92b78e5995be3d75f509",
-              "2752f35b292cb57400a072475114b5d1e1c7504a52ae736e6f81b16edc9f280a8d3fbc8b1f8250570d609cfb44b9432058e3ab3a3c39b45615329648a3525603",
-              "8da05233c8c6d348ff29d2a9e596cf4dfae398c8a4773a4b87fff676beb19802a4533c9266c79de785dc3821eb7ae4b2c4889570b2b1585cacaeea7f9d6a6c0f",
-              "a722c94168aa16c0fd8801e9e4c9a757c47f67e2c90138404ffd48b42da5c50f2eb0bf3280cf3195d950719b96d07026c9bca4d15cd7ce2d800ea8d446a80b06"
-            ]
-          },
-          {
-            "signatures": [
-              "373eecab3b1bfa4c1b530591b9b0c6a493a8a4e600bcef0945aae80ae125af0bcb876ecd32c4536673a2dab7e65e67f720e644b95aace3e830755ae61c654403",
-              "0abfbcfac036dca463a53488d27553f83066370d31736c4dbd0a9564d6ac890db8707a400e105ede90e58f29aea03e6b173a24bc7cb70402c30392f5cd889909",
-              "16313da834e99953bdb380dd258b945dd63eb8f17f64ff504e7e930b9518010669ec0153082e1c455f17c0f3427c924dc7c7d89432169b9cc2701c426311f40d",
-              "ee998c26f8571e4da0417a087e12f32f1c7155fa2642dbe48645421b30abd40507288101f378adf327dc8a88e87fc681ba0cccc394b4f2f2392352722a463c0a",
-              "3b2b5fbe923f174548f238122f23f8c5d273f45768923b93b0fff94534e1a60543aeafdcb2261a6ac105899524a798481331158b762e3aa8768cb060a49e560c",
-              "a6974b272a1a5a51c18c26573dd3aee77138f00bb9ee99f7a0e2894286f9540bd37721290a6fae975c312de0db5a2f070e3dcc6d75d73ff6d1e6962e404f370e"
-            ]
-          },
-          {
-            "signatures": [
-              "432a5359a10d780ee42e0d0ebc50d38ada3b1dce77c4cac3db6824b9871a6008c7859055f1942427f82cf2afd0c80d0e2edbabac9ef982e45407be1c80dc8e03",
-              "3ed713891e86dba7ed3bd6cbc4771694be836ba64fcae8c63386df54312cc50f80d5ef38e17ff65785dafd2524357d11eebfb04975dac46069c3034b472ed10f",
-              "49e1b5ef3a716b7786aef51fe1a510d84d42e1c3c82a52a10f57bb3559bf00078012e4d3e5808653a6c67d754af4c67fb91305b84574f126e345df7723fd710f",
-              "e75b4224b990aea810379e8ab83e89dabb90cf406e9114f8addc9c763aa2930a24c901b10fde4320d4456913a9a7798b3be4a76f72dae482de601e4ac54d1208",
-              "530785b4d0b3577351f1fa99def0cee1fe36b8d4a5cf42b4932e5593749c7a01250b393f49706a5a875ce22ddbc1fe65f5193b96a4c42518b22776e3ce655a05",
-              "6acc69fb8d01d09e8ab7fa7d2870932841af704fc116d02df370316b45928d0b212a57a11b698b913af22ff47938984e59cb07b2551c68102fb69b9c672a8500"
-            ]
-          },
-          {
-            "signatures": [
-              "96d3f6bf93feb02ef99bb4789730a4486acae5d219cd592179df14cb8e554e06fc535634fd5ff8d4a1eab08559d55a51497a2c3ddb04561662109325c6802002",
-              "16d5806a64ec82745dcbce83ec4fe4cefa808536236bcdd216801eb8d400cf0a668941f140091f7458e4cd8402273c06ab1f6145e83e2f0a1deb6131483cb806",
-              "69ead33c66ca0fb1ef8a5428c5d61a8e4abcf24e6a0196e0d53ce2b25f88fc01a4f4506957392252ad6197732afdea8f034c4b6e51a85a505216de1dbf43bf01",
-              "1c5edee862a297763aa423366cf3b6bfbd3a67de3e85e5da0b225a3a72d8150bdbfa7c15e0a67348a3d7f2cb09800f020a7f234d46e3198657b78df95d814d03",
-              "501dfac2fd4d39ee603dc95663556e388b8d2e35f1c9bb4a789f33871c57080e433a8942191c0ad1d17d27dcf6d6c207a48da1a2c18e276be90bf628f01f0705",
-              "d7853a25c3be9a6add4756dc1d9e355c8a8b9119b8f5958f1edbd471bb7dc701419852480e70e81cae9bd5c946a8c80dd89025af99a9fcea50cd64e1aafd6505"
-            ]
-          },
-          {
-            "signatures": [
-              "50b2295922a6f49989551a029f11b9289fda947a050a43f30d4beaece948960357c0744521f359419a04a5c06a0a4466875f6aa8524392dad75d06c6ba306905",
-              "a38524df196c65d17c7334c1639f935a258a1b2b7d4e19a3761b77c591156c0c228d2e020052065d46deb4a97b476e9a5677bc7685527fe9534935b413ce180c",
-              "8e003580fd27e276c04f84a801f40756360ccbc8cf1162c1059bc7956e811a06412f4d8d830836eb3368c7ac534524b7e45b5532fe08e786a410a166d52a410c",
-              "5dc9587ff4f23328c0cfcfd6f71508c3228a5a7d10c8b9a20c91248c4f69150864f95f89c6b95873d854d06235ce38e7b3ae5756b733c046dca409290b091803",
-              "6691f402a8622846863b8f00f2b946bf18752fe1a8ccb15eff60246e275f2d05804c6a519e60d977bed527abf074b230aedf71b517b4a59ca4c14cd5023d7102",
-              "8c635a0a87e13002d94b0759efb3d197c89c748c136eecfff6f90b8fc91fb50760666b78ee50fbde9ee98fd35573da3b3647c54e2d04eef6abd9813a5d9f1d04"
-            ]
-          },
-          {
-            "signatures": [
-              "b6727fbf3fbbacccec43da66041d503a1a6addf753df62ad26a936066cf37d0e50031d6305337b7db89c6d154261ccd2f30fc7b4ef2b8effc65f9ea8a630570c",
-              "e8acab1ed7cd894d7a77338c88b5e1903252711af3bdb66b631a16534c9e4005cda9ea859c39780fee15fb88a3cfd8ec445189ebe4f0fc6d2ee988ce2fb07708",
-              "978df631e5e80550f1fbdb9827a59cdb035a4d337e1cad4fde4215ad2e675a03b4624c611ae582c44e95a7dbc162a28737b4185643b67279088d74673aba0500",
-              "971ac4c6b50746f73cca32cf7d007d4c6b8471c944595dda9142f5b455f4050b6b095336b0713d93d5528f730dcb49853930657e878da0c3d3fe121b2ec0ed02",
-              "7eefcdb5b782fbe2ddead654968dcf7c01fcda3380cd34e7e18e2272580d3707837112073499182d70efd28e2ade83f0a0ca295dab8a1d3d6a17aff2376ba50e",
-              "fada144727ca7f8ced551182e233be7e7af4f0c604bfc09275280039a2363c02c36699ea6c20109e034b7c2dc2efb8e7066a6a7a05368b3b4f4ab642998e280a"
-            ]
-          },
-          {
-            "signatures": [
-              "4d5b58c62169dcb6dc18446a2ffd787a4f97790803df7afc1e7f85bf168ae709c2de8e843873b465c6b5984404118989ef70965a9f6c1a990f4ce3a3e2ce330e",
-              "ce28d491f366c9ebb5a792836a1473b8a047fb632e7505fdafa2d5f6fb25640382d1245923de78926c6f5af1bff7056006d636403dc762b5c8109c0576c0d507",
-              "e65f5c1eb62772c510eab1a6cc5f034468ec98b2f3fc8ee058f11a40068918091a08bef7ded1679a150acb2651b60140552efc03b4436c49b4739981ecb61503",
-              "04a177197262fc943b16b05c46653425592e105b4d85577fb35e87ffbdaa8609bf6e9d7515348125b80c9288a27c453d26d9b9b5f205977008bbea6092584804",
-              "f8183a84026f904b3ea44136592b7d9d03566a4857fa425d63e8d7f318671f05f826f3edddaafd9d0e60c13d02b1635e06277ed89cdc6f76d2028e6959f00d08",
-              "8df0fff4f8177864bca85839abf8ea186f984aea5309b23ef0425b5ba52bea08d1a88145e3b0d33e0cd83d0503dbad34d87fe4af15ab9b709bd5b0ad2e9ea605"
-            ]
-          },
-          {
-            "signatures": [
-              "e1eb2e260f20acf04055d0ad02f8d81bc2a17269764eca088d0278411c368b092ee3da0cad683a49c8dafc4b9b64072f15b3b019b1b8013080c4a8e3aa94d60a",
-              "aa21bc0845804a38fe183a395021c722c18d687ecdb7437bdc5078ba53a10702baec6e3b6c35b92d97f53a957b8d9db48c76728091e78128e3507fe84ec16806",
-              "f19157c15a97ea42c93333cab1898ff6f62fdc93ecd7c435751f6d0332df3c0024873e0548908837722f40ad29acce2b937d8d50f974e91b21dee9110e02f50a",
-              "45237fc3999d7c98a324c98868818d45b26399a8580c06b876debc032394f805bdf947f185844f8cef0a429137a43c98c14e482e0534763bc3ceac9f8d8c9705",
-              "1fd73e1e8a7a92eb951b7574106fc245d55c050238bf12eb36e0e003ef6ba00e695139f5ab38732bb1752a3bb7299106a6e6dcc46805f46d803c2d5b5ed54e04",
-              "bf8cec08974d3537b860317032a473d1fa39c197f10aa006728423b981710e0e6bac0dff0a2b45ff66ebbf0c23cc23979a498ab6ba9ae12c46cb2cc7c4804501"
-            ]
-          }
-        ],
         "timestamp": 1518594264,
         "unlockTime": 0
       },
@@ -772,15 +442,6 @@
         "inputs": [
           {
             "amount": 10000000000000,
-            "globalIndexes": [
-              635,
-              693,
-              2554,
-              2678,
-              3916,
-              6771,
-              8109
-            ],
             "keyImage": "530558088fcc97725dd073f801ffca2a3f54fead5638fb279769d985a4225c6b",
             "keys": [
               "e2185819dcf138dc8cb46cd366a1df514250a4a8a35beda0bcc4004627907765",
@@ -835,21 +496,7 @@
             "key": "1c0f860c7e01ebc49f70ec9be1764dd094e120ef30ad299644c2b92221fa8f0e"
           }
         ],
-        "prefixHash": "9cff2abe9561fef14cc3955383386322ccc85555f19a1006e8a7b52557c0d047",
         "publicKey": "eb523e0dfac0c8d58df86b2e32fcabac9ce5ce33626f3d9efa6262073ef70ff4",
-        "signatures": [
-          {
-            "signatures": [
-              "24d0659ce637bb4aeb1af3b363f89cac9fed7ae0fcb711ad4ae85609b24bac00db9e4fe293ad9b16dd77cfbac3c3d0e5bd11f9c6d6d843eac756652e6bfc2808",
-              "0ffca57a28ac4272ca6b076a05b32cf71e8698a042388bb99a0f86db742ec30e82d3cefe5781da748513efa76f46af33e951986e876b8192e1139c9fc523c302",
-              "77508404447c7f31617252ce110edbb6709a351ce5017a3b854cf756e327020f323f1c79d04b18f199523436633f88711b64bf6aaa40ec2cafc5f1c6366ec30a",
-              "91b66fa274510c1e1fefd37912815d74703af8d6b62d2a54a07c1926ee44930fa1b862ff9952fe66741d155fa878a8e510cd10abb4e6294fb699d16911c2ae0f",
-              "828cf560411a90b7bfe0f44e0cb70413982598185da757334634a7f0f97df50d96e9936ba35460192e97d3c018801ca1f3bb2048e576d39e0e5d741d3a15130e",
-              "c074878e2efda2ef348699521121a5a9ded4405956f7bcddc504c34532d60c05e9598c737feca867637837bdb46663a92eb42a7b9ebd4472f079261e0d384801",
-              "68fc46ea550cd6e3e8a3a94f978987f9d040928c98c01ea6d65d5e35f11ded0a2caa436c47b755690833a643f21094e76aa788e13fc6cf70495a91cd2506c602"
-            ]
-          }
-        ],
         "timestamp": 1518594264,
         "unlockTime": 0
       }
