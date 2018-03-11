@@ -51,6 +51,16 @@ const publicSpendKeys = [
 findOutputs(transactionPublicKey, transactionOutputs, viewSecretKey, publicSpendKeys, callback)
 ```
 
+Check whether the ring signature is correct
+```javascript
+checkRingSignature(txPrefixHash, keyImage, outputPublicKeysFromInput, signatures);
+```
+
+Generate key image
+```javascript
+generateKeyImage({ address, viewSecret, spendSecret }, transactionHash, indexInOutput);
+```
+
 Decompose amount
 ```javascript
 decomposeAmount(amount, dustThreshold)
@@ -64,7 +74,6 @@ decomposeAmount(62387455827, 500000) === [
     60000000000
 ]
 ```
-
 
 ## Compilation
 

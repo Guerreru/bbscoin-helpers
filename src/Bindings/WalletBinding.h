@@ -1,7 +1,11 @@
 #pragma once
 
 #include <nan.h>
+#include "Common/StringTools.h"
 #include "CryptoNoteCore/CryptoNoteTools.h"
+
+using namespace CryptoNote;
+using namespace Common;
 
 class WalletBinding {
 public:

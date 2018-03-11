@@ -14,9 +14,9 @@
         "inputs": [
           {
             "amount": 60345055065941,
+            "globalIndexes": [],
             "keyImage": "0000000000000000000000000000000000000000000000000000000000000000",
-            "keys": [],
-            "txHash": "80d0eb0501000000000000a2ce7f000000faeb05010000000000000000000000"
+            "keys": []
           }
         ],
         "outputs": [
@@ -56,7 +56,9 @@
             "key": "5921be77914bc51dec7ea4eb855e80c10beec12edfded5adae9144b64400afd7"
           }
         ],
+        "prefixHash": "4d972f4e910e8269011db39b601bf337c208698a817444d54f7160ff6ba0a584",
         "publicKey": "7a5f7383530d8250cb5d29467430908195daf3c1ae97b6621e713a5395bf3943",
+        "signatures": [],
         "timestamp": 1519014840,
         "unlockTime": 26278
       },
@@ -66,19 +68,23 @@
         "inputs": [
           {
             "amount": 600000000000,
+            "globalIndexes": [
+              30161
+            ],
             "keyImage": "dcfc7e09433319951b4bad015d33d6f6347a0f922b034fb132c01332ce27ba11",
             "keys": [
               "d928550025742c5e19735b00d1f18beed574f2c6964428181aa959fecbe6aa7b"
-            ],
-            "txHash": "e5faf03a9d069663ed498fc944c819a7e3b5ea9ad07b17626dafbfa26d93e9f1"
+            ]
           },
           {
             "amount": 28936,
+            "globalIndexes": [
+              7
+            ],
             "keyImage": "58817a6d0c4cfbb81dfb22f00eb0728cd1a83f7dcd2f429e37a70e0d1b555101",
             "keys": [
               "3cca282761e1913a782200220c59b98f049884e09ed6303fbc59f50a2ca1d4ab"
-            ],
-            "txHash": "d0f814f1436c29baf8a8e373bf0afcd6f75bc228394bc3f218652bf950ae183f"
+            ]
           }
         ],
         "outputs": [
@@ -153,7 +159,20 @@
             "key": "09faaeebe8b7e3f79d2e71ce83be6a3eafae295d8826ad53fc1cee864b188486"
           }
         ],
+        "prefixHash": "821e8ce91f22d36aac9ac4487479400fe9a28f5dc305e842444fa264a79ea501",
         "publicKey": "c727d1b84311b6e04de8bb94b6c61390c7929bd77cdaeffb9ac267de44dfa47c",
+        "signatures": [
+          {
+            "signatures": [
+              "053f27b2694dd2c0086922a0b942340f47fff07bb3f9544f17d436ae168ea10ca457f45619d5ca3048d7fd67a5b4f3352e54ff6c9198a677419e9e3806871508"
+            ]
+          },
+          {
+            "signatures": [
+              "94c24d7fde0e6b4820729313d16f2daf858176af3caaa0b271d000c766789a044600602c5939c2ad9beb8370c1a3381ac1d6f3b4c44c8455af5d12088b365e0f"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -163,27 +182,33 @@
         "inputs": [
           {
             "amount": 400000000,
+            "globalIndexes": [
+              48717
+            ],
             "keyImage": "2ad655eb9c9617bb331d628d0da856c1db52134712eed4110a25213cd2436173",
             "keys": [
               "a125e788047559b20b0bcf4fe96b77598f90920a97aff162add54bd74e408e21"
-            ],
-            "txHash": "3c52d74c741a1f20316cbff2465e480993697e3a4f2819f67d778cafd5c6475a"
+            ]
           },
           {
             "amount": 50000000000000,
+            "globalIndexes": [
+              5739
+            ],
             "keyImage": "66dfbb86dcaaf77b3858dbc612c5e4d6e890edeebb76a019b080a83fd158c53b",
             "keys": [
               "7a50df709c679cbf9efc37b8d1d8248ceac18883669c3fe809bf79c3a4211a70"
-            ],
-            "txHash": "fb1dd7a2c5aac7cfa4aaad08f22878c5f3aac85a8ee550a9d9ced4f4bd335e7c"
+            ]
           },
           {
             "amount": 12996,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "335054018b3c7aeff2b34d33113bc609ad880dfe7f654da2b47eebbeb1e58f51",
             "keys": [
               "43f1f717b936c6a568c813902c708f4971b6b4799b27c8d9569dfb3f4c3c2fc2"
-            ],
-            "txHash": "9a776af54b107ec353533216d24ab209d90233c97e8774aed3ad2d07337fb67a"
+            ]
           }
         ],
         "outputs": [
@@ -298,7 +323,25 @@
             "key": "618a8c22820b02d2f1d7a5197bec673d7642021c8c0cc63a23a047e7810a04e8"
           }
         ],
+        "prefixHash": "820623920d749b7ed47b6384fde7b392b7170711c9ecaeb6f97d06296e8d825f",
         "publicKey": "5a9085fa9ce6c6063f2ff64c1bde93f57e6698d7b735e485cfc3dd9439fc1e47",
+        "signatures": [
+          {
+            "signatures": [
+              "6348ce85a890fce23d0d7d729ef68f45ee78504a9b458a8aff79cda6d9d6c9037430f8af98b4185d1fc37927226cd9d496da2f34ce681207912aa26b2a3df509"
+            ]
+          },
+          {
+            "signatures": [
+              "b5dd64993a84a4e27c0f42571020dd442beda207dbff72995cc6a70d8a2978088fcaea115a69a15ec8b05f1e9c69efda7b6f38bd12a36fb8852e93986361ff0a"
+            ]
+          },
+          {
+            "signatures": [
+              "e9bc5c9aeea3c4ecb8b5e473d7a37eb7e978b4f86c3055f051a47165ad16cd0f874640b871173cb3119bb58cc080cfb3f18e493c802c4b73eab44ce935be970e"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -308,19 +351,23 @@
         "inputs": [
           {
             "amount": 8000000000000,
+            "globalIndexes": [
+              12591
+            ],
             "keyImage": "37ffa0c510b84990f1cf48334860fe787f18b4cfc31fc6cc140b27d890b01919",
             "keys": [
               "564b2e0bfeed86e623c61738f5e315e9e7e64a76e2860673570bd52a26080855"
-            ],
-            "txHash": "68fe6dacfebd82f70c098fbe37cc62b2ce0f76e1ed778bbecd05163390245ad3"
+            ]
           },
           {
             "amount": 65559,
+            "globalIndexes": [
+              2
+            ],
             "keyImage": "a95b4aec36d4b976e90404cdffc8689cb7ab4f7621bf46a1985be83c7fdfc039",
             "keys": [
               "e042eac92157bb85f772a72ccf7b96ad180b310aec29e6b02e34769c7eb17e3f"
-            ],
-            "txHash": "f0e81ffe0397020d817e34eee1828ecf585e67d7d10b7fb254135fc9ed54b779"
+            ]
           }
         ],
         "outputs": [
@@ -455,7 +502,20 @@
             "key": "daf932196215311e7308bc4365385bfeda2aaefa383566a5855a6e05391e4150"
           }
         ],
+        "prefixHash": "acba932c3886ac7ced9a93df2250e9cbf3d996b1ad60ac17864a9039c9fea137",
         "publicKey": "a176bcb112f7579303df6d8811159054f1c60961e20cc131bb6745e1e6b4de43",
+        "signatures": [
+          {
+            "signatures": [
+              "747b82d084a648a03f86ebff1aa4420a49ce2f9298406b417034b36cf5d3880608758e7e718427a0c5c43ada82b57d276e3dff2bb5b8023fffc87a8c414d3c0e"
+            ]
+          },
+          {
+            "signatures": [
+              "4df61269d37680379e9ba866c2f4e011243d3252d88afef5eab41421f22c4401246b7d28ce1195658146f3d26d37eaefc2875d651da872673b1c6ed84517200c"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -465,19 +525,23 @@
         "inputs": [
           {
             "amount": 40000000000000,
+            "globalIndexes": [
+              5581
+            ],
             "keyImage": "4acf30ba2d39ea0a63b0ce422e97edb19d2af588bb9c127dcff49ad3e89898a4",
             "keys": [
               "6083a64bf307bb00d2e7073ee0d4880710437c107a51b62eb1606944efeab7ac"
-            ],
-            "txHash": "58438ae42a8989a1aed49c221ea02af7581fe73186a985c44ccb3503e3813f3a"
+            ]
           },
           {
             "amount": 13893,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "aca818d210d51884bdce0c2121feb5a0c099c99c6b43f94f1ae4d0bde673439a",
             "keys": [
               "7bb6fdff0290636cf225ff496105acba98366907daeac6885b90d7f01de5faa0"
-            ],
-            "txHash": "1a4bba728bbfc07cbf7d5643d5fde598a1f511fcee3ec101d9c450ce78f00485"
+            ]
           }
         ],
         "outputs": [
@@ -612,7 +676,20 @@
             "key": "444f6e5e1df47c47b4bc4e6897008ffae07399b26471d8fd770bd2825efc7556"
           }
         ],
+        "prefixHash": "194d483e337555e1dcaa9eeea625461b0d92678a086e08602e0cf36da31abe95",
         "publicKey": "051ef3892e5d98bd0263cf396d5293116c07d16796330f8c68ac3e28227912a4",
+        "signatures": [
+          {
+            "signatures": [
+              "46ece105f4dd2017cc898f4af6b433110b3e3a102e3dea9ea9d3000ac65d95048f2184d4e9dacd897b3963a101c7ae5d7b45ebd25ca534f704ca00e22bd0c40e"
+            ]
+          },
+          {
+            "signatures": [
+              "77f686e033677a5ee769f8fa5bbb49df37eca284ddbf5b817dc4c300b0d158036d7738c4908b007235b341dd5111fccd53b413ff9e57c448d314992a6175f708"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -622,19 +699,23 @@
         "inputs": [
           {
             "amount": 20000000000000,
+            "globalIndexes": [
+              7636
+            ],
             "keyImage": "e65dcc9d6ad53b7c6f20c865f5a15c27610e7fbe5fe18104c46a5456999d9ccd",
             "keys": [
               "5d1086d63425a2b8ce6a505449e616f61ee4e8de51df526796876e684ecc5692"
-            ],
-            "txHash": "d2fe5a86386b20413af015d1deb354bc252eb1254130183107061871f11bba1f"
+            ]
           },
           {
             "amount": 54508,
+            "globalIndexes": [
+              1
+            ],
             "keyImage": "46bf277d8b925be3a137788b5ff43bc96d7d086e37d4f904767a996fe7d66b1f",
             "keys": [
               "0367ace9e0989e385ed791420140558bd667ff7c0906bae7d9fb3d29e6b3965a"
-            ],
-            "txHash": "b748c49966da511a53e7c281aae16e082646821822b32097e29d39a46c338e1a"
+            ]
           }
         ],
         "outputs": [
@@ -769,7 +850,20 @@
             "key": "ade91a5cb6081d5f2d5e4b5eafddd95a6e1fd5617252baa61ec21b9c62ab5069"
           }
         ],
+        "prefixHash": "ce5fb73976ab78116b96c3e9c7948b6504687d3fa24503ca8832cf7acf88040d",
         "publicKey": "95ff95b0ab601de4653e2928708029a66a8939c6c6a3fb4d67193e7bce6076a8",
+        "signatures": [
+          {
+            "signatures": [
+              "09833a1d26931d8d6c0d00cef70e89905acc868a57a3c396df476f0b93dd460b520d66a168c1c7fc9c2efa81eefd0da03c6bfe9e256d52df9401399eae53230f"
+            ]
+          },
+          {
+            "signatures": [
+              "11d7373d6d26b1f2f14a0d8a002670cc76aaa3774a0c5f028dcde11d02596102aeb1020f2ff27560b91bd338583d64372ae50f976fcb7785544c2e061ad34b09"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -779,27 +873,33 @@
         "inputs": [
           {
             "amount": 400000000000,
+            "globalIndexes": [
+              37488
+            ],
             "keyImage": "a4d5df51744316357b6a741e81dc97c7dd49485ee4319ccd3e3de3329ebd7e0d",
             "keys": [
               "d651f556fcaeafe50e2408992cd463a9f60b4f4dc8b4fc8f3c056fa5a4294212"
-            ],
-            "txHash": "5fb2ec1f9ca4de7b84c1b658620f9c2bcfb9384d3dc4eb9a834d6b8a70e28348"
+            ]
           },
           {
             "amount": 6000000000000,
+            "globalIndexes": [
+              13839
+            ],
             "keyImage": "8fa9841386554af0bc1455929999067eea961e96ebd1e4544483bd2e35f8ef7c",
             "keys": [
               "c02401717879c7aa351b50dcb1ef8312a974365fabc4b8ca7860e36a544cb9dc"
-            ],
-            "txHash": "b9f8f37f76b6da497b1ed53aac46641580db80f9e011fbe52378db48291d77ef"
+            ]
           },
           {
             "amount": 90546,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "de3c25d57424f7f60465a1cdce03c1e8a6c977406af58a5570b35db43ae36660",
             "keys": [
               "c31fef7d172f586a3175eb85ea0d5105923c4e6aef3e15599f45443b49f0d754"
-            ],
-            "txHash": "f4cbd1ae95bb08411083a29138d475c54bdd72ac067a3eb0f47345105cb8ac9f"
+            ]
           }
         ],
         "outputs": [
@@ -924,7 +1024,25 @@
             "key": "bdd6bd0644726282081bb35d082291a634e3766f8baf51d128701b55ded8460c"
           }
         ],
+        "prefixHash": "acef80f93099081e042e0f0ec9c56ad1821acbe6b471d48509194b2094d882fd",
         "publicKey": "c820d200f04e011f5c7b937b1a2882ec5a7e8dd066a829a963dc066c605b8c85",
+        "signatures": [
+          {
+            "signatures": [
+              "71a56d5f4052cc5e9047131b3303a1dfb85f3301db9e31acb6c8211991997e0c68a71de0a9037f0d1e128a595ee6b179b7f36bab8239cabf05b69d41a2a3d50c"
+            ]
+          },
+          {
+            "signatures": [
+              "ffabb249528c697e710398b76af9fe725236a6a4554a6d5e900be41aee5d79045695e5019a96b08a96313caf1c3e383a67afade470f7452f94d70ab39b2ceb0d"
+            ]
+          },
+          {
+            "signatures": [
+              "13fcbe3ed9a1d49918bf79bf6fa4577b74a65c390f2f92db9e1e691e5460de0e03782651afbc9231c84207b5be6037a1ce632166b5273124d6e39fb1d46bec06"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -934,43 +1052,53 @@
         "inputs": [
           {
             "amount": 70000000000,
+            "globalIndexes": [
+              44520
+            ],
             "keyImage": "cd42e9f5b5c0ecaee7ef3ac49467329f429c8fdb729d04e44f120ddf17ab1851",
             "keys": [
               "1384503efa9dadd893bde37a9cda33ce6ceb585c3891e248bed0055b5612a2f7"
-            ],
-            "txHash": "0bf4c61e257aef513ba51c8427d0acb88c262317cf688d789d470d00db2d6169"
+            ]
           },
           {
             "amount": 1000000,
+            "globalIndexes": [
+              6351
+            ],
             "keyImage": "fea6dc68a1c1197928b759ee9003ab27fc68731fafae4150cb1c3508139d2092",
             "keys": [
               "73f40d643d537f21e85ecdc66dd74ec96c9c3c65e9dd66aa5379114ea36b069e"
-            ],
-            "txHash": "3ff73e58257e63c11e397deca303ae517f85a6cb8f8f76036ca5dc05ff957819"
+            ]
           },
           {
             "amount": 50000000000,
+            "globalIndexes": [
+              47213
+            ],
             "keyImage": "b25b4d410d833c4e576edbfd724a6da49fbe31a27c83a3d71cb8fe7ee4b2c484",
             "keys": [
               "e1877a03913f404503c7c770dae4f76b2a8da41d48f4868f9310ca85991856aa"
-            ],
-            "txHash": "7deeac945d6b7cf6b733b002da425d252543c9e223d13955d58dd47893de6fed"
+            ]
           },
           {
             "amount": 7000000000000,
+            "globalIndexes": [
+              13704
+            ],
             "keyImage": "ca317ff2ac987f19589c93ce44a3d8bb3924dbb8af4e14cf0d0b221c7959bd1b",
             "keys": [
               "182e6a4ac5d021037beb5da08627b1806f622692fd2b88cf04d92bd021f0a79c"
-            ],
-            "txHash": "eed904664b0a5d4c18a8d7c9720a786508c25a1cd258b61d09c228b9533bfa5a"
+            ]
           },
           {
             "amount": 54061,
+            "globalIndexes": [
+              1
+            ],
             "keyImage": "62d0ee48d8b1d02a3a48fc8847d0e38136601e01f6cd605fbcb4d3bf43c171f4",
             "keys": [
               "1838c0d040feeffa31eeeac3f18702972fded5755d0d240706ea9f94e1f48a34"
-            ],
-            "txHash": "c0938df3ba67087ad96e2888fb063c1242ea6eda0342180d48c45fa0f1f722e5"
+            ]
           }
         ],
         "outputs": [
@@ -1080,7 +1208,35 @@
             "key": "97b10d409e8747b514a0c1d201508d044822cceec0cc853159be00d8abf288f7"
           }
         ],
+        "prefixHash": "976a0c26bb60183ab0828a7d0bcd38125dec7800da41ef50d32644231ec5ecfb",
         "publicKey": "1dbc6d4954c00802b6b7024e3e9611e6a2a3c107793ebb852d8043be5055eada",
+        "signatures": [
+          {
+            "signatures": [
+              "0960a470722cccfed5387fb497f0d30a51f0362eeb7d824deb6f8edde05d9a0ef8ac41ef100ca2fc4b440578ea78cc5a37cae14d43537e775c4552cd4b9f4b07"
+            ]
+          },
+          {
+            "signatures": [
+              "7e33accc9cc6eb86cd6c88d1b8041e7c7c58675f382aca291793108f6763c2001e345b27fe408ecdeb4b00970747ab1a4a73f3b6a42cb24fefdf32e5d61edd01"
+            ]
+          },
+          {
+            "signatures": [
+              "718c80700a86af9feae33f4875cb38db858bcaf805f7729c7a5750f4d7c8e90d455804d57d125b479226505836ef231def72c65e4afa2ed8681e22028d141404"
+            ]
+          },
+          {
+            "signatures": [
+              "40ae984a4639ce7fbd557806aa2527fbc4a28826b2f8b972f75d15619915850364c91b696826c9362c246f5a0d0b1e0fb8a704177625afe56755ab8dc345220a"
+            ]
+          },
+          {
+            "signatures": [
+              "9318c8535c0cdb43b5db142a423a12939dfc0667e1e5399dc38d6acafad63f0272ccdae35436acc476592f332e3f6bcc99b0abf7f0a3e5558a7acad0e4492900"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -1090,75 +1246,93 @@
         "inputs": [
           {
             "amount": 20000000,
+            "globalIndexes": [
+              4838
+            ],
             "keyImage": "7ec46ac3af83ae323c682f60cc21a7a2ac680d32ce760871c3e377e8fd3dc6b8",
             "keys": [
               "e19ba7aa07d85bd09d0f34b6be8f7c943328f11d5879f64bef0c24f4e21f8e3a"
-            ],
-            "txHash": "424b5dc4e3430e6d09854cef99c962d999c27652a8b9dd0849f93bf23ef2a177"
+            ]
           },
           {
             "amount": 10000000,
+            "globalIndexes": [
+              5714
+            ],
             "keyImage": "ea63b978989617769a32206a90a9bacaac0003d4cf46e480653bf7ef2d9aa906",
             "keys": [
               "f3cd59baa14bd7ead22d5fe9de4071003ea381dd8a2cca7857a01ff15c9862c6"
-            ],
-            "txHash": "424b5dc4e3430e6d09854cef99c962d999c27652a8b9dd0849f93bf23ef2a177"
+            ]
           },
           {
             "amount": 200000000,
+            "globalIndexes": [
+              46493
+            ],
             "keyImage": "a2ea70d62b312941814f5fde01d0fcee9e31c64ce7ec023cbec6d28cfe46d24d",
             "keys": [
               "3e100e123f31503b1a0f8e0e697266a3d9ec5f13bb9d75aec0680879fbf7f2e9"
-            ],
-            "txHash": "997d26f550e86c989bdede49191377183a07d3a7e6c33bb4157388cdeacdb296"
+            ]
           },
           {
             "amount": 300000,
+            "globalIndexes": [
+              4802
+            ],
             "keyImage": "eddb44cfe50042aeb3201d7be59b4732a1e6c73b6316cd0aac8686c66b7aeb16",
             "keys": [
               "220d9c73ee7c300f83e1ce4ea4a4d839c2922322cba55eb0fe0980585334c0cb"
-            ],
-            "txHash": "f91a0e4a229d7648e001c20c63359e6b6cc27304d8931a476019898892a38383"
+            ]
           },
           {
             "amount": 20000000,
+            "globalIndexes": [
+              4688
+            ],
             "keyImage": "ad2bcd3196e78e40cb7c867d4ad50638cb7a2fc78d8728918ec9155898043dc8",
             "keys": [
               "e2f2e1b0561395ec819ee83ea8264addfa1df81883a751cf7d0f37f7f866beaa"
-            ],
-            "txHash": "3d4779d7e28ac279f29c6b5765b0f3ec11ee22682564067091532482559a3f3a"
+            ]
           },
           {
             "amount": 2000000,
+            "globalIndexes": [
+              4962
+            ],
             "keyImage": "153a46dd068c43de0fa4014e32cd87b15deb8185c17f63b1049e69eb21dcdabb",
             "keys": [
               "0e9a4cfc355efe516490e2e186192e7e2950573d21ee48f25cfe9c957ffe0f21"
-            ],
-            "txHash": "f91a0e4a229d7648e001c20c63359e6b6cc27304d8931a476019898892a38383"
+            ]
           },
           {
             "amount": 200000000,
+            "globalIndexes": [
+              47957
+            ],
             "keyImage": "cc5fb75bc892c04163358594fee2649ea2da813efa1ad8e2e3fc854c4020273e",
             "keys": [
               "d1834af42be4723261e55d536b5c9cf1296999f513be599c26b577980ab00621"
-            ],
-            "txHash": "995ee3aa69119d85a89cf8bf44ac331270a499b64c0b4a514c55e291fa7db8ef"
+            ]
           },
           {
             "amount": 90000000,
+            "globalIndexes": [
+              5231
+            ],
             "keyImage": "527b41021e46dcdf8a5b135b58a6683c116e5686756040cb17e6b9c8712d8c7b",
             "keys": [
               "0aaa50f362183e27c0de8acf6d4aa397ccd7d8b0509d62ecf699f5a9edef970c"
-            ],
-            "txHash": "3d4779d7e28ac279f29c6b5765b0f3ec11ee22682564067091532482559a3f3a"
+            ]
           },
           {
             "amount": 45678,
+            "globalIndexes": [
+              1
+            ],
             "keyImage": "99e07a21c3a2bfb060452e6c5c28d80fae208e59bb279c6c50e16979e99f7b7e",
             "keys": [
               "0fc779904e91ed5919e26414f0f43b336f6a1002bd8fa06dace70e020cedaeda"
-            ],
-            "txHash": "f91a0e4a229d7648e001c20c63359e6b6cc27304d8931a476019898892a38383"
+            ]
           }
         ],
         "outputs": [
@@ -1233,7 +1407,55 @@
             "key": "5af48e1d3f18ad4e38b109754b0b37d5f5a933858d63b20c68e994df06495377"
           }
         ],
+        "prefixHash": "6942ff8604bdd640d80623ad6e7bf95a831eb148d58ab630359bad5a5585d7e0",
         "publicKey": "71237b3631cf7e2a84159d6fa9a4793eba19af3d663f2b0edc8205bc386c1e11",
+        "signatures": [
+          {
+            "signatures": [
+              "7d7c8ef7317d11c4300f5d8f32c084c17469997a6957a42bedf64c1bc9b68d0df873ea18ebc0b1769784056392a14423e816e186005db26d357ef3b0a65ff706"
+            ]
+          },
+          {
+            "signatures": [
+              "1c2ac9019afbdf6fdc8bc9fea5f521e4b9ce0892867fe9edc96239b164f7a506340ad74ae63a02bc3bc773258281c0b3becdbb521da586d7c87601c40f6f0001"
+            ]
+          },
+          {
+            "signatures": [
+              "b85aa5c4093b3303add8d7cc6485db5a2732e76e19716fe9975b98386d180b03c2fb34089228c638f83211185fd1c04c3e3b736deecdc08a0e0b729004487c09"
+            ]
+          },
+          {
+            "signatures": [
+              "d8fcec1f42ca5a044062054dfc2685110089e02024928af7c32611792f5963015bd6dec99d9d43cc02916a7481ce35406bef40cefe4584e8d681c195dfeae10c"
+            ]
+          },
+          {
+            "signatures": [
+              "99f3eeb38e571af975cae486f7467e170ddead450c37b462bfce7089d0691d05b44cb11cddb81f988c492007db9f63f1dc1d3680c0cbad9e55af566ade4ccb0d"
+            ]
+          },
+          {
+            "signatures": [
+              "a3912459394776f11ce6d03f25beab9f4099e3a504c413557bd5dc481c5b8805e8b3a9e767eff2c6ae1c5dbd618d071f7e101255312de5bc8c06f116b1346a00"
+            ]
+          },
+          {
+            "signatures": [
+              "adedcc9524ad8be0f5479f7c4e04f08fa1cc3db1f16a65fe3d6792c8a6602208993f473e99ece754762cb4733f24ecfc10997d5cf9c6c368860c3a3dbf5e950d"
+            ]
+          },
+          {
+            "signatures": [
+              "d64e98f5fe8ed7ee57f2e231514e9cbbd1da3189d62db26e7ce332341855540cd2041b8037811b6f144c4b842617ee5c44df203a2603519711b4b026994dba01"
+            ]
+          },
+          {
+            "signatures": [
+              "3d24c83d5fe28c253591d5986c356987fe23678562196f86197375a29e4bff091c8defafc3244bd81f4bc93de747f36d75d6bd77f6394eeeec1baee27a912108"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -1243,43 +1465,53 @@
         "inputs": [
           {
             "amount": 9000000000000,
+            "globalIndexes": [
+              12164
+            ],
             "keyImage": "c0bc3f64b74aebd47a3dde95c2a8fcf2cec0028d8ae4b38654f8ca06bee27f47",
             "keys": [
               "e1b017569ce84937ab2deba82b125dce7b5856ba8ee49d6a28af045b7473b796"
-            ],
-            "txHash": "6c9ae62d4564521756b1aa31e562b86298cbf63e924f2ffce5ea1b0bb50e0e9f"
+            ]
           },
           {
             "amount": 50000000000,
+            "globalIndexes": [
+              47289
+            ],
             "keyImage": "8623a47b8b76e86100032b7b9c7d0c0295560c5e01d1b4681970473ae7ec42aa",
             "keys": [
               "75ed24da23293f266d1db5ac2c8aa2fe0a32fee26561e49c55bc5d94cafe9ec3"
-            ],
-            "txHash": "6ba6688e137290377f3c9aee44c69452ecdd20f103a8fe7f0796e92f96f3971e"
+            ]
           },
           {
             "amount": 10000000000,
+            "globalIndexes": [
+              63379
+            ],
             "keyImage": "75d94c75014addc04d0a9613e49f0cac2a74c383fa6dfdcb13ea75931e9aac89",
             "keys": [
               "2b9e036295f4d0965d120ea92cfa81104a0833848dcf0cb49011155dfd58def7"
-            ],
-            "txHash": "19526e7d326cf655b02ca4343a8579dc9d29ccfd1820696069453ec6bf68ad1a"
+            ]
           },
           {
             "amount": 60000000000000,
+            "globalIndexes": [
+              24938
+            ],
             "keyImage": "8aa656add6c6437f1d08516adc6289f40d3cb337b84bd6205ba40cbdc9d7a1d6",
             "keys": [
               "2d8ae2a9a566a6cb96a26a7980253cc8cd0fb417b76bc6269247d349fdfefed5"
-            ],
-            "txHash": "37408806608477810d33d1f5c58fe0ea2c940b3979d26f798c385583b5c6d0e2"
+            ]
           },
           {
             "amount": 8505,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "873e3b1497ab8906d046381198f6079c2edd420c8f13c5cc6c8f0dc0c0f51c40",
             "keys": [
               "b424f69daf5c2583c41160b70493e729dc049a02a2a2bcf93feb59d55aa85987"
-            ],
-            "txHash": "7e87db9101c01407addf4320067d1c800220aa42e3b1e9d9e550ed0364abb3d4"
+            ]
           }
         ],
         "outputs": [
@@ -1409,7 +1641,35 @@
             "key": "65459c6572cbf33628af088c13cb4b0014cd07fc678bd0d7d9758867ee80fc43"
           }
         ],
+        "prefixHash": "cfc9d5c8a298bec4346f405e7cb24d3856b972031c5b74ddf1d85316d05cfae6",
         "publicKey": "c423c3320a48a1f1f121e9afbd7255c388e7f28abd073be496b74a376a0fafd3",
+        "signatures": [
+          {
+            "signatures": [
+              "e11217e70cb5f987770117ca60ea7a6336d6b6b911c281446fdb1363e345c20846c0f91e857cb3ab7e5ba2a2a8163d5ea8d6d9267002bb0aa49e9817b98d0405"
+            ]
+          },
+          {
+            "signatures": [
+              "1e347b5443226bb5eb539dbc883c192aac98ee3c4fb58c32b9c6057909a9160e2be3f52644a954c66b3f8dc58363f51903235c223c6fc718168c4c8109e0720a"
+            ]
+          },
+          {
+            "signatures": [
+              "7ebe47506a7ba7567e3b7e007f9a35d272f5576f6d515c38f3905cecbde75e0c5b93cb2a26abd1529b6f8ba0f06a12057d031e8dea6259ac5d34df989cd25407"
+            ]
+          },
+          {
+            "signatures": [
+              "26e05b889dd245aed9b32fda6be16519cd7c177f11bbf7c861d5db0a2ab83103b03007ef8364469609208893c63fe033427c63103bde2f34a0506019cfa96f0c"
+            ]
+          },
+          {
+            "signatures": [
+              "181deac8dd035950f3b80f4a21e1e19134d5088ac0888162b381aecc518f4c08b1a6b6a42e3d9ef5233518d4d73f085d6fc019e221360a695d69792aa3852e0f"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -1419,35 +1679,43 @@
         "inputs": [
           {
             "amount": 50000000000,
+            "globalIndexes": [
+              47498
+            ],
             "keyImage": "746c668df2a0656167de8e1f9a0df1c5d0f54d4f9947a4a483400fbbf6276e02",
             "keys": [
               "32db524046ace93e85f15717e68950a5271fdecc5f725f6d3f54a218bd5f44c4"
-            ],
-            "txHash": "07003314f041ac40b5142718374a4a2a52dd54154a98edfada223562d0a40174"
+            ]
           },
           {
             "amount": 900000000,
+            "globalIndexes": [
+              51042
+            ],
             "keyImage": "abcb00086c2ce1fcd6c174cc024c604a497039dcf3e0fe2a0a743d68e9d23b82",
             "keys": [
               "a19a4e76fe8319f630080ff6010163da58ef8684c292c14f019db8ff4d9f62ee"
-            ],
-            "txHash": "24660caa697511007f3b56679cc6b833b6947c2ec07b5647f49d1047e51c9b59"
+            ]
           },
           {
             "amount": 40000000000000,
+            "globalIndexes": [
+              5572
+            ],
             "keyImage": "6c5054fa3259fa44527a8417be105d5c04d5c4f2de783dc6613e4d11044b443a",
             "keys": [
               "2e6dd8f7ca4a15610b36d94ceb23bd16dd823ff90313e8d4a35ecb3b5c7536ed"
-            ],
-            "txHash": "7681108f60b8cf5b87ed330dca935a6170fbb6b11864abab644ab4d0c2e96925"
+            ]
           },
           {
             "amount": 65522,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "28fd3b30bceebb15d96a1f112df68fed9dcf419bf153ab96813fbf92803ee387",
             "keys": [
               "f75db3cfda74147c227b6bad615f588583e27d610a8a392fa196fe06140ee95e"
-            ],
-            "txHash": "829f954ed763b54eb8c7e5ea1688808bd4cc2bf99fd3cbc3a33e7f0be843595c"
+            ]
           }
         ],
         "outputs": [
@@ -1592,7 +1860,30 @@
             "key": "91ab1f7c2348b5e459417f5be55de2c4ab2851d51403d474a6ee70c12edaecc0"
           }
         ],
+        "prefixHash": "e36d3acd33d44862eac60c17b72ce26ec1afca19b866b40a3c2feaab2887ce53",
         "publicKey": "b8c42bcc8f2200b84f18775f673343a5c4616b3f0bf6580755cf7f8d7c3936bc",
+        "signatures": [
+          {
+            "signatures": [
+              "257ba9c48db254136de95ececd1610742c7272010e2be956b2d965fa58e4be05c79e9643efea15a78d10cda99f72ba3ab918f4d3b454f5e0a0a08906563bad0c"
+            ]
+          },
+          {
+            "signatures": [
+              "f2a8fe1a628bc4cc9db4b6c869adee5af866dcad49180042d2a15fdec7e0680fab8fd447c7dc5c9dfdc09c1a3ae39ae1d6c19dc2549761df16af021f4308bd0a"
+            ]
+          },
+          {
+            "signatures": [
+              "c1fff24f1809304306eeb27a4e879380b415dca199ddd9d50535a6daa7835e03ccd8d96c49d4dc6d30cd2989c86246aa49d8a8f2bcd02e165f37f141e67b4f01"
+            ]
+          },
+          {
+            "signatures": [
+              "945141df862ab6a228170e1ddb4634fc03cb40e4c0741d825e817444681518097235c2aac3a12c4adfdd9408695c81ce15dda274233f87700002bf8701d78c0a"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -1602,43 +1893,53 @@
         "inputs": [
           {
             "amount": 700000000,
+            "globalIndexes": [
+              48437
+            ],
             "keyImage": "120b06445b880882be877d8a424223f86c57ff72d89077edd9cb8a79b0edb98a",
             "keys": [
               "c1d919e0c1379ea58ada82622aa1fcc39806462d7c4139983c42adf750d02a80"
-            ],
-            "txHash": "f9aac294b0d561e8270948e59abb5e46596ca7eab1a0056c5710f4c30cd77561"
+            ]
           },
           {
             "amount": 90000000000,
+            "globalIndexes": [
+              43667
+            ],
             "keyImage": "a0eecc92b49017c42c2f872cc766316aab4033193a0d45f47683db163f5e85bd",
             "keys": [
               "b13d14a998178a720c50aab9205117e8e497037988f8f9a628916a727a4904d7"
-            ],
-            "txHash": "3cd28be1fbca633990cf518f1388e61008e3b1a40f9c6a7346b9071d98ab2506"
+            ]
           },
           {
             "amount": 1000000,
+            "globalIndexes": [
+              6365
+            ],
             "keyImage": "21e4c6d65283db4accf444f659f7aaec7dc3198a72c740f6bfc032ea984cc508",
             "keys": [
               "505ee78ec4a1175f2fc1ab5b8a740fb1a7656417c16635e8ee12b1376f90886c"
-            ],
-            "txHash": "45339f6a38ef8cf5e12274c722716833e6ead2c1d45e703c16108aeb0a5fbde1"
+            ]
           },
           {
             "amount": 30000000000000,
+            "globalIndexes": [
+              6166
+            ],
             "keyImage": "cc7f57199e270d64cf1ce04b07b2460ce3bd58a6b9cdeca1f8f372dd2d5f4002",
             "keys": [
               "a1eb539109c7f793506937c62e8b29b6384aa90df0cb8833c7ab16d370b00a69"
-            ],
-            "txHash": "d6ba4e5ffdf958244feed61ba829ee896dcec4ddeb706d3e0a8034b88612c4bb"
+            ]
           },
           {
             "amount": 28804,
+            "globalIndexes": [
+              3
+            ],
             "keyImage": "448acdf2cbd7a57800df799f2fc792b098ceec39928a8b40b89a9524ce083aae",
             "keys": [
               "583743ad9b52869ae06b23112d3544184ab2d660c0c57d9ea41c4912770776ac"
-            ],
-            "txHash": "2b6dda285c3ec297f4a92fe957f24a6fb8710043fdedb387f7322e3fb1577aa4"
+            ]
           }
         ],
         "outputs": [
@@ -1778,7 +2079,35 @@
             "key": "9b619b0984f16a6686ec96899cad06a723eeb6ef4178acca164923f2d6a849ab"
           }
         ],
+        "prefixHash": "020c1191b456bb71dfd22eae6974aee525091dd0d67dc03061f6a358f3ff0fef",
         "publicKey": "bbed71a3874efe0b219e40312cb160f7d1e5d4372e93ea40fb229b3510a65d3e",
+        "signatures": [
+          {
+            "signatures": [
+              "6e163d978e3c7afe82db41a58833a96e3cd5ee2e184ce48fd3a3998bc2ba1004665fc20a004fa0db191ea9ff678a4b611147193a423513c4f178f352b04df50a"
+            ]
+          },
+          {
+            "signatures": [
+              "a34ab4b51698ef08989f66e15d4bf2b3ceeeaafd7e8a86c52d64b9db6dbbb30ad55653570faa89fd9d0d4bd61ac40f79c94e6327a0745e0fbafb66820749f70c"
+            ]
+          },
+          {
+            "signatures": [
+              "3197e6166243ef67ba6274bfbdae5100a3b3490a4841d7bdedd360db37dbe6000c590b72a7ba4ddb8681ed5bfd88a20884bd7c935665aaf2d4631046d0783e0e"
+            ]
+          },
+          {
+            "signatures": [
+              "b36db5d8d0f9117980ec08f034d4c370d6ef54359a43ec9754e0f38fbd6e52001c66c92ba0926557ebc8b963eb60f3da74673f2eb27dc8764eb163a90fe2f505"
+            ]
+          },
+          {
+            "signatures": [
+              "dc9126b3c703dc1e23d12e35a1dfbe981f834c2a0a1eeb62048bb1226c46f903612ce3872fa5cfe5427fcb8a21cfec08513baa95da9cef2048de830f16f55e01"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       },
@@ -1788,59 +2117,73 @@
         "inputs": [
           {
             "amount": 40000000000,
+            "globalIndexes": [
+              49547
+            ],
             "keyImage": "d35bae72ba9cc634a9701be06b6816c6fcab2b87bf66302e3f297c5027bd039e",
             "keys": [
               "6cf83787ef47270e550d19b18f5e80ba43ad5f7f6feccfe7314c3ad8057001ef"
-            ],
-            "txHash": "2adca1942843edd9d5a0daed74b6b94ef3bd119baac127e3a9d5679b30579474"
+            ]
           },
           {
             "amount": 1000000000,
+            "globalIndexes": [
+              49747
+            ],
             "keyImage": "82d7fbb62cc02cde3df55b9e11f3c5487910168bc77a959de5e86041a687ff15",
             "keys": [
               "0541ea85a50c3a2a77c4efba140d7b52643f06d3b640481d5f505d3a9cd51023"
-            ],
-            "txHash": "ce39f73eccd497b29a68814c4f6b7088ce59a422120a8e1e7c397f1199d7e616"
+            ]
           },
           {
             "amount": 70000000,
+            "globalIndexes": [
+              4713
+            ],
             "keyImage": "af7cbe09006e68333ceada3bffdd3375403f8bb73edc1ea6de8f9e0277c4f10b",
             "keys": [
               "14bf29544aec3b675cd8e44ddb07367b573d6fe24c301fff633592d72c1e6acc"
-            ],
-            "txHash": "79a728bd50e56244d21ec95bf22adbee18bfff5208dbbf42dac50a518bc1572d"
+            ]
           },
           {
             "amount": 9000000,
+            "globalIndexes": [
+              5329
+            ],
             "keyImage": "0265dd58684e67622959a811bdf23b6e61d189a2e3f577556f1a74bc3fdc248e",
             "keys": [
               "62daf3c9c15898948e18154fd1ecf918f9b0f8b652bb4fa15e4073235cef39b9"
-            ],
-            "txHash": "8cd8fe452dfb3ad619308c88608a130af1e99e2255634108e84d9efaefcd1931"
+            ]
           },
           {
             "amount": 900000000000,
+            "globalIndexes": [
+              27433
+            ],
             "keyImage": "fdac2a0c447f04ba318f4ff77035222123661a48862a1bb0bdd099877c4d73f7",
             "keys": [
               "9d4acf2c6b5ca1f05746131bf2c326e4269e4e65f5558c3ae148cd5badc410a1"
-            ],
-            "txHash": "e65fa5731da82dbd6912a93c58f6fa9a714b59d435635f6da3c14d481dd2f2fe"
+            ]
           },
           {
             "amount": 400000000000,
+            "globalIndexes": [
+              37504
+            ],
             "keyImage": "d8249d5ab6de96d9a06e578bebe3d774bc445abc54d8e0b5183a8176ae90607f",
             "keys": [
               "0b03becaa50f634dfb3c32cd25eaa8a3fdd75d3954ed630031c6fe7dcd853bbe"
-            ],
-            "txHash": "7dba9b7e974937caadbaef941a1c947e29fb28be8278680a7a59718e3dc3a7a0"
+            ]
           },
           {
             "amount": 48365,
+            "globalIndexes": [
+              0
+            ],
             "keyImage": "be5d8585caa53a1ee128d5a798d48216aa1f554d6695bce1999faa27bdbe8b86",
             "keys": [
               "afbf41fbce09374c78cef17db10e7c426fb58e7fcc071a0f643d16c865955cf4"
-            ],
-            "txHash": "a4f289a5a35506276b2549cd91603607df8f4dfa6d19cd6bba8d714d886913c2"
+            ]
           }
         ],
         "outputs": [
@@ -1965,7 +2308,45 @@
             "key": "946ab9232e5ac8299fa85f84b47a9894d8b752a902c0c61426ca9bd41593195f"
           }
         ],
+        "prefixHash": "6be7b1c813bd7815c8f0a3d3af26b91a87d518c1a7d64ba225b360034c36506b",
         "publicKey": "d57d89b0e74f5f7ca96b7518207c3623c0d6e8b11149ac0ba0887867db812e37",
+        "signatures": [
+          {
+            "signatures": [
+              "fd58a7b50b25dca101fde6811b5be9eed4d16e2d7d2c57fcbf9f7d3be38ebc06bd293cb59dc07a5a01f1aacf3e565ee74792d1b193bd9e1f1525c577b1670f0e"
+            ]
+          },
+          {
+            "signatures": [
+              "e4129eb920448d0751fa2a7b594a40cc4e6a628065251ec5348b236a76f13006c51b755ca2fe087b781f5cc05ec1b53f20a029d48b5848aa74ab5cc2fe7f8e03"
+            ]
+          },
+          {
+            "signatures": [
+              "4ba4c8ed1bf7f80039f6e74302377bbe08d1cbd68cf0dd932cfdd1e80eae5509ab2560a4579e349b401afbba0ba1550eb70c22f5995ae45a37ade9e8d6701100"
+            ]
+          },
+          {
+            "signatures": [
+              "172801485320bdf3cbeede25801348041df92d02a884266ff7283dad3b51630f59ee599106c77f61d256519c9afb5a0b989ff1f1c8c3e36eccc53fbb33ba5109"
+            ]
+          },
+          {
+            "signatures": [
+              "c15c5566d466ef19434e51c9842b9a6bcb1b98f708eb1b92446e316116b69e0e2da61325e5901d0408dbb043080ddb8c9ebe0029a73e0c5061d0df5c6ddf8d01"
+            ]
+          },
+          {
+            "signatures": [
+              "399cede444771572ac68cfdd39c3f034a073ba5f2c52a4dddca821d5d68d780d8a58e9b6eff430901b14c016b3f0e05adf99f01655c17de09f3c0ef153b30f09"
+            ]
+          },
+          {
+            "signatures": [
+              "48d4c04ba6f83e8b6b2174ae6e3bfbe8c194948f5543cf44cd0ac52672c02504622bce9eaebc1755a496e00afcfa0a77589163fafb27a973f0e18870f12ca704"
+            ]
+          }
+        ],
         "timestamp": 1519014840,
         "unlockTime": 0
       }
