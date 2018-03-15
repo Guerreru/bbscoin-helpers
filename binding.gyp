@@ -12,25 +12,23 @@
                 "bbscoin/src",
                 "<!(node -e \"require('nan')\")",
             ],
-            "libraries": [
-                "<!(pwd)/bbscoin/build/release/src/*.a",
-            ],
             "conditions": [
                 ["OS=='linux'", {
+                    "libraries": [
+                        "<!(pwd)/bbscoin/build/src/*.a",
+                    ],
                     "include_dirs": [
                         "bbscoin/src/Platform/Linux",
                         "bbscoin/src/Platform/Posix"
                     ]
                 }],
                 ["OS=='mac'", {
+                    "libraries": [
+                        "<!(pwd)/bbscoin/build/release/src/*.a",
+                    ],
                     "include_dirs": [ 
                         "bbscoin/src/Platform/OSX",
                         "bbscoin/src/Platform/Posix"
-                    ]
-                }],
-                ["OS=='win'", {
-                    "include_dirs": [ 
-                        "bbscoin/src/Platform/Windows" 
                     ]
                 }]
             ], 
