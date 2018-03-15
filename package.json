@@ -4,18 +4,16 @@
   "description": "",
   "main": "bindings.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./tests/**/*.js",
-    "install": "node-gyp rebuild"
+    "test": "./node_modules/.bin/mocha ./tests/**/*.js"
   },
   "author": "",
   "license": "ISC",
   "gypfile": true,
-  "dependencies": {
-    "mocha": "^5.0.2",
-    "nan": "^2.8.0"
-  },
   "devDependencies": {
     "request": "^2.83.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "minimist": "^1.2.0",
+    "mocha": "^5.0.2",
+    "nan": "^2.8.0"
   }
 }
