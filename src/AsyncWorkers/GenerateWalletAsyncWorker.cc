@@ -18,7 +18,7 @@ void GenerateWalletAsyncWorker::Execute() {
         prefix->nextIv = Crypto::rand<Crypto::chacha8_iv>();
 
         // Generate storage key
-        Crypto::cn_context cnContext;
+        cn_context cnContext;
         chacha8_key storageKey;
         Crypto::generate_chacha8_key(cnContext, password, storageKey);
 

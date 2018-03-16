@@ -2,6 +2,7 @@
 
 #include <nan.h>
 
+#include "crypto/crypto.h"
 #include "Common.h"
 #include "Common/MemoryInputStream.h"
 #include "Common/StringTools.h"

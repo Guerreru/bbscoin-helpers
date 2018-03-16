@@ -18,9 +18,9 @@ void ParseWalletAsyncWorker::Execute() {
             return;
         }
 
-        Crypto::cn_context cnContext;
-        Crypto::chacha8_key key;
-        generate_chacha8_key(cnContext, password, key);
+        cn_context cnContext;
+        chacha8_key key;
+        Crypto::generate_chacha8_key(cnContext, password, key);
 
         decryptKeyPair(prefix->encryptedViewKeys, viewKey.publicKey, viewKey.secretKey, timestamp, key);
         throwIfKeysMismatch(viewKey.secretKey, viewKey.publicKey, "Restored view public key doesn't correspond to secret key");

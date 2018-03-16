@@ -3,6 +3,7 @@
 #include <initializer_list>
 #include <nan.h>
 
+#include "crypto/crypto.h"
 #include "Common.h"
 #include "CryptoNote.h"
 #include "Common/StringOutputStream.h"
