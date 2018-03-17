@@ -28,7 +28,7 @@ async function prepareData() {
             method: 'POST',
             uri: 'http://localhost:21204/json_rpc',
             body: {
-                'method': 'on_get_txs_by_height',
+                'method': 'get_txs_by_height',
                 'params': {
                     'height': height
                 }

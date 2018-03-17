@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { address, spendKey, viewKey } = require('./fixtures/test.keys.json');
-const { decomposeAmount, checkRingSignature, generateKeyImage } = require('../');
+const { decomposeAmount, checkRingSignature, generateKeyImage, buildTransaction } = require('../');
 
 describe('transaction helpers', () => {
     it('should decompose amount', () => {
@@ -41,5 +41,66 @@ describe('transaction helpers', () => {
             viewSecret: viewKey.secret,
             spendSecret: spendKey.secret
         }, '486ae678af345ff7cbd7cf7800ae1d11a7d39f7ee80a6e096afe2313cf93a1da', 6) === '56ef7da1fce4f142d44defcd392709ec94ad2bd3d68786372269f8a94b31936f');
+    });
+
+    it('should build transaction', (done) => {
+        const tx = buildTransaction({
+            "unlockTime": 0,
+            "extra": "",
+            "sender": {
+                address,
+                viewSecret: viewKey.secret,
+                spendSecret: spendKey.secret
+            },
+            "sources": [
+                {
+                    "amount": 100000000,
+                    "realOutput": {
+                        "transactionIndex": 3,
+                        "transactionKey": "59170d0e17e3df7a36ff838a069a017583acbb993deca09d7594a330b123bded",
+                        "outputInTransaction": 4
+                    },
+                    "outputs": [
+                        {
+                            "globalIndex": 10408,
+                            "key": "5c978096d515696948382e85206b81acd2088925da4c1f7d829f5229d44ee631"
+                        },
+                        {
+                            "globalIndex": 65066,
+                            "key": "830e2625491ce8296d244cca14cc1d961727448b3b621beebd07d2855cfb295d"
+                        },
+                        {
+                            "globalIndex": 69945,
+                            "key": "81f995e8b51dfbaebd4739e8a17d45e34a99b454dc2273a11b4e6dd86e5cf822"
+                        },
+                        {
+                            "globalIndex": 110586,
+                            "key": "a81674065c21945ddd80c1f54b8f43633b0325fe279c2110ce5c7f57a928d6fa"
+                        }
+                    ]
+                }
+            ],
+            "destinations": [
+                {
+                    "address": "fyTpS7UgsfTJaGWxKoBcYNAie7ZXkia8UKarA8mAEnusGpM1JQPAzvFd6S8fpDR7WgEN9wTVL6vdBe3PjPmqafpm2PogvpQna",
+                    "amount": 10000000
+                },
+                {
+                    "type": "change",
+                    "address": "fySYVoeryY4WZmM6vpduKBccALWaLukXfQ6KwsFgg8pR8HhjHw3AeCiDrXfqEPSYnkgbK74CRBat9YETn8qwj7aN23TMRqiTh",
+                    "amount": 80000000
+                }
+            ]
+        }, function (error, result) {
+            if (error) {
+                console.error(error);
+                done(error);
+            }
+
+            assert(result.hash);
+            assert(result.data);
+            done();
+        });
+
     });
 });

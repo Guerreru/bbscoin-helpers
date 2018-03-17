@@ -7,7 +7,7 @@ describe('wallet', () => {
     let filePath
 
     before(() => {
-        filePath = path.resolve(__dirname, path.join('tmp', 'test.wallet'));
+        filePath = path.resolve(__dirname, path.join('test.wallet'));
         if (fs.existsSync(filePath)) {
             fs.unlinkSync(filePath);
         }
