@@ -76,15 +76,9 @@ decomposeAmount(62387455827, 500000) === [
 ```
 
 ## Compilation
-
-First, please clone bbscoin project to cryptonote-helpers' root or create a symbol link to ./bbscoin.
-Please follow the instructions to build it first: https://github.com/bbscoin/bbscoin 
-As we will link static libraries from the build release folder.
-
-
 ### Requirement
 
-- node (v9.5.0)
+- node (v9.5.0+)
 - boost
 
 ### macOS
