@@ -4,9 +4,14 @@ Native Node.js module for BBSCoin. This should work for all cryptonote based cry
 
 ## Usages
 
-Create a GUI compatible wallet with a single spending key.
+Create a GUI compatible wallet file with a single spending key.
 ```javascript
 createWallet(filePath, walletPassword, callback);
+```
+
+Create a GUI compatible wallet file with given keys.
+```javascript
+generateWallet(filePath, walletPassword, address, viewSecret, spendSecret, callback);
 ```
 
 Parse a GUI wallet file.

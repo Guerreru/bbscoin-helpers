@@ -11,6 +11,7 @@ class WalletBinding {
 public:
   static NAN_MODULE_INIT(Init);
   static NAN_METHOD(CreateWallet);
+  static NAN_METHOD(GenerateWallet);
   static NAN_METHOD(ParseWallet);
   static NAN_METHOD(SecretKeyToPublicKey);
   static NAN_METHOD(GenerateNewKeyPair);

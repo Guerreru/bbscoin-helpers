@@ -3,10 +3,16 @@
 
 GenerateWalletAsyncWorker::GenerateWalletAsyncWorker(std::string path,
                                                      std::string password,
+                                                     KeyPair spendKey,
+                                                     KeyPair viewKey,
+                                                     bool generateNewKeys,
                                                      Nan::Callback *callback) : Nan::AsyncWorker(callback) {
 
     this->path = path;
     this->password = password;
+    this->spendKey = spendKey;
+    this->viewKey = viewKey;
+    this->generateNewKeys = generateNewKeys;
 }
 
 void GenerateWalletAsyncWorker::Execute() {
@@ -23,8 +29,10 @@ void GenerateWalletAsyncWorker::Execute() {
         Crypto::generate_chacha8_key(cnContext, password, storageKey);
 
         // Generate spend/view key pair
-        Crypto::generate_keys(spendKey.publicKey, spendKey.secretKey);
-        Crypto::generate_keys(viewKey.publicKey, viewKey.secretKey);
+        if (generateNewKeys) {
+            Crypto::generate_keys(spendKey.publicKey, spendKey.secretKey);
+            Crypto::generate_keys(viewKey.publicKey, viewKey.secretKey);
+        }
         timestamp = time(nullptr);
 
         // View keys

@@ -5,6 +5,7 @@
 
 NAN_MODULE_INIT(WalletBinding::Init) {
     Nan::SetMethod(target, "createWallet", CreateWallet);
+    Nan::SetMethod(target, "generateWallet", GenerateWallet);
     Nan::SetMethod(target, "parseWallet", ParseWallet);
     Nan::SetMethod(target, "secretKeyToPublicKey", SecretKeyToPublicKey);
     Nan::SetMethod(target, "generateNewKeyPair", GenerateNewKeyPair);
@@ -24,10 +25,65 @@ NAN_METHOD(WalletBinding::CreateWallet) {
         return Nan::ThrowError(Nan::New("expected arg 2: function callback").ToLocalChecked());
     }
 
+    KeyPair spendKey;
+    KeyPair viewKey;
+
     Nan::AsyncQueueWorker(new GenerateWalletAsyncWorker(
         std::string(*Nan::Utf8String(info[0]->ToString())),
         std::string(*Nan::Utf8String(info[1]->ToString())),
+        spendKey,
+        viewKey,
+        true,
         new Nan::Callback(info[2].As<v8::Function>())));
+
+    info.GetReturnValue().Set(Nan::Undefined());
+}
+
+NAN_METHOD(WalletBinding::GenerateWallet) {
+    if (!info[0]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 0: string path").ToLocalChecked());
+    }
+    if (!info[1]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 1: string container password").ToLocalChecked());
+    }
+    if (!info[2]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 2: string wallet address").ToLocalChecked());
+    }
+    if (!info[3]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 3: string view secret").ToLocalChecked());
+    }
+    if (!info[4]->IsString()) {
+        return Nan::ThrowError(Nan::New("expected arg 4: string spend secret").ToLocalChecked());
+    }
+    if (!info[5]->IsFunction()) {
+        return Nan::ThrowError(Nan::New("expected arg 5: function callback").ToLocalChecked());
+    }
+
+    KeyPair spendKey;
+    KeyPair viewKey;
+
+    std::string address = std::string(*Nan::Utf8String(info[2]->ToString()));
+    CryptoNote::AccountPublicAddress keys;
+    uint64_t prefix = parameters::CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX;
+    if (!parseAccountAddressString(prefix, keys, address)) {
+        return Nan::ThrowError(Nan::New("Incorrect wallet address").ToLocalChecked());
+    }
+    spendKey.publicKey = keys.spendPublicKey;
+    viewKey.publicKey = keys.viewPublicKey;
+    
+    std::vector<uint8_t> viewKeyRaw = fromHex(std::string(*Nan::Utf8String(info[3]->ToString())));
+    viewKey.secretKey = *reinterpret_cast<Crypto::SecretKey *>(viewKeyRaw.data());
+
+    std::vector<uint8_t> spendKeyRaw = fromHex(std::string(*Nan::Utf8String(info[4]->ToString())));
+    spendKey.secretKey = *reinterpret_cast<Crypto::SecretKey *>(spendKeyRaw.data());
+
+    Nan::AsyncQueueWorker(new GenerateWalletAsyncWorker(
+        std::string(*Nan::Utf8String(info[0]->ToString())),
+        std::string(*Nan::Utf8String(info[1]->ToString())),
+        spendKey,
+        viewKey,
+        false,
+        new Nan::Callback(info[5].As<v8::Function>())));
 
     info.GetReturnValue().Set(Nan::Undefined());
 }
