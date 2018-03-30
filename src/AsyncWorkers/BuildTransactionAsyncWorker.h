@@ -29,6 +29,7 @@ class BuildTransactionAsyncWorker : public Nan::AsyncWorker {
   public:
     BuildTransactionAsyncWorker(uint64_t unlockTime,
                                 CryptoNote::AccountKeys senderKeys,
+                                std::string paymentId,
                                 std::string extra,
                                 std::vector<InputInfo> sources,
                                 std::vector<OutputInfo> destinations,
@@ -40,6 +41,7 @@ class BuildTransactionAsyncWorker : public Nan::AsyncWorker {
   private:
     uint64_t unlockTime;
     CryptoNote::AccountKeys senderKeys;
+    std::string paymentId;
     std::string extra;
     std::vector<InputInfo> sources;
     std::vector<OutputInfo> destinations;

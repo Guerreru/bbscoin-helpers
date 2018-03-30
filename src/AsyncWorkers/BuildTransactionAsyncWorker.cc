@@ -3,12 +3,14 @@
 
 BuildTransactionAsyncWorker::BuildTransactionAsyncWorker(uint64_t unlockTime,
                                                          CryptoNote::AccountKeys senderKeys,
+                                                         std::string paymentId,
                                                          std::string extra,
                                                          std::vector<InputInfo> sources,
                                                          std::vector<OutputInfo> destinations,
                                                          Nan::Callback *callback) : Nan::AsyncWorker(callback) {
     this->unlockTime = unlockTime;
     this->senderKeys = senderKeys;
+    this->paymentId = paymentId;
     this->extra = extra;
     this->sources = sources;
     this->destinations = destinations;
@@ -23,6 +25,10 @@ void BuildTransactionAsyncWorker::Execute() {
     }
 
     tx->setUnlockTime(unlockTime);
+    if (!paymentId.empty()) {
+        std::vector<uint8_t> paymentIdValue = fromHex(paymentId);
+        tx->setPaymentId(*reinterpret_cast<Crypto::Hash *>(paymentIdValue.data()));
+    }
     tx->appendExtra(Common::asBinaryArray(extra));
 
     for (auto &source : sources) {

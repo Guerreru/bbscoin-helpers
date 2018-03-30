@@ -47,6 +47,7 @@ describe('transaction helpers', () => {
         const tx = buildTransaction({
             "unlockTime": 0,
             "extra": "",
+            "paymentId": "",
             "sender": {
                 address,
                 viewSecret: viewKey.secret,

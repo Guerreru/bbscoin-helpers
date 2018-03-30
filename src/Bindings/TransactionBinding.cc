@@ -142,6 +142,7 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
     // {
     //     unlockTime : '',
     //     extra: '',
+    //     paymentId: '',
     //     sender : {
     //         address : '',
     //         viewSecret : '',
@@ -177,6 +178,10 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
     // extra
     v8::Local<v8::Value> extraValue = Nan::Get(transactionJs, Nan::New("extra").ToLocalChecked()).ToLocalChecked();
     std::string extra = std::string(*Nan::Utf8String(extraValue->ToString()));
+
+    // paymentId
+    v8::Local<v8::Value> paymentIdValue = Nan::Get(transactionJs, Nan::New("paymentId").ToLocalChecked()).ToLocalChecked();
+    std::string paymentId = std::string(*Nan::Utf8String(paymentIdValue->ToString()));
 
     // sender
     CryptoNote::AccountKeys senderKeys;
@@ -278,6 +283,7 @@ NAN_METHOD(TransactionBinding::BuildTransaction) {
     Nan::AsyncQueueWorker(new BuildTransactionAsyncWorker(
         unlockTime,
         senderKeys,
+        paymentId,
         extra,
         sources,
         destinations,
