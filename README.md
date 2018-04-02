@@ -87,9 +87,10 @@ decomposeAmount(62387455827, 500000) === [
 - boost
 
 ### macOS
-
+You will need the daemon source code in order to compile this module
 ```bash
 brew install boost
+ln ../bbscoin bbscoin
 npm install
 node-gyp rebuild
 ```
